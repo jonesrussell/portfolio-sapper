@@ -1,5 +1,10 @@
 FROM node:12
 
+LABEL name="Sapper"
+LABEL version="1.0.0"
+
+EXPOSE 3000
+
 # This Dockerfile adds a non-root user with sudo access. Update the “remoteUser” property in
 # devcontainer.json to use it. More info: https://aka.ms/vscode-remote/containers/non-root-user.
 ARG USERNAME=node
