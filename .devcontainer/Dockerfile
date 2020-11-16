@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:14-buster
 
 LABEL name="Sapper"
 LABEL version="1.0.0"
@@ -45,7 +45,7 @@ RUN apt-get update \
     && apt-get -y install --no-install-recommends yarn \
     #
     # Install tslint and typescript globally
-    && npm install -g tslint eslint typescript pnpm \
+    && npm install -g tslint eslint typescript \
     #
     # [Optional] Update a non-root user to UID/GID if needed.
     && if [ "$USER_GID" != "1000" ] || [ "$USER_UID" != "1000" ]; then \
