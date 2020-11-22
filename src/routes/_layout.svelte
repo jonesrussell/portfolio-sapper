@@ -1,43 +1,10 @@
-<style lang="scss" global>
-  @import '../scss/_variables.scss';
-  /*
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: $db-heading-font;
-    font-weight: 400;
-    line-height: 1.2;
-    margin: 0 0 0.5em;
-  }
-
-  h1 {
-    display: none;
-    font-size: $db-h1-font-size;
-  }
-
-  a {
-    color: $db-a-color;
-  }
-
-  @media (min-width: 400px) {
-    body {
-      font-size: $db-font-size;
-    }
-  }
-  */
-</style>
-
-<!--<script context="module" ✂prettier:content✂="CiAgZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHByZWxvYWQoeyBwYXJhbXMsIHF1ZXJ5IH0pIHsKICAgIC8vIHRoZSBgc2x1Z2AgcGFyYW1ldGVyIGlzIGF2YWlsYWJsZSBiZWNhdXNlCiAgICAvLyB0aGlzIGZpbGUgaXMgY2FsbGVkIFtzbHVnXS5zdmVsdGUKICAgIGNvbnN0IHJlcyA9IGF3YWl0IHRoaXMuZmV0Y2goYGJsb2cvJHtwYXJhbXMuc2x1Z30uanNvbmApCiAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzLmpzb24oKQoKICAgIGlmIChyZXMuc3RhdHVzID09PSAyMDApIHsKICAgICAgcmV0dXJuIHsgcG9zdDogZGF0YSB9CiAgICB9IGVsc2UgewogICAgICB0aGlzLmVycm9yKHJlcy5zdGF0dXMsIGRhdGEubWVzc2FnZSkKICAgIH0KICB9Cg==" lang="ts" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=">{}</script>-->
 <script lang="typescript">
-  import Nav from '../components/Nav.svelte';
+  import Nav from "../components/Nav.svelte";
 
   export let segment;
 </script>
 
-<Nav segment="{segment}" />
+<Nav {segment} />
 
 <main class="profile-page">
   <slot />
@@ -45,8 +12,7 @@
 <footer class="relative bg-gray-300 pt-8 pb-6">
   <div
     class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-    style="height: 80px; transform: translateZ(0px);"
-  >
+    style="height: 80px; transform: translateZ(0px);">
     <svg
       class="absolute bottom-0 overflow-hidden"
       xmlns="http://www.w3.org/2000/svg"
@@ -54,12 +20,10 @@
       version="1.1"
       viewBox="0 0 2560 100"
       x="0"
-      y="0"
-    >
+      y="0">
       <polygon
         class="text-gray-300 fill-current"
-        points="2560 0 2560 100 0 100"
-      ></polygon>
+        points="2560 0 2560 100 0 100" />
     </svg>
   </div>
   <div class="container mx-auto px-4">
@@ -72,21 +36,17 @@
         <div class="mt-6">
           <button
             class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-            type="button"
-          >
-            <i class="flex fab fa-twitter"></i></button><button
+            type="button">
+            <i class="flex fab fa-twitter" /></button><button
             class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-            type="button"
-          >
-            <i class="flex fab fa-facebook-square"></i></button><button
+            type="button">
+            <i class="flex fab fa-facebook-square" /></button><button
             class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-            type="button"
-          >
-            <i class="flex fab fa-dribbble"></i></button><button
+            type="button">
+            <i class="flex fab fa-dribbble" /></button><button
             class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-            type="button"
-          >
-            <i class="flex fab fa-github"></i>
+            type="button">
+            <i class="flex fab fa-github" />
           </button>
         </div>
       </div>
@@ -94,63 +54,57 @@
         <div class="flex flex-wrap items-top mb-6">
           <div class="w-full lg:w-4/12 px-4 ml-auto">
             <span
-              class="block uppercase text-gray-600 text-sm font-semibold mb-2"
-            >Useful Links</span>
+              class="block uppercase text-gray-600 text-sm font-semibold mb-2">Useful
+              Links</span>
             <ul class="list-unstyled">
               <li>
                 <a
                   class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://www.creative-tim.com/presentation"
-                >About Us</a>
+                  href="https://www.creative-tim.com/presentation">About Us</a>
               </li>
               <li>
                 <a
                   class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://blog.creative-tim.com"
-                >Blog</a>
+                  href="https://blog.creative-tim.com">Blog</a>
               </li>
               <li>
                 <a
                   class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://www.github.com/creativetimofficial"
-                >Github</a>
+                  href="https://www.github.com/creativetimofficial">Github</a>
               </li>
               <li>
                 <a
                   class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://www.creative-tim.com/bootstrap-themes/free"
-                >Free Products</a>
+                  href="https://www.creative-tim.com/bootstrap-themes/free">Free
+                  Products</a>
               </li>
             </ul>
           </div>
           <div class="w-full lg:w-4/12 px-4">
             <span
-              class="block uppercase text-gray-600 text-sm font-semibold mb-2"
-            >Other Resources</span>
+              class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other
+              Resources</span>
             <ul class="list-unstyled">
               <li>
                 <a
                   class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                >MIT License</a>
+                  href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">MIT
+                  License</a>
               </li>
               <li>
                 <a
                   class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://creative-tim.com/terms"
-                >Terms &amp; Conditions</a>
+                  href="https://creative-tim.com/terms">Terms &amp; Conditions</a>
               </li>
               <li>
                 <a
                   class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://creative-tim.com/privacy"
-                >Privacy Policy</a>
+                  href="https://creative-tim.com/privacy">Privacy Policy</a>
               </li>
               <li>
                 <a
                   class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://creative-tim.com/contact-us"
-                >Contact Us</a>
+                  href="https://creative-tim.com/contact-us">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -164,8 +118,7 @@
           Copyright © 2019 Tailwind Starter Kit by
           <a
             href="https://www.creative-tim.com"
-            class="text-gray-600 hover:text-gray-900"
-          >Creative Tim</a>.
+            class="text-gray-600 hover:text-gray-900">Creative Tim</a>.
         </div>
       </div>
     </div>
