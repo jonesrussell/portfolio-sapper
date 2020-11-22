@@ -5,14 +5,15 @@ LABEL version="1.0.0"
 
 EXPOSE 3000
 
-# This Dockerfile adds a non-root user with sudo access. Update the “remoteUser” property in
-# devcontainer.json to use it. More info: https://aka.ms/vscode-remote/containers/non-root-user.
+ARG INSTALL_ZSH="true"
 ARG USERNAME=node
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
 # Docker Compose version
 ARG COMPOSE_VERSION=1.24.0
+
+COPY library-scripts/*.sh /tmp/library-scripts/
 
 # Install needed packages and setup non-root user. Use a separate RUN statement to add your own dependencies.
 RUN apt-get update \
@@ -21,6 +22,14 @@ RUN apt-get update \
     #
     # Verify git and needed tools are installed
     && apt-get -y install git openssh-client less iproute2 procps \
+    # Install common packages, non-root user, update yarn and install nvm
+    && bash /tmp/library-scripts/common-debian.sh "${INSTALL_ZSH}" "${USERNAME}" "${USER_UID}" "${USER_GID}" "${UPGRADE_PACKAGES}" \
+    # Install nvm
+    && rm -rf /opt/yarn-* /usr/local/bin/yarn /usr/local/bin/yarnpkg \
+    && bash /tmp/library-scripts/node-debian.sh "${NVM_DIR}" "none" "${USERNAME}" \
+    && bash /tmp/library-scripts/docker-debian.sh \
+    # Clean up
+    && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /root/.gnupg /tmp/library-scripts \
     #
     # Install Docker CE CLI
     && apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common lsb-release \
