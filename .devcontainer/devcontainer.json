@@ -6,15 +6,15 @@
 	"workspaceFolder": "/workspace",
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"terminal.integrated.shell.linux": "/bin/bash"
+		"terminal.integrated.shell.linux": "/bin/zsh"
 	},
 	"postCreateCommand": "npm install",
 	// Add the IDs of extensions you want installed when the container is created.
-  "mounts": [
-    "source=ext,target=/home/node/.vscode-server/extensions,type=volume",
-    "source=ext-insiders,target=/home/node/.vscode-server-insiders/extensions,type=volume",
-    "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
-  ],
+	"mounts": [
+		"source=ext,target=/home/node/.vscode-server/extensions,type=volume",
+		"source=ext-insiders,target=/home/node/.vscode-server-insiders/extensions,type=volume",
+		"source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
+	],
 	"extensions": [
 		"dbaeumer.vscode-eslint",
 		"ms-azuretools.vscode-dapr",
