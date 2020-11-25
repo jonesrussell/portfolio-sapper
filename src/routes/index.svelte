@@ -10,7 +10,7 @@
   <h1 class="text-5xl page-title animated delay slideInDown">Ahnii!</h1>
 </header> -->
 
-<section class="hidden">
+<section>
   <div class="self-center justify-center col-start-1 row-start-1">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@
         <image
           x="50%"
           y="50%"
-          href="cartoon-russell.jpg"
+          href="/static/cartoon-russell.jpg"
           width="auto"
           height="100%"
           clip-path="url(#myCircle)"
