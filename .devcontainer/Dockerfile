@@ -9,19 +9,20 @@ ARG INSTALL_ZSH="true"
 ARG USERNAME=node
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
+ARG NVM_DIR=/usr/local/share/nvm
 
 # Docker Compose version
 ARG COMPOSE_VERSION=1.24.0
+
+ARG NODE_VERSION=v14.14.0
+
+ENV DOCKER_HOST=unix:///var/run/user/1000/docker.sock
 
 COPY library-scripts/*.sh /tmp/library-scripts/
 
 # Install needed packages and setup non-root user. Use a separate RUN statement to add your own dependencies.
 RUN apt-get update \
     && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
-    #
-    # Verify git and needed tools are installed
-    && apt-get -y install git openssh-client less iproute2 procps \
     # Install common packages, non-root user, update yarn and install nvm
     && bash /tmp/library-scripts/common-debian.sh "${INSTALL_ZSH}" "${USERNAME}" "${USER_UID}" "${USER_GID}" "${UPGRADE_PACKAGES}" \
     # Install nvm
@@ -32,26 +33,21 @@ RUN apt-get update \
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /root/.gnupg /tmp/library-scripts \
     #
     # Install Docker CE CLI
-    && apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common lsb-release \
-    && curl -fsSL https://download.docker.com/linux/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/gpg | (OUT=$(apt-key add - 2>&1) || echo $OUT) \
-    && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/$(lsb_release -is | tr '[:upper:]' '[:lower:]') $(lsb_release -cs) stable" \
-    && apt-get update \
-    && apt-get install -y docker-ce-cli \
+    # && apt-get install -y apt-transport-https ca-certificates curl gnupg-agent lsb-release \
+    # && curl -fsSL https://download.docker.com/linux/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/gpg | (OUT=$(apt-key add - 2>&1) || echo $OUT) \
     #
     # Install Docker Compose
-    && curl -sSL "https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
-    && chmod +x /usr/local/bin/docker-compose \
+    # && curl -sSL "https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
+    # && chmod +x /usr/local/bin/docker-compose \
     #
     # Remove outdated yarn from /opt and install via package 
     # so it can be easily updated via apt-get upgrade yarn
-    && rm -rf /opt/yarn-* \
-    && rm -f /usr/local/bin/yarn \
-    && rm -f /usr/local/bin/yarnpkg \
-    && apt-get install -y curl apt-transport-https lsb-release \
-    && curl -sS https://dl.yarnpkg.com/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/pubkey.gpg | apt-key add - 2>/dev/null \
-    && echo "deb https://dl.yarnpkg.com/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
-    && apt-get update \
-    && apt-get -y install --no-install-recommends yarn \
+    # && rm -rf /opt/yarn-* \
+    # && rm -f /usr/local/bin/yarn \
+    # && rm -f /usr/local/bin/yarnpkg \
+    # && curl -sS https://dl.yarnpkg.com/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/pubkey.gpg | apt-key add - 2>/dev/null \
+    # && echo "deb https://dl.yarnpkg.com/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
+    # && apt-get -y install --no-install-recommends yarn \
     #
     # Install tslint and typescript globally
     && npm install -g tslint eslint typescript \
@@ -63,7 +59,6 @@ RUN apt-get update \
     && chown -R $USER_UID:$USER_GID /home/$USERNAME; \
     fi \
     # [Optional] Add add sudo support for non-root user
-    && apt-get install -y sudo \
     && echo node ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME \
     #
