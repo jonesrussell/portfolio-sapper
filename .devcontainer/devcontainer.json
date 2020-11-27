@@ -8,7 +8,7 @@
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/zsh"
 	},
-	"postCreateCommand": "nvm install v14.14.0 && npm install",
+	"postCreateCommand": "npm install",
 	// Add the IDs of extensions you want installed when the container is created.
 	"mounts": [
 		"source=ext,target=/home/node/.vscode-server/extensions,type=volume",
