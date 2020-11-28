@@ -1,4 +1,4 @@
-<h1 align="center">🌐 Opinionated Sapper project base</h1>
+<h1 align="center">🌐 @jonesrussell42 Portfolio</h1>
 
 ## ❓ What is this?
 
@@ -14,7 +14,6 @@ This is an extremely opinionated Sapper project base intended for my own use. Th
   - Thanks to [@Eckhardt-D](https://github.com/Eckhardt-D)'s [`sapper-firebase-starter`](https://github.com/Eckhardt-D/sapper-firebase-starter)
   - Thanks to [@nhristov](https://github.com/nhristov)'s [`sapper-template-firebase`](https://github.com/nhristov/sapper-template-firebase)
 - [TypeScript](https://www.typescriptlang.org/)
-  - [TypeGraphQL](https://typegraphql.com/)
   - Inside Svelte components, thanks to [`svelte-preprocess`](https://github.com/kaisermann/svelte-preprocess)
 - [PostCSS](https://postcss.org/)
   - [Tailwind CSS](https://tailwindcss.com/)
@@ -31,8 +30,6 @@ This is an extremely opinionated Sapper project base intended for my own use. Th
 - [ESLint](https://eslint.org/)
   - [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - `eslint:fix` package script
-
-This template comes from combining two of my smaller ones: [one for Tailwind CSS (PostCSS)](https://github.com/babichjacob/sapper-postcss-template), and [another for TypeScript and GraphQL](https://github.com/babichjacob/sapper-typescript-graphql-template). If this is too much for you, check out one of those!
 
 ## 🧭 Project Status
 
@@ -56,43 +53,12 @@ npx use-preset babichjacob/svelte-add-tailwindcss  # Apply the changes to set up
 # Remember, the above are hypothetical commands and the real ones might look and work different
 ```
 
-This should have the same result as cloning a project base, but there are more reasons to reach for this solution:
-
-1. Reduced "heartbeat commits" (like upgrading packages to their latest versions) to prove the project still works
-2. Allows picking parts instead of taking _all or nothing_ from a project base
-3. Focus on higher quality "atomic" presets. For example, there might be a `svelte-add-pwa` preset that adds a service worker and `manifest.json` with example icon files like we have now
-4. `create-svelte` is young and probably going to change often, so only affected presets will need to be updated
-5. Reduced duplication: I won't need to copy over changes from one project base to another to keep them synchronized
-
-Than there are to continue making project bases:
-
-1. (I suspect) preset logic is complex
-2. I suspect presets are harder to test and can have harder to predict errors
-
-So this is what's going to happen.
-
-**Read on to use this project base today:**
-
-## 📋 Copy
-
-Choose either to clone or fork depending on your preference.
-
-### 🐑 Clone
-
-```sh
-git clone https://github.com/babichjacob/sapper-firebase-typescript-graphql-tailwindcss-actions-template
-```
-
-### 🍴 Fork
-
-Click the `Use this template` button on [this project's GitHub page](https://github.com/babichjacob/sapper-firebase-typescript-graphql-tailwindcss-actions-template).
-
 ### ⬇️ Install Dependencies
 
 You need to be using version 12 or higher of Node; the `package.json` `engines` field only specifies `10` for Cloud Functions for Firebase.
 
 ```sh
-cd sapper-firebase-typescript-graphql-tailwindcss-actions-template
+cd portfolio-sapper
 npm install  # npm also works
 ```
 
@@ -104,7 +70,7 @@ npm install  # npm also works
 npm run dev
 ```
 
-### 🔥 Deployment to Firebase
+### 🔥 Deployment to x
 
 This will create a production build for you before deploying.
 
@@ -114,46 +80,10 @@ npm run deploy
 
 ### 🔨 Testing Production Builds Locally
 
-This probably pairs well with [Firebase Emulators](https://firebase.google.com/docs/rules/emulator-setup).
-
 ```sh
 npm run prod
 npm run start
 ```
-
-### 📦 Deploying a Static Site to Firebase Hosting
-
-Cloud Functions for Firebase [requires billing set up with the Blaze Plan](https://firebase.google.com/support/faq#expandable-15), but you can stay on the Spark Plan for a free and fast (no cold starts!) static site:
-
-```sh
-npm run deploy:export
-```
-
-This will create an exported build for you before deploying.
-
-If your project is transitioning from SSR to a static site, be sure to delete the residual `ssr` Cloud Function:
-
-```sh
-npm run firebase functions:delete ssr
-```
-
-You will also need to remove `rewrites` from `firebase.json`.
-
-## ⚙ Configuration
-
-### 🔥 Firebase and 🐙 GitHub Actions
-
-The least you should need to do to get started is to edit `.firebaserc`, changing the project ID to _your_ project (initialized in the [Firebase console](https://console.firebase.google.com/)) ID.
-
-For automatic building and deployment to work, you need to generate [a CI login token from Firebase](https://firebase.google.com/docs/cli#cli-ci-systems):
-
-```sh
-npm run firebase login:ci
-```
-
-Then, go to your repository's Settings > Secrets. Copy the result of the command above and save it as a Secret named `FIREBASE_TOKEN`.
-
-You can test if it's working by making a commit to `main` or `master` and checking the Actions tab of your repository to see if your project successfully builds and deploys to Firebase.
 
 ### ⚡ Web app
 
@@ -165,58 +95,6 @@ The [Apple touch icon](https://developer.apple.com/library/archive/documentation
 
 This project base comes with [source maps](https://blog.teamtreehouse.com/introduction-source-maps) enabled during development and disabled during production for the best compromise between performance and developer experience. You can change this behavior through the `sourcemap` variable in `rollup.config.js`.
 
-### 💨 Optionally removing Tailwind CSS (and PurgeCSS)
-
-1. Remove all Tailwind imports in the `src/global.pcss` file
-2. Remove these lines in `postcss.config.js`:
-   1. ```js
-      const tailwindcss = require('tailwindcss')
-      ```
-   2. ```js
-      const tailwindcssConfig = require('./tailwind.config')
-      ```
-   3. ```js
-      tailwindcss(tailwindcssConfig),
-      ```
-3. Delete the `tailwind.config.js` file
-4. Uninstall the `tailwindcss` and `@tailwindcss/ui` packages
-
-### 🕸 Optionally removing the GraphQL server
-
-1. Remove these lines in `src/server.ts`:
-
-   1. ```ts
-      import { createApolloServer } from './graphql'
-      ```
-   2. ```ts
-      const apolloServer = await createApolloServer()
-      ```
-   3. ```ts
-      apolloServer.applyMiddleware({ app, path: graphqlPath })
-      ```
-
-2. Remove the now-useless `graphqlPath` parameter to `createSapperAndApolloServer` in `src/server.ts`. This is also a good opportunity to rename the function since there is no longer an Apollo Server; if you do rename it, then also update the reference in `/index.js` or your Cloud Functions will still be referring to the old (now non-existent) function
-
-3. Delete the `src/graphql` folder
-
-4. Uninstall the `apollo-server-express`, `bufferutil`, `class-validator`, `graphql`, `reflect-metadata`, `type-graphql`, and `utf-8-validate` packages
-
-5. Remove the now-error-causing
-   ```yaml
-   - name: 'Delete the Unexportable GraphQL Page'
-     run: 'rm __sapper__/export/graphql'
-   ```
-   task in `.github/workflows/build-and-deploy.yml`
-
-## 😵 Help! I have a question
-
-[Create an issue](https://github.com/babichjacob/sapper-typescript-graphql-template/issues/new) and I'll try to help.
-
-## 😡 Fix! There is something that needs improvement
-
-[Create an issue](https://github.com/babichjacob/sapper-typescript-graphql-template/issues/new) or [pull request](https://github.com/babichjacob/sapper-typescript-graphql-template/pulls) and I'll try to fix.
-
-I'm sorry, because of my skill level and the fragility of (the combination of) some of these tools, there are likely to be problems in this project. Thank you for bringing them to my attention or fixing them for me.
 
 ## 📄 License
 
