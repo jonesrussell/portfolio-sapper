@@ -38,7 +38,7 @@
       <div class="relative flex items-center mt-10">
         <a
           href="https://dev.to"
-          class="flex items-center self-start justify-center px-5 py-3 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-yellow-500 border border-transparent rounded-lg shadow hover:bg-yellow-600 focus:outline-none focus:border-yellow-600 focus:shadow-outline-yellow md:py-4 md:text-lg xl:text-xl md:px-10"
+          class="flex items-center self-start justify-center px-5 py-3 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-yellow-500 border border-transparent rounded-lg shadow hover:bg-yellow-600 focus:outline-none focus:border-yellow-600 focus:ring-yellow md:py-4 md:text-lg xl:text-xl md:px-10"
         >Get Started</a>
         <a
           href="https://dev.to"

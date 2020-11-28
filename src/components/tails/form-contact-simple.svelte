@@ -138,7 +138,7 @@
         <form class="w-full" on:submit="{handleSubmit}">
           <div class="pb-3">
             <input
-              class="w-full px-5 py-3 border border-gray-400 rounded-lg outline-none focus:shadow-outline"
+              class="w-full px-5 py-3 border border-gray-400 rounded-lg outline-none focus:ring"
               type="text"
               placeholder="Email Address"
               name="email"
@@ -147,7 +147,7 @@
           </div>
           <div class="py-3">
             <input
-              class="w-full px-5 py-3 border border-gray-400 rounded-lg outline-none focus:shadow-outline"
+              class="w-full px-5 py-3 border border-gray-400 rounded-lg outline-none focus:ring"
               type="text"
               placeholder="Subject"
               name="subject"
@@ -157,14 +157,14 @@
           <div class="py-3">
             <textarea
               rows="4"
-              class="w-full h-40 px-5 py-3 border border-gray-400 rounded-lg outline-none focus:shadow-outline"
+              class="w-full h-40 px-5 py-3 border border-gray-400 rounded-lg outline-none focus:ring"
               name="message"
               placeholder="Your message here..."
             ></textarea>
           </div>
           <div class="pt-3">
             <button
-              class="flex px-6 py-3 text-white bg-indigo-500 rounded-md hover:bg-indigo-600 hover:text-white focus:outline-none focus:shadow-outline focus:border-indigo-300"
+              class="flex px-6 py-3 text-white bg-indigo-500 rounded-md hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring focus:border-indigo-300"
               type="submit"
             >
               <svg

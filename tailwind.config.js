@@ -5,11 +5,10 @@
 	View the full documentation at https://tailwindcss.com.
 */
 
-const tailwindui = require("@tailwindcss/ui");
-
 module.exports = {
 	purge: {
 		content: ["./src/**/*.svelte", "./src/**/*.html"],
+		preserveHtmlElements: false,
 		options: {
 			defaultExtractor: (content) => [...content.matchAll(/(?:class:)*([\w\d-/:%.]+)/gm)].map(([_match, group, ..._rest]) => group),
 			keyframes: true,
@@ -19,12 +18,5 @@ module.exports = {
 		extend: {},
 	},
 	variants: {},
-	plugins: [
-		tailwindui,
-	],
-
-	future: {
-		purgeLayersByDefault: true,
-		removeDeprecatedGapUtilities: true,
-	},
+	plugins: [],
 };

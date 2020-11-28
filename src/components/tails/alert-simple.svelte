@@ -1,5 +1,5 @@
 <div class="flex flex-col justify-center min-h-screen pt-4 bg-gray-100 min-w-screen">
-    <div class="w-full px-4 py-4 overflow-x-auto text-center whitespace-no-wrap rounded-md">
+    <div class="w-full px-4 py-4 overflow-x-auto text-center whitespace-nowrap rounded-md">
         <div class="inline-flex w-full max-w-sm ml-3 overflow-hidden bg-white rounded-lg shadow-sm">
             <div class="flex items-center justify-center w-12 bg-green-500">
                 <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
@@ -12,7 +12,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full px-4 py-4 overflow-x-auto text-center whitespace-no-wrap rounded-md">
+    <div class="w-full px-4 py-4 overflow-x-auto text-center whitespace-nowrap rounded-md">
         <div class="inline-flex w-full max-w-sm ml-3 overflow-hidden bg-white rounded-lg shadow-sm">
             <div class="flex items-center justify-center w-12 bg-blue-500">
                 <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full px-4 py-4 overflow-x-auto text-center whitespace-no-wrap rounded-md">
+    <div class="w-full px-4 py-4 overflow-x-auto text-center whitespace-nowrap rounded-md">
         <div class="inline-flex w-full max-w-sm ml-3 overflow-hidden bg-white rounded-lg shadow-sm">
             <div class="flex items-center justify-center w-12 bg-yellow-500">
                 <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full px-4 py-4 overflow-x-auto text-center whitespace-no-wrap rounded-md">
+    <div class="w-full px-4 py-4 overflow-x-auto text-center whitespace-nowrap rounded-md">
         <div class="inline-flex w-full max-w-sm ml-3 overflow-hidden bg-white rounded-lg shadow-sm">
             <div class="flex items-center justify-center w-12 bg-red-500">
                 <svg class="w-6 h-6 text-white fill-current" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">

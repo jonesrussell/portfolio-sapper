@@ -21,7 +21,7 @@
         <div class="flex items-center">
           <button
             type="submit"
-            class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded-lg bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+            class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded-lg bg-purple-500 hover:bg-purple-700 focus:ring focus:outline-none"
           >
             Get started
           </button>

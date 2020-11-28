@@ -22,11 +22,11 @@
       <div class="flex mt-4">
         <a
           href="https://dev.to"
-          class="flex items-center justify-center self-start px-5 py-3 border border-transparent text-base leading-tight font-medium rounded-lg shadow text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-8 mt-5"
+          class="flex items-center justify-center self-start px-5 py-3 border border-transparent text-base leading-tight font-medium rounded-lg shadow text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-8 mt-5"
         >Get Started</a>
         <a
           href="https://dev.to"
-          class="flex items-center justify-center self-start px-5 py-3 border-transparent text-base leading-tight font-medium rounded-lg shadow text-indigo-500 bg-gray-200 hover:bg-white focus:outline-none focus:border-gray-100 focus:shadow-outline-gray transition duration-150 ease-in-out md:py-4 md:text-lg md:px-8 mt-5 ml-5"
+          class="flex items-center justify-center self-start px-5 py-3 border-transparent text-base leading-tight font-medium rounded-lg shadow text-indigo-500 bg-gray-200 hover:bg-white focus:outline-none focus:border-gray-100 focus:ring-gray transition duration-150 ease-in-out md:py-4 md:text-lg md:px-8 mt-5 ml-5"
         >How It Works</a>
       </div>
     </div>

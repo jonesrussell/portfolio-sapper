@@ -20,7 +20,7 @@
         </p>
         <a
           href="https://dev.to"
-          class="flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+          class="flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md shadow text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
         >View Case Studies</a>
       </div>
       <div class="w-1/2">
