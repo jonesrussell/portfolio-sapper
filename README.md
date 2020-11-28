@@ -8,11 +8,6 @@ This is an extremely opinionated Sapper project base intended for my own use. Th
 
 - [Sapper for Svelte](https://sapper.svelte.dev/)
   - [Official VS Code Extension](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
-- [Firebase](https://firebase.google.com/)
-  - [Functions](https://firebase.google.com/docs/functions/) for Server Side Rendering (SSR)
-  - [Hosting](https://firebase.google.com/docs/hosting) for static assets
-  - Thanks to [@Eckhardt-D](https://github.com/Eckhardt-D)'s [`sapper-firebase-starter`](https://github.com/Eckhardt-D/sapper-firebase-starter)
-  - Thanks to [@nhristov](https://github.com/nhristov)'s [`sapper-template-firebase`](https://github.com/nhristov/sapper-template-firebase)
 - [TypeScript](https://www.typescriptlang.org/)
   - Inside Svelte components, thanks to [`svelte-preprocess`](https://github.com/kaisermann/svelte-preprocess)
 - [PostCSS](https://postcss.org/)
@@ -23,7 +18,7 @@ This is an extremely opinionated Sapper project base intended for my own use. Th
   - [CSSNano](https://cssnano.co/)
   - Inside Svelte components, thanks to [`svelte-preprocess`](https://github.com/kaisermann/svelte-preprocess)
 - [GitHub Actions](https://github.com/features/actions)
-  - Automatic building and deployment to Firebase, triggered on commits to `main` or `master`
+  - Automatic building and deployment to X, triggered on commits to `main` or `master`
 - [Progressive Web App (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) best practices set up
   - [`manifest.json`](https://developer.mozilla.org/en-US/docs/Web/Manifest)'s most important fields filled out
   - High [Lighthouse](https://developers.google.com/web/tools/lighthouse) audit score
@@ -41,8 +36,6 @@ But, once we move on, I won't be creating project bases (templates / boilerplate
 
 ```sh
 npm init svelte@next  # Use the official template from create-svelte
-
-npx use-preset babichjacob/svelte-add-firebase-hosting  # Apply the changes to set up Firebase deployment for create-svelte
 
 npx use-preset babichjacob/svelte-add-typescript  # Apply the changes to set up TypeScript for create-svelte
 npx use-preset babichjacob/svelte-add-typegraphql  # Apply the changes to set up TypeGraphQL for create-svelte as long as TypeScript is already set up

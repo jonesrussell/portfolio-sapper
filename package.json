@@ -3,7 +3,6 @@
   "description": "My portfolio website that includes Sapper for Svelte, TypeScript, Tailwind CSS, ESLint and EditorConfig, and automatic building and deployment with GitHub Actions",
   "keywords": [
     "sapper",
-    "firebase",
     "typescript",
     "eslint",
     "postcss",
@@ -11,8 +10,7 @@
     "github-actions",
     "svelte",
     "cssnano",
-    "tailwindcss",
-    "apollo-server"
+    "tailwindcss"
   ],
   "repository": {
     "type": "git",
@@ -25,10 +23,6 @@
     "eslint:fix": "eslint --fix ./*.js ./src/*.ts ./src/components/**/*.svelte ./src/routes/**/*.svelte ./src/routes/**/*.ts",
     "validate": "svelte-check --ignore src/node_modules/@sapper",
     "validate:dev": "svelte-check --ignore src/node_modules/@sapper --watch",
-    "firebase": "firebase",
-    "firebase:deploy": "firebase deploy",
-    "firebase:deploy:hosting": "firebase deploy --only hosting",
-    "firebase:deploy:functions": "firebase deploy --only functions",
     "sapper:dev": "node_modules/sapper/sapper dev",
     "sapper:build": "cross-env NODE_ENV=production sapper build --legacy",
     "sapper:export": "cross-env NODE_ENV=production sapper export --legacy",
@@ -48,9 +42,6 @@
     "autoprefixer": "^10.0.3",
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "firebase-admin": "^9.2.0",
-    "firebase-functions": "^3.11.0",
-    "firebase-tools": "^8.13.1",
     "highlight.js": "^10.4.0",
     "node-fetch": "^2.6.1",
     "sirv": "^1.0.7"

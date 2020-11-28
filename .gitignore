@@ -1,7 +1,5 @@
 ._*
 .DS_Store
-.firebase/
-firebase-debug.log
 /.history/
 /node_modules/
 __sapper__/
