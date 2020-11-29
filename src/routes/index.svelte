@@ -1,74 +1,70 @@
-<script>
-  import Line from '../components/Line.svelte';
-</script>
-
-<svelte:head>
-  <title>Full-Stack Developer | Russell Jones</title>
-</svelte:head>
-
-<!-- <header class="flex justify-center">
-  <h1 class="text-5xl page-title animated delay slideInDown">Ahnii!</h1>
-</header> -->
-
-<section>
-  <div class="self-center justify-center col-start-1 row-start-1">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      version="1.1"
-      class="w-screen my-4 bg current"
-      preserveAspectRatio="xMinYMin meet"
-    >
-      <defs>
-        <clipPath id="myCircle">
-          <circle fill="#FFFFFF" cy="50%" r="75" cx="50%"></circle>
-        </clipPath>
-      </defs>
-      <Line y="0" stroke="gray" strokeWidth="4" />
-      <Line y="7" stroke="gray" strokeWidth="4" />
-      <Line y="18" stroke="gray" strokeWidth="4" />
-
-      <Line y="24" stroke="green" strokeWidth="7" />
-      <Line y="32" stroke="green" strokeWidth="7" />
-      <Line y="40" stroke="green" strokeWidth="7" />
-      <Line y="48" stroke="green" strokeWidth="7" />
-
-      <Line y="60" stroke="purple" strokeWidth="5" />
-      <Line y="66" stroke="purple" strokeWidth="6" />
-
-      <Line y="80" stroke="gray" strokeWidth="4" />
-      <Line y="86" stroke="gray" strokeWidth="4" />
-      <Line y="100" stroke="gray" strokeWidth="4" />
-      <Line y="106" stroke="gray" strokeWidth="4" />
-      <Line y="118" stroke="gray" strokeWidth="4" />
-      <Line y="123" stroke="gray" strokeWidth="4" />
-
-      <Line y="132" stroke="green" strokeWidth="7" />
-      <Line y="140" stroke="green" strokeWidth="7" />
-
-      <!--<circle cx="50%" cy="50%" r="100"/>-->
-
-      <!-- <g transform="translate(50%, 50%);"> -->
-      <g transform="rotate(45 50 50)">
-        <image
-          x="50%"
-          y="50%"
-          href="/static/cartoon-russell.jpg"
-          width="auto"
-          height="100%"
-          clip-path="url(#myCircle)"
-        ></image>
-      </g>
-    </svg>
+<div class="flex flex-wrap justify-center">
+  <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+    <div class="relative">
+      <img
+        alt="..."
+        src="cartoon-russell.jpg"
+        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+        style="max-width: 150px;" />
+    </div>
   </div>
-  <!--
-    transition duration-500 ease-in-out transform
-  -->
-  <div class="self-center justify-center col-start-1 row-start-1">
-    <img
-      style="display: none"
-      class="w-56 m-auto rounded-full animated zoomIn"
-      src="cartoon-russell.jpg"
-      alt="Surprisingly accurate looking cartoon avatar of Russell Jones"
-    />
+  <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
+    <div class="py-6 px-3 mt-32 sm:mt-0">
+      <button
+        class="bg-pink-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1"
+        type="button"
+        style="transition: all 0.15s ease 0s;">
+        Connect
+      </button>
+    </div>
   </div>
-</section>
+  <div class="w-full lg:w-4/12 px-4 lg:order-1">
+    <div class="flex justify-center py-4 lg:pt-4 pt-8">
+      <div class="mr-4 p-3 text-center">
+        <span
+          class="text-xl font-bold block uppercase tracking-wide text-gray-700">22</span><span
+          class="text-sm text-gray-500">Friends</span>
+      </div>
+      <div class="mr-4 p-3 text-center">
+        <span
+          class="text-xl font-bold block uppercase tracking-wide text-gray-700">10</span><span
+          class="text-sm text-gray-500">Photos</span>
+      </div>
+      <div class="lg:mr-4 p-3 text-center">
+        <span
+          class="text-xl font-bold block uppercase tracking-wide text-gray-700">89</span><span
+          class="text-sm text-gray-500">Comments</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center mt-12">
+  <h3 class="text-4xl font-semibold leading-normal text-gray-800 mb-2">
+    Russell Jones
+  </h3>
+  <div
+    class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+    <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500" />
+    Greater Sudbury, Ontario
+  </div>
+  <div class="mb-2 text-gray-700 mt-10">
+    <i class="fas fa-briefcase mr-2 text-lg text-gray-500" />Solution Full Stack
+    Developer
+  </div>
+  <div class="mb-2 text-gray-700">
+    <i class="fas fa-university mr-2 text-lg text-gray-500" />DevOps
+  </div>
+</div>
+<div class="mt-10 py-10 border-t border-gray-300 text-center">
+  <div class="flex flex-wrap justify-center">
+    <div class="w-full lg:w-9/12 px-4">
+      <p class="mb-4 text-lg leading-relaxed text-gray-800">
+        A "web" developer of considerable range, Russell is a First Nations
+        person born and raised in Canada. , First Nation Nick Murphy writes,
+        performs and records all of his own music, giving it a warm, intimate
+        feel with a solid groove structure. An artist of considerable range.
+      </p>
+      <a href="#pablo" class="font-normal text-pink-500">Show more</a>
+    </div>
+  </div>
+</div>
