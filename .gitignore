@@ -8,3 +8,4 @@ __sapper__/
 /static/global.css.map
 .pnpm-store
 static/Ubuntu_80s_glitch_by_Abubakar_NK.jpg
+*.log
