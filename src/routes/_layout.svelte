@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-  export function preload({ params, query }) {
+  export function preload(this: any, { params, query }) {
     return this.fetch(`blog.json`)
       .then((r: { json: () => any }) => r.json())
       .then((posts: { slug: string; title: string; html: any }[]) => {
@@ -19,8 +19,8 @@
 
 <section class="relative block" style="height: 500px;">
   <div
-    class="absolute top-0 w-full h-full bg-center bg-cover"
-    style="background-image: url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80');">
+    class="absolute top-0 w-full h-full bg-bottom bg-cover"
+    style="background-image: url('indian_head_discovery_by_rhineville_d2zqv2d.jpg');">
     <span
       id="blackOverlay"
       class="w-full h-full absolute opacity-50 bg-black" />
@@ -42,7 +42,8 @@
     </svg>
   </div>
 </section>
-<main class="profile-page">
+
+<main>
   <section class="relative py-16 bg-gray-300">
     <div class="container mx-auto px-4">
       <div
@@ -55,4 +56,4 @@
   </section>
 </main>
 
-<Footer year="2020" />
+<Footer year={2020} />

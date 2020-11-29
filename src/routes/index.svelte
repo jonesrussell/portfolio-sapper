@@ -1,8 +1,12 @@
+<svelte:head>
+  <title>Russell Jones | DevOps &amp; Full-Stack Developer</title>
+</svelte:head>
+
 <div class="flex flex-wrap justify-center">
   <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
     <div class="relative">
       <img
-        alt="..."
+        alt="Cartoon of Russell"
         src="cartoon-russell.jpg"
         class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
         style="max-width: 150px;" />
@@ -45,11 +49,11 @@
   <div
     class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
     <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500" />
-    Greater Sudbury, Ontario
+    Sagamok Anishnawbek, Ontario
   </div>
   <div class="mb-2 text-gray-700 mt-10">
-    <i class="fas fa-briefcase mr-2 text-lg text-gray-500" />Solution Full Stack
-    Developer
+    <i class="fas fa-briefcase mr-2 text-lg text-gray-500" />Full Stack
+    Developer / DevOps
   </div>
   <div class="mb-2 text-gray-700">
     <i class="fas fa-university mr-2 text-lg text-gray-500" />DevOps

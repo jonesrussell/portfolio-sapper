@@ -1,10 +1,10 @@
 <script lang="typescript">
-  const toggleNavbar = (collapseID) => {
-    document.getElementById(collapseID).classList.toggle("hidden");
-    document.getElementById(collapseID).classList.toggle("block");
+  const toggleNavbar = (collapseID: string) => {
+    document.getElementById(collapseID)?.classList.toggle("hidden");
+    document.getElementById(collapseID)?.classList.toggle("block");
   };
 
-  export let segment;
+  export let segment: string;
 </script>
 
 <nav
@@ -19,7 +19,9 @@
         href="/">Home</a><button
         class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
         type="button"
-        on:click={toggleNavbar('example-collapse-navbar')}>
+        on:click={() => {
+          toggleNavbar('example-collapse-navbar');
+        }}>
         <i class="text-white fas fa-bars" />
       </button>
     </div>
@@ -31,9 +33,17 @@
           <a
             class:selected={segment === 'projects'}
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="/profile"><i
+            href="/projects"><i
               class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2" />
             Projects</a>
+        </li>
+        <li class="flex items-center">
+          <a
+            class:selected={segment === 'tails'}
+            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+            href="/tails"><i
+              class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2" />
+            Tails</a>
         </li>
       </ul>
       <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
