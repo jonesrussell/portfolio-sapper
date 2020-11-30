@@ -1,3 +1,13 @@
+<script>
+  import Fa from "svelte-fa";
+
+  import {
+    faBriefcase,
+    faMapMarkerAlt,
+    faUniversity,
+  } from "@fortawesome/free-solid-svg-icons";
+</script>
+
 <svelte:head>
   <title>Russell Jones | DevOps &amp; Full-Stack Developer</title>
 </svelte:head>
@@ -48,15 +58,15 @@
   </h3>
   <div
     class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
-    <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500" />
+    <Fa icon={faMapMarkerAlt} class="mr-2 text-lg text-gray-500" />
     Sagamok Anishnawbek, Ontario
   </div>
   <div class="mb-2 text-gray-700 mt-10">
-    <i class="fas fa-briefcase mr-2 text-lg text-gray-500" />Full Stack
+    <Fa icon={faBriefcase} class="mr-2 text-lg text-gray-500" />Full Stack
     Developer / DevOps
   </div>
   <div class="mb-2 text-gray-700">
-    <i class="fas fa-university mr-2 text-lg text-gray-500" />DevOps
+    <Fa icon={faUniversity} class="mr-2 text-lg text-gray-500" />DevOps
   </div>
 </div>
 <div class="mt-10 py-10 border-t border-gray-300 text-center">

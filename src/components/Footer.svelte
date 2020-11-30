@@ -1,4 +1,7 @@
 <script>
+  import Fa from "svelte-fa";
+  import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+
   export let year: number;
 </script>
 
@@ -30,10 +33,10 @@
           <button
             class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
             type="button">
-            <i class="flex fab fa-twitter" /></button><button
+            <Fa icon={faTwitter} class="flex" /></button><button
             class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
             type="button">
-            <i class="flex fab fa-github" />
+            <Fa icon={faGithub} class="flex" />
           </button>
         </div>
       </div>
