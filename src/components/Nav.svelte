@@ -1,4 +1,7 @@
 <script lang="typescript">
+  import Fa from "svelte-fa";
+  import { faTwitter } from "@fortawesome/free-solid-svg-icons";
+
   const toggleNavbar = (collapseID: string) => {
     document.getElementById(collapseID)?.classList.toggle("hidden");
     document.getElementById(collapseID)?.classList.toggle("block");
@@ -57,7 +60,8 @@
         <li class="flex items-center">
           <a
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="#pablo"><i
+            href="#pablo"><Fa
+              icon={faTwitter}
               class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg " /><span
               class="lg:hidden inline-block ml-2">Tweet</span></a>
         </li>

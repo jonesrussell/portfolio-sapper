@@ -1,13 +1,3 @@
-<script context="module" lang="ts">
-  export function preload(this: any, { params, query }) {
-    return this.fetch(`blog.json`)
-      .then((r: { json: () => any }) => r.json())
-      .then((posts: { slug: string; title: string; html: any }[]) => {
-        return { posts };
-      });
-  }
-</script>
-
 <script lang="typescript">
   import Nav from "../components/Nav.svelte";
   import Footer from "../components/Footer.svelte";
