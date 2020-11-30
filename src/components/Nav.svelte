@@ -1,6 +1,6 @@
 <script lang="typescript">
   import Fa from "svelte-fa";
-  import { faTwitter } from "@fortawesome/free-solid-svg-icons";
+  import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
   const toggleNavbar = (collapseID: string) => {
     document.getElementById(collapseID)?.classList.toggle("hidden");
@@ -60,10 +60,12 @@
         <li class="flex items-center">
           <a
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="#pablo"><Fa
+            data-show-count="false"
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"><Fa
               icon={faTwitter}
               class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg " /><span
               class="lg:hidden inline-block ml-2">Tweet</span></a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </li>
         <li class="flex items-center">
           <a
@@ -78,7 +80,7 @@
             type="button"
             style="transition: all 0.15s ease 0s;">
             <i class="fas fa-arrow-alt-circle-down" />
-            Download
+            Contact
           </button>
         </li>
       </ul>
