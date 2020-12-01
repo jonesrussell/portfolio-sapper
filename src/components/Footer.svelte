@@ -60,13 +60,8 @@
               <li>
                 <a
                   class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://www.github.com/creativetimofficial">Github</a>
-              </li>
-              <li>
-                <a
-                  class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://www.creative-tim.com/bootstrap-themes/free">Free
-                  Products</a>
+                  href="https://www.github.com/jonesrussell"
+                  target="_blank">Github</a>
               </li>
             </ul>
           </div>
@@ -78,23 +73,12 @@
               <li>
                 <a
                   class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">MIT
-                  License</a>
+                  href="/privacy-policy">Privacy Policy</a>
               </li>
               <li>
                 <a
                   class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://creative-tim.com/terms">Terms &amp; Conditions</a>
-              </li>
-              <li>
-                <a
-                  class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://creative-tim.com/privacy">Privacy Policy</a>
-              </li>
-              <li>
-                <a
-                  class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://creative-tim.com/contact-us">Contact Us</a>
+                  href="/contact">Contact Russell</a>
               </li>
             </ul>
           </div>

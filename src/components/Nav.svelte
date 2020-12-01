@@ -6,7 +6,7 @@
     faTwitter,
   } from "@fortawesome/free-brands-svg-icons";
   import {
-    faArrowAltCircleDown,
+    faAddressBook,
     faBars,
     faFileAlt,
   } from "@fortawesome/free-solid-svg-icons";
@@ -64,7 +64,7 @@
         <li class="flex items-center">
           <a
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="#pablo"><Fa
+            href="#fb"><Fa
               icon={faFacebook}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg" /><span
               class="lg:hidden inline-block ml-2">Share</span></a>
@@ -82,7 +82,7 @@
         <li class="flex items-center">
           <a
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="#pablo"><Fa
+            href="https://github.com/jonesrussell/portfolio-sapper/"><Fa
               icon={faGithub}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg " /><span
               class="lg:hidden inline-block ml-2">Star</span></a>
@@ -92,8 +92,8 @@
             class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
             type="button"
             style="transition: all 0.15s ease 0s;">
-            <Fa icon={faArrowAltCircleDown} />
-            Contact
+            <Fa icon={faAddressBook} class="inline" />
+            <span class="inline">Contact</span>
           </button>
         </li>
       </ul>
