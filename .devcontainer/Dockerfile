@@ -3,8 +3,6 @@ FROM node:14-buster
 LABEL name="Sapper"
 LABEL version="1.0.1"
 
-EXPOSE 3000
-
 ARG INSTALL_ZSH="true"
 ARG USERNAME=node
 ARG USER_UID=1000
@@ -56,5 +54,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
+
+EXPOSE 4000
 
 CMD ["sleep", "infinity"]
