@@ -1,7 +1,3 @@
-<script>
-  import Line from '../components/Line.svelte'
-</script>
-
 <svelte:head>
   <title>Russell Jones</title>
 </svelte:head>
@@ -18,8 +14,7 @@
       frameborder="0"
       width="100%"
       height="640px"
-      style="border: 1px solid #cccccc; border-radius: 2px;"
-    ></iframe>
+      style="border: 1px solid #cccccc; border-radius: 2px;" />
   </div>
   <!--
     transition duration-500 ease-in-out transform
@@ -29,7 +24,6 @@
       style="display: none"
       class="w-56 m-auto rounded-full animated zoomIn"
       src="cartoon-russell.jpg"
-      alt="Surprisingly accurate looking cartoon avatar of Russell Jones"
-    />
+      alt="Surprisingly accurate looking cartoon avatar of Russell Jones" />
   </div>
 </section>

@@ -1,5 +1,5 @@
-<script>
-  import Line from '../components/Line.svelte';
+<script lang="typescript">
+  import Line from "../components/Line.svelte";
 </script>
 
 <svelte:head>
@@ -16,11 +16,10 @@
       xmlns="http://www.w3.org/2000/svg"
       version="1.1"
       class="w-screen my-4 bg current"
-      preserveAspectRatio="xMinYMin meet"
-    >
+      preserveAspectRatio="xMinYMin meet">
       <defs>
         <clipPath id="myCircle">
-          <circle fill="#FFFFFF" cy="50%" r="75" cx="50%"></circle>
+          <circle fill="#FFFFFF" cy="50%" r="75" cx="50%" />
         </clipPath>
       </defs>
       <Line y="0" stroke="gray" strokeWidth="4" />
@@ -44,31 +43,14 @@
 
       <Line y="132" stroke="green" strokeWidth="7" />
       <Line y="140" stroke="green" strokeWidth="7" />
-
-      <!--<circle cx="50%" cy="50%" r="100"/>-->
-
-      <!-- <g transform="translate(50%, 50%);"> -->
-      <g transform="rotate(45 50 50)">
-        <image
-          x="50%"
-          y="50%"
-          href="/static/cartoon-russell.jpg"
-          width="auto"
-          height="100%"
-          clip-path="url(#myCircle)"
-        ></image>
-      </g>
     </svg>
   </div>
-  <!--
-    transition duration-500 ease-in-out transform
-  -->
+
   <div class="self-center justify-center col-start-1 row-start-1">
     <img
       style="display: none"
       class="w-56 m-auto rounded-full animated zoomIn"
       src="cartoon-russell.jpg"
-      alt="Surprisingly accurate looking cartoon avatar of Russell Jones"
-    />
+      alt="Surprisingly accurate looking cartoon avatar of Russell Jones" />
   </div>
 </section>
