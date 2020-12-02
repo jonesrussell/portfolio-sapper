@@ -59,6 +59,24 @@
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
             Tails</a>
         </li>
+        <li class="flex items-center">
+          <a
+            class:selected={segment === 'stacks'}
+            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+            href="/stacks"><Fa
+              icon={faFileAlt}
+              class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
+            Stacks</a>
+        </li>
+        <li class="flex items-center">
+          <a
+            class:selected={segment === 'faq'}
+            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+            href="/faq"><Fa
+              icon={faFileAlt}
+              class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
+            FAQ</a>
+        </li>
       </ul>
       <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
         <li class="flex items-center">
