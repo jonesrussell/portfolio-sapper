@@ -91,7 +91,7 @@
         <div class="text-sm text-gray-600 font-semibold py-1">
           &copy;
           {year}
-          | Russell Jones
+          Russell Jones
         </div>
       </div>
     </div>
