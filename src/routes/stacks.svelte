@@ -1,29 +1,17 @@
+<script lang="typescript">
+  import FeatureColumns from "./../components/tails/feature-columns.svelte";
+  import Feature from "./../components/tails/feature.svelte";
+  import { faDharmachakra } from "@fortawesome/free-solid-svg-icons";
+</script>
+
 <svelte:head>
-  <title>Russell Jones</title>
+  <title>Stacks | Full-Stack Developer</title>
 </svelte:head>
 
-<header class="flex justify-center">
-  <h1 class="text-5xl page-title animated delay slideInDown">Ahnii!</h1>
-</header>
-
-<section class="grid">
-  <div class="self-center justify-center col-start-1 row-start-1">
-    <iframe
-      title="Snapcraft"
-      src="https://snapcraft.io/nvim/embedded?button=black&summary=true&screenshot=true"
-      frameborder="0"
-      width="100%"
-      height="640px"
-      style="border: 1px solid #cccccc; border-radius: 2px;" />
-  </div>
-  <!--
-    transition duration-500 ease-in-out transform
-  -->
-  <div class="self-center justify-center col-start-1 row-start-1">
-    <img
-      style="display: none"
-      class="w-56 m-auto rounded-full animated zoomIn"
-      src="cartoon-russell.jpg"
-      alt="Surprisingly accurate looking cartoon avatar of Russell Jones" />
-  </div>
-</section>
+<FeatureColumns>
+  <Feature title="Kubernetes" image={faDharmachakra}>
+    World-class deployment of containerized apps.
+  </Feature>
+  <Feature title="Svelte" image={faDharmachakra}>Lorem ipsum.</Feature>
+  <Feature title="Tailwind CSS" image={faDharmachakra}>Lorem ipsum.</Feature>
+</FeatureColumns>

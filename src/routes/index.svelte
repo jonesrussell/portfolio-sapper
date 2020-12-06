@@ -1,11 +1,7 @@
 <script>
   import Fa from "svelte-fa";
 
-  import {
-    faBriefcase,
-    faMapMarkerAlt,
-    faUniversity,
-  } from "@fortawesome/free-solid-svg-icons";
+  import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 </script>
 
 <svelte:head>
@@ -54,19 +50,12 @@
 </div>
 <div class="text-center mt-12">
   <h3 class="text-4xl font-semibold leading-normal text-gray-800 mb-2">
-    Russell Jones
+    Full-Stack Developer
   </h3>
   <div
     class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
     <Fa icon={faMapMarkerAlt} class="mr-2 text-lg text-gray-500" />
-    Sagamok Anishnawbek, Ontario
-  </div>
-  <div class="mb-2 text-gray-700 mt-10">
-    <Fa icon={faBriefcase} class="mr-2 text-lg text-gray-500" />Full Stack
-    Developer / DevOps
-  </div>
-  <div class="mb-2 text-gray-700">
-    <Fa icon={faUniversity} class="mr-2 text-lg text-gray-500" />DevOps
+    Russell Jones
   </div>
 </div>
 <div class="mt-10 py-10 border-t border-gray-300 text-center">
