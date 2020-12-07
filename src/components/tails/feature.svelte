@@ -1,5 +1,5 @@
 <script lang="typescript">
-  import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
+  import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
   export let title: string = "Feature";
   export let image: IconDefinition;
