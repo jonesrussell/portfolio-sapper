@@ -1,3 +1,4 @@
+<!-- Feature Columns -->
 <div class="pb-1 text-center text-gray-700 bg-gray-100 bg-cover">
   <div class="container relative max-w-2xl px-5 pt-12 mx-auto sm:py-12 lg:px-0">
     <h2
@@ -9,11 +10,6 @@
       Here are some stacks I'm using over myriad projects.
     </p>
   </div>
-  <div class="my-8">
-    <div class="max-w-xl px-4 mx-auto sm:px-6 lg:max-w-screen-xl lg:px-8">
-      <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-        <slot />
-      </div>
-    </div>
-  </div>
+
+  <slot />
 </div>

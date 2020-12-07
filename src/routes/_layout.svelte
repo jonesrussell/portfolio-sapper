@@ -1,3 +1,7 @@
+<script context="module">
+  export const preload = () => {};
+</script>
+
 <script lang="typescript">
   import Nav from "../components/Nav.svelte";
   import Footer from "../components/Footer.svelte";

@@ -1,7 +1,13 @@
 <script lang="typescript">
   import FeatureColumns from "./../components/tails/feature-columns.svelte";
+  import FeatureGroup from "./../components/tails/feature-group.svelte";
   import Feature from "./../components/tails/feature.svelte";
   import { faDharmachakra } from "@fortawesome/free-solid-svg-icons";
+  import {
+    faDrupal,
+    faLaravel,
+    faPhp,
+  } from "@fortawesome/free-brands-svg-icons";
 </script>
 
 <svelte:head>
@@ -9,9 +15,16 @@
 </svelte:head>
 
 <FeatureColumns>
-  <Feature title="Kubernetes" image={faDharmachakra}>
-    World-class deployment of containerized apps.
-  </Feature>
-  <Feature title="Svelte" image={faDharmachakra}>Lorem ipsum.</Feature>
-  <Feature title="Tailwind CSS" image={faDharmachakra}>Lorem ipsum.</Feature>
+  <FeatureGroup>
+    <Feature title="Kubernetes" icon={faDharmachakra}>
+      World-class deployment of containerized apps.
+    </Feature>
+    <Feature title="Svelte" icon={faDharmachakra}>Lorem ipsum.</Feature>
+    <Feature title="Tailwind CSS" icon={faDharmachakra}>Lorem ipsum.</Feature>
+  </FeatureGroup>
+  <FeatureGroup>
+    <Feature title="PHP" icon={faPhp}>Lorem ipsum.</Feature>
+    <Feature title="Drupal" icon={faDrupal}>Lorem Ipsum.</Feature>
+    <Feature title="Laravel" icon={faLaravel}>Lorem ipsum.</Feature>
+  </FeatureGroup>
 </FeatureColumns>

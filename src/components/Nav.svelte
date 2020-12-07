@@ -9,6 +9,9 @@
     faAddressBook,
     faBars,
     faFileAlt,
+    faLayerGroup,
+    faProjectDiagram,
+    faQuestion,
   } from "@fortawesome/free-solid-svg-icons";
 
   const toggleNavbar = (collapseID: string) => {
@@ -46,25 +49,16 @@
             class:selected={segment === 'projects'}
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             href="/projects"><Fa
-              icon={faFileAlt}
+              icon={faProjectDiagram}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
             Projects</a>
-        </li>
-        <li class="flex items-center">
-          <a
-            class:selected={segment === 'tails'}
-            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="/tails"><Fa
-              icon={faFileAlt}
-              class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
-            Tails</a>
         </li>
         <li class="flex items-center">
           <a
             class:selected={segment === 'stacks'}
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             href="/stacks"><Fa
-              icon={faFileAlt}
+              icon={faLayerGroup}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
             Stacks</a>
         </li>
@@ -73,7 +67,7 @@
             class:selected={segment === 'faq'}
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             href="/faq"><Fa
-              icon={faFileAlt}
+              icon={faQuestion}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
             FAQ</a>
         </li>
