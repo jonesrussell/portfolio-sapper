@@ -5,10 +5,10 @@
     faGithub,
     faTwitter,
   } from "@fortawesome/free-brands-svg-icons";
+
   import {
     faAddressBook,
     faBars,
-    faFileAlt,
     faLayerGroup,
     faProjectDiagram,
     faQuestion,
@@ -31,7 +31,11 @@
       <a
         class:selected={segment === 'home'}
         class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-        href="/">Home</a><button
+        href="/"><img
+          src="cartoon-russell.jpg"
+          alt="Logo"
+          class="rounded"
+          style="max-width:25%;max-height:25%;" /></a><button
         class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
         type="button"
         on:click={() => {
