@@ -1,15 +1,47 @@
 <script context="module" lang="typescript">
-  export function preload(this: any, {}) {
-    return this.fetch(`blog.json`)
-      .then((r: { json: () => any }) => r.json())
-      .then((posts: { slug: string; title: string; html: any }[]) => {
-        return { posts };
-      });
+  export async function preload(this: any, session: any, {}) {
+    const { BLOG_URL } = session;
+
+    return this.fetch(BLOG_URL)
+      .then((res: { json: () => any }) => res.json())
+      .then(
+        (
+          posts: {
+            version: string;
+            description: string;
+            home_page_url: string;
+            feed_url: string;
+            items: {
+              id: string;
+              title: string;
+              content_html: string;
+              summary: string;
+              date_published: string;
+              tags: string[];
+            }[];
+          }[]
+        ) => {
+          return { posts };
+        }
+      );
   }
 </script>
 
 <script lang="typescript">
-  export let posts: { slug: string; title: string; html: any }[];
+  export let posts: {
+    version: string;
+    description: string;
+    home_page_url: string;
+    feed_url: string;
+    items: {
+      id: string;
+      title: string;
+      content_html: string;
+      summary: string;
+      date_published: string;
+      tags: string[];
+    }[];
+  }[];
 </script>
 
 <style>
@@ -27,12 +59,12 @@
   <h1>Recent posts</h1>
 
   <ul>
-    {#each posts as post}
+    {#each posts.items as post}
       <!-- we're using the non-standard `rel=prefetch` attribute to
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-      <li><a rel="prefetch" href="blog/{post.slug}">{post.title}</a></li>
+      <li><a rel="prefetch" href={post.id}>{post.title}</a></li>
     {/each}
   </ul>
 </section>

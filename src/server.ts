@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import * as sapper from "@sapper/server"; // eslint-disable-line import/no-unresolved
 import compression from "compression";
 import express, { Express } from "express";
@@ -5,6 +7,7 @@ import sirv from "sirv";
 
 const PORT = process.env.PORT; // eslint-disable-line prefer-destructuring
 const mode = process.env.NODE_ENV;
+const BLOG_URL = process.env.BLOG_URL;
 const dev = mode === "development";
 
 const main = require.main === module || require.main?.filename.match(/__sapper__\/build\/index.js$/);
@@ -18,7 +21,11 @@ const createSapperServer = async (): Promise<Express> => {
 
 	app.use(
 		compression({ threshold: 0 }),
-		sapper.middleware(),
+		sapper.middleware({
+			session: () => ({
+        BLOG_URL,
+      }),
+		}),
 	);
 
 	return app;

@@ -15,6 +15,7 @@
   } from "@fortawesome/free-solid-svg-icons";
 
   const toggleNavbar = (collapseID: string) => {
+    console.log("nav clicked");
     document.getElementById(collapseID)?.classList.toggle("hidden");
     document.getElementById(collapseID)?.classList.toggle("block");
   };
@@ -23,15 +24,15 @@
 </script>
 
 <nav
-  class:hidden={segment === 'home'}
   class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
   <div
     class="container px-4 mx-auto flex flex-wrap items-center justify-between max-w-screen-lg">
     <div
       class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
       <a
-        class:selected={segment === 'home'}
-        class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+        class="text-sm font-bold leading-relaxed mr-4 py-2 whitespace-nowrap uppercase text-white"
+        class:md:inline-block={segment !== 'home'}
+        class:hidden={segment === 'home'}
         href="/"><img
           src="cartoon-russell.jpg"
           alt="Logo"
@@ -46,7 +47,7 @@
       </button>
     </div>
     <div
-      class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none "
+      class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden block"
       id="example-collapse-navbar">
       <ul class="flex flex-col lg:flex-row list-none mr-auto">
         <li class="flex items-center">
