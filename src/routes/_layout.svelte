@@ -6,14 +6,14 @@
   import Nav from "../components/Nav.svelte";
   import Footer from "../components/Footer.svelte";
 
-  export let segment: string;
+  export let segment: string = "home";
 </script>
 
 <Nav {segment} />
 
-<section class="relative block" style="height: 500px;">
+<section class="relative block" style="height: 400px;">
   <div
-    class="absolute top-0 w-full h-full bg-bottom bg-cover"
+    class="absolute top-0 w-full h-full bg-left bg-cover"
     style="background-image: url('indian_head_discovery_by_rhineville_d2zqv2d.jpg');">
     <span
       id="blackOverlay"
@@ -38,7 +38,7 @@
 </section>
 
 <main class="relative py-16 bg-gray-300">
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4 max-w-screen-lg">
     <div
       class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
       <div class="px-6">

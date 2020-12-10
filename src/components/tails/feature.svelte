@@ -1,6 +1,5 @@
 <script lang="typescript">
   import Fa from "svelte-fa";
-  import { debug } from "svelte/internal";
   //import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
   export let title: string = "Feature";

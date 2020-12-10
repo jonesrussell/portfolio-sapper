@@ -1,13 +1,13 @@
 <script lang="typescript">
-  let open = false;
+  let open: boolean = false;
 
-  function openTrue() {
+  const openTrue = () => {
     open = true;
-  }
+  };
 
-  function openFalse() {
+  const openFalse = () => {
     open = false;
-  }
+  };
 </script>
 
 <div

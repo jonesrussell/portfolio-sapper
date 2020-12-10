@@ -1,5 +1,5 @@
 <script lang="typescript">
-  let hover = false;
+  let hover: boolean = false;
 
   const setHover = (state: boolean): void => {
     hover = state;

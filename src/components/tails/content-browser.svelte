@@ -1,30 +1,73 @@
-<div class="px-8 mx-auto flex items-center min-h-screen min-w-screen bg-white">
-    <div class="w-1/2">
-        <div class="flex flex-col overflow-hidden shadow-2xl rounded-lg">
-            <div class="h-8 bg-gray-900 text-white flex items-center">
-                <div class="w-3 h-3 rounded-full ml-3 bg-red-400"></div>
-                <div class="w-3 h-3 rounded-full ml-2 bg-yellow-400"></div>
-                <div class="w-3 h-3 rounded-full ml-2 bg-green-400"></div>
-            </div>
-            <img alt="Placeholder"
-                src="https://images.unsplash.com/photo-1504985954001-5737b2af529e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2879&q=80"
-                class="w-full h-full object-cover">
-        </div>
+<script lang="typescript">
+  export let title: string = "Awesome Features";
+  export let subtitle: string = "Awesome Features<br />for Everyone to Enjoy.";
+  export let cta: string = "View All Features";
+  export let href: string = "#";
+</script>
+
+<style>
+  .screenshot {
+    --transform: rotate3d(0.5, -0.866, 0, 19deg);
+    --shadow: 34.3px 62.5px 125px -25px rgba(50, 50, 93, 0.5),
+      20.6px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
+    --lighting-angle: 300deg;
+  }
+
+  .screenshot .image-container {
+    -webkit-transform: var(--transform);
+    transform: var(--transform);
+    -webkit-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+    -webkit-transition-property: -webkit-transform, -webkit-box-shadow;
+    transition-property: -webkit-transform, -webkit-box-shadow;
+    transition-property: transform, box-shadow;
+    transition-property: transform, box-shadow, -webkit-transform,
+      -webkit-box-shadow;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+</style>
+
+<div class="px-8 my-4 mx-auto flex items-center min-w-screen bg-white">
+  <div class="relative w-1/2 h-full pl-12">
+    <p class="text-sm uppercase font-bold text-indigo-500 tracking-wide">
+      {title}
+    </p>
+    <h2 class="text-4xl font-bold text-gray-900 mt-5 leading-tight">
+      {@html subtitle}
+    </h2>
+    <p class="text-gray-600 text-base mt-3">
+      <slot />
+    </p>
+    <a
+      {href}
+      class="underline font-medium flex items-center text-indigo-500 mt-8">
+      <span>{cta}</span>
+      <svg
+        class="w-4 h-4 ml-1 mt-1 transform -rotate-45"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M14 5l7 7m0 0l-7 7m7-7H3" />
+      </svg>
+    </a>
+  </div>
+  <div class="w-1/2 screenshot">
+    <div
+      class="flex flex-col overflow-hidden shadow-2xl rounded-lg image-container">
+      <div class="h-8 bg-gray-900 text-white flex items-center">
+        <div class="w-3 h-3 rounded-full ml-3 bg-red-400" />
+        <div class="w-3 h-3 rounded-full ml-2 bg-yellow-400" />
+        <div class="w-3 h-3 rounded-full ml-2 bg-green-400" />
+      </div>
+      <slot name="media" />
     </div>
-    <div class="relative w-1/2 h-full pl-12">
-        <p class="text-sm uppercase font-bold text-indigo-500 tracking-wide">Awesome Features</p>
-        <h2 class="text-4xl font-bold text-gray-900 mt-5 leading-tight">Awesome Features<br> for Everyone to Enjoy.</h2>
-        <p class="text-gray-600 text-base mt-3">Perhaps the coolest features since the introduction of Poprocks! We've
-            got some rock'n poppin features that will leave you wanting more. We've got a jampacked feature set of
-            awesomeness that will blow your pants right off!</p>
-        <a href="/security-awareness-training-topics/"
-            class="underline font-medium flex items-center inline-block text-indigo-500 mt-8">
-            <span>View All Features</span>
-            <svg class="w-4 h-4 ml-1 mt-1 transform -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                </path>
-            </svg>
-        </a>
-    </div>
+  </div>
 </div>
