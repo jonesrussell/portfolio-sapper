@@ -57,4 +57,6 @@ RUN export DEBIAN_FRONTEND=noninteractive \
 
 EXPOSE 4000
 
+ENTRYPOINT ["/usr/local/share/docker-init.sh"]
+
 CMD ["sleep", "infinity"]

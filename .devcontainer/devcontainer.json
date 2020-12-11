@@ -4,17 +4,19 @@
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "docker-from-docker",
 	"workspaceFolder": "/workspace",
-	// Set *default* container specific settings.json values on container create.
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/zsh"
 	},
 	"postCreateCommand": "npm install",
-	// Add the IDs of extensions you want installed when the container is created.
+	"runArgs": [
+		"--init"
+	],
 	"mounts": [
 		"source=ext,target=/home/node/.vscode-server/extensions,type=volume",
 		"source=ext-insiders,target=/home/node/.vscode-server-insiders/extensions,type=volume",
 		"source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
 	],
+	"overrideCommand": false,
 	"extensions": [
 		"ardenivanov.svelte-intellisense",
 		"bradlc.vscode-tailwindcss",
@@ -58,7 +60,13 @@
 		"ms-kubernetes-tools.vscode-kubernetes-tools",
 		"ms-kubernetes-tools.kind-vscode",
 		"eg2.vscode-npm-script",
-		"christian-kohler.npm-intellisense"
+		"christian-kohler.npm-intellisense",
+		"mindaro.mindaro",
+		"mskelton.npm-outdated",
+		"herrmannplatz.npm-dependency-links",
+		"howardzuo.vscode-npm-dependency",
+		"esbenp.prettier-vscode",
+		"gruntfuggly.todo-tree"
 	],
 	// Uncomment the next line if you want start specific services in your Docker Compose config.
 	// "runServices": [],
