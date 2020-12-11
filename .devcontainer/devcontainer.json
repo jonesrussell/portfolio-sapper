@@ -15,7 +15,7 @@
 		"source=ext,target=/home/node/.vscode-server/extensions,type=volume",
 		"source=ext-insiders,target=/home/node/.vscode-server-insiders/extensions,type=volume",
 		"source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind",
-		"source=/home/russell/.kube/config,target=/home/node/.kube/config,type=bind"
+		"source=/home/russell/.kube,target=/home/node/.kube,type=bind"
 	],
 	"overrideCommand": false,
 	"extensions": [

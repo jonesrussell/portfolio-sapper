@@ -1,4 +1,4 @@
-version: '3.5'
+version: "3.5"
 services:
   docker-from-docker:
     # Uncomment the next line to use a non-root user for all processes. You can also
@@ -9,7 +9,7 @@ services:
     #
     user: node
 
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile
 
@@ -29,6 +29,8 @@ services:
       # Forwards the local Docker socket to the container.
       - /var/run/docker.sock:/var/run/docker.sock
 
+      - /home/russell/.kube:/home/node/.kube
+
     # Uncomment the next four lines if you will use a ptrace-based debuggers like C++, Go, and Rust.
     # cap_add:
     #  - SYS_PTRACE
@@ -38,6 +40,6 @@ services:
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
 
-networks: 
+networks:
   default:
     name: sapper-dev-container
