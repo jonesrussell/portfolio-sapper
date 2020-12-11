@@ -1,6 +1,6 @@
 {
 	// Node.js, Svelte/Sapper, TailwindCSS, & TypeScript
-	"name": "Svelte/Sapper & TypeScript",
+	"name": "Portfolio",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "docker-from-docker",
 	"workspaceFolder": "/workspace",
@@ -39,7 +39,10 @@
 		"tiibun.vscode-docker-ws",
 		"tombonnike.vscode-status-bar-format-toggle",
 		"vincaslt.highlight-matching-tag",
-		"zamarrowski.docker-vulnerability-extension"
+		"zamarrowski.docker-vulnerability-extension",
+		"halfnelson.svelte-type-checker-vscode",
+		"britesnow.vscode-toggle-quotes",
+		"visualstudioexptteam.vscodeintellicode"
 	],
 	// Uncomment the next line if you want start specific services in your Docker Compose config.
 	// "runServices": [],

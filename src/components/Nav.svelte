@@ -82,28 +82,29 @@
         <li class="flex items-center">
           <a
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="#fb"><Fa
+            target="_blank"
+            href="https://linkedin.com/in/jonesrussell42"><Fa
               icon={faLinkedin}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg" /><span
-              class="lg:hidden inline-block ml-2">Share</span></a>
+              class="lg:hidden inline-block ml-2">LinkedIn</span></a>
         </li>
         <li class="flex items-center">
           <a
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            data-show-count="false"
-            href="https://twitter.com/share?ref_src=twsrc%5Etfw"><Fa
+            target="_blank"
+            href="https://twitter.com/jonesrussell42"><Fa
               icon={faTwitter}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg " /><span
-              class="lg:hidden inline-block ml-2">Tweet</span></a>
-          <!--<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+              class="lg:hidden inline-block ml-2">Twitter</span></a>
         </li>
         <li class="flex items-center">
           <a
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="https://github.com/jonesrussell/portfolio-sapper/"><Fa
+            target="_blank"
+            href="https://github.com/jonesrussell"><Fa
               icon={faGithub}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg " /><span
-              class="lg:hidden inline-block ml-2">Star</span></a>
+              class="lg:hidden inline-block ml-2">Github</span></a>
         </li>
         <li class="flex items-center">
           <button
