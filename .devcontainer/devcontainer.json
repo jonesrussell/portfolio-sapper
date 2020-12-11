@@ -15,7 +15,7 @@
 		"source=ext,target=/home/node/.vscode-server/extensions,type=volume",
 		"source=ext-insiders,target=/home/node/.vscode-server-insiders/extensions,type=volume",
 		"source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind",
-		"source=/home/russell/.kube,target=/home/node/.kube,type=bind"
+		"source=/home/russell/.kube/config,target=/home/node/.kube/config,type=bind"
 	],
 	"overrideCommand": false,
 	"extensions": [
@@ -68,7 +68,10 @@
 		"howardzuo.vscode-npm-dependency",
 		"esbenp.prettier-vscode",
 		"gruntfuggly.todo-tree",
-		"mutantdino.resourcemonitor"
+		"mutantdino.resourcemonitor",
+		"ipedrazas.kubernetes-snippets",
+		"lunuan.kubernetes-templates",
+		"jasonnutter.search-node-modules"
 	],
 	// Uncomment the next line if you want start specific services in your Docker Compose config.
 	// "runServices": [],

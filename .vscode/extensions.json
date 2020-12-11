@@ -3,6 +3,11 @@
         "bradlc.vscode-tailwindcss",
         "dbaeumer.vscode-eslint",
         "svelte.svelte-vscode",
-        "mutantdino.resourcemonitor"
+        "mutantdino.resourcemonitor",
+        "mskelton.npm-outdated",
+        "herrmannplatz.npm-dependency-links",
+        "howardzuo.vscode-npm-dependency",
+        "halfnelson.svelte-type-checker-vscode",
+        "jasonnutter.search-node-modules"
     ]
 }
