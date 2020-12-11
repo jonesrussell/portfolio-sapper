@@ -2,6 +2,7 @@
     "recommendations": [
         "bradlc.vscode-tailwindcss",
         "dbaeumer.vscode-eslint",
-        "svelte.svelte-vscode"
+        "svelte.svelte-vscode",
+        "mutantdino.resourcemonitor"
     ]
 }
