@@ -9,6 +9,7 @@
   import {
     faAddressBook,
     faBars,
+    faBlog,
     faLayerGroup,
     faProjectDiagram,
     faQuestion,
@@ -67,6 +68,15 @@
               icon={faLayerGroup}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
             Stacks</a>
+        </li>
+        <li class="flex items-center">
+          <a
+            class:selected={segment === 'blog'}
+            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+            href="/blog"><Fa
+              icon={faBlog}
+              class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
+            Blog</a>
         </li>
         <li class="flex items-center">
           <a

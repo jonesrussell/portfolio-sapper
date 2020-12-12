@@ -1,5 +1,17 @@
+<script context="module" lang="typescript">
+  export async function preload(this: any, session: any, {}) {
+    console.log("projecs session", session);
+    const { BELL_CREEK_URL } = session;
+    const href: string = BELL_CREEK_URL;
+    console.log("href", href);
+    return { href };
+  }
+</script>
+
 <script lang="typescript">
   import ContentBrowser from "../components/tails/content-browser.svelte";
+
+  export let href: string;
 </script>
 
 <svelte:head>
@@ -15,9 +27,9 @@
     title="Interactive Animation"
     subtitle="Beautiful animation with SVG and JavaScript"
     cta="Enlarge"
-    href="https://bell-creek.jonesrussell42.xyz">
+    {href}>
     <span slot="media"><iframe
-        src="https://bell-creek.jonesrussell42.xyz/"
+        src={href}
         title="SVG Animation"
         class="w-full h-64 overflow-hidden" /></span>
     Learn how gold is processed from ore into dore bars in this interacive

@@ -1,5 +1,6 @@
 <script context="module" lang="typescript">
   export async function preload(this: any, session: any, {}) {
+    console.log("session", session);
     const { BLOG_URL } = session;
 
     return this.fetch(BLOG_URL)
