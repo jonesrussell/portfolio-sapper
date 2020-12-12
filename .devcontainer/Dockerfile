@@ -56,7 +56,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
 USER node
-RUN mkdir /home/node/.kube
+RUN mkdir /home/node/.kube && mkdir /home/node/.vs-kubernetes
 USER root
 
 EXPOSE 4000
