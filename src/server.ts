@@ -4,29 +4,28 @@ import * as sapper from "@sapper/server"; // eslint-disable-line import/no-unres
 import compression from "compression";
 import express, { Express } from "express";
 import sirv from "sirv";
+import cors from "cors";
 
-const PORT = process.env.PORT; // eslint-disable-line prefer-destructuring
-const mode = process.env.NODE_ENV;
-const BLOG_URL = process.env.BLOG_URL;
-const BELL_CREEK_URL = process.env.BELL_CREEK_URL;
+const { PORT, mode, BLOG_URL, BELL_CREEK_URL } = process.env;
 const dev = mode === "development";
-
 const main = require.main === module || require.main?.filename.match(/__sapper__\/build\/index.js$/);
 
 const createSapperServer = async (): Promise<Express> => {
-	const app = express();
+	const app: Express = express();
 
 	if (main) {
 		app.use(sirv("static", { dev }));
 	}
 
+	app.use(cors());
+	
 	app.use(
 		compression({ threshold: 0 }),
 		sapper.middleware({
 			session: () => ({
 				BLOG_URL,
-				BELL_CREEK_URL
-      }),
+				BELL_CREEK_URL,
+			}),
 		}),
 	);
 

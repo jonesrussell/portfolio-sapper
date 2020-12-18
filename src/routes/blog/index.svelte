@@ -1,9 +1,10 @@
 <script context="module" lang="typescript">
-  export async function preload(this: any, session: any, {}) {
-    console.log("blog index session", session);
+  export async function preload(page: any, session: any) {
+    if (!session) return;
     const { BLOG_URL } = session;
+    if (!BLOG_URL) return;
 
-    return this.fetch(BLOG_URL)
+    return await this.fetch(BLOG_URL)
       .then((res: { json: () => any }) => res.json())
       .then(
         (
