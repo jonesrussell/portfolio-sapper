@@ -72,7 +72,8 @@
 		"mutantdino.resourcemonitor",
 		"ipedrazas.kubernetes-snippets",
 		"lunuan.kubernetes-templates",
-		"jasonnutter.search-node-modules"
+		"jasonnutter.search-node-modules",
+		"ziyasal.vscode-open-in-github"
 	],
 	// Uncomment the next line if you want start specific services in your Docker Compose config.
 	// "runServices": [],
