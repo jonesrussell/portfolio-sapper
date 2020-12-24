@@ -15,7 +15,7 @@
 </div>
 <div class="text-center mt-16 pt-16 prose-xl">
   <h1 class="text-5xl font-semibold leading-normal text-gray-800 mb-2">
-    Ahnii, I'm Russell Jones.
+    Ahnii, I'm Russell Jones
   </h1>
   <h2
     class="text-3xl leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">

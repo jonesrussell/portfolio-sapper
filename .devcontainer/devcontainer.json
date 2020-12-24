@@ -44,7 +44,6 @@
 		"tombonnike.vscode-status-bar-format-toggle",
 		"vincaslt.highlight-matching-tag",
 		"zamarrowski.docker-vulnerability-extension",
-		"halfnelson.svelte-type-checker-vscode",
 		"britesnow.vscode-toggle-quotes",
 		"visualstudioexptteam.vscodeintellicode",
 		"formulahendry.auto-close-tag",
@@ -73,7 +72,8 @@
 		"ipedrazas.kubernetes-snippets",
 		"lunuan.kubernetes-templates",
 		"jasonnutter.search-node-modules",
-		"ziyasal.vscode-open-in-github"
+		"ziyasal.vscode-open-in-github",
+		"rbuckton.tsserver-live-reload"
 	],
 	// Uncomment the next line if you want start specific services in your Docker Compose config.
 	// "runServices": [],
