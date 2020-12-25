@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-  <title>Projects | Full-Stack Developer</title>
+  <title>Projects | Full Stack Developer</title>
 </svelte:head>
 
 <header class="prose">

@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Full-Stack Developer | Russell Jones</title>
+  <title>Full Stack Developer | Russell Jones</title>
 </svelte:head>
 
 <!-- <header class="flex justify-center">

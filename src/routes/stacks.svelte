@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-  <title>Stacks | Full-Stack Developer</title>
+  <title>Stacks | Full Stack Developer</title>
 </svelte:head>
 
 <FeatureColumns>

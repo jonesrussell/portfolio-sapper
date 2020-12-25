@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Russell Jones | DevOps &amp; Full-Stack Developer</title>
+  <title>Russell Jones | DevOps &amp; Full Stack Developer</title>
 </svelte:head>
 
 <div class="flex flex-wrap justify-center">
