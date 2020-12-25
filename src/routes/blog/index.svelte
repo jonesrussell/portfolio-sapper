@@ -1,7 +1,15 @@
-<script lang="typescript">
-  import posts from "./_feed";
+<script context="module" lang="typescript">
+  export async function preload(page: any, session: any) {
+    const { BLOG_URL } = session;
+    const res = await this.fetch(BLOG_URL);
+    const posts = await res.json();
 
-  /*export let posts: {
+    return { posts };
+  }
+</script>
+
+<script lang="typescript">
+  export let posts: {
     version: string;
     description: string;
     home_page_url: string;
@@ -14,7 +22,7 @@
       date_published: string;
       tags: string[];
     }[];
-  }[];*/
+  }[];
 </script>
 
 <style>
@@ -32,12 +40,12 @@
   <h1>Recent posts</h1>
 
   <ul>
-    {#each posts as post}
+    {#each posts.items as post}
       <!-- we're using the non-standard `rel=prefetch` attribute to
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-      <li><a rel="prefetch" href={`/blog/{post.id}`}>{post.title}</a></li>
+      <li><a rel="prefetch" href={`/blog/${post.id}`}>{post.title}</a></li>
     {/each}
   </ul>
 </section>

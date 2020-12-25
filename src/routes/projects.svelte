@@ -1,9 +1,7 @@
 <script context="module" lang="typescript">
-  export async function preload(this: any, session: any, {}) {
-    console.log("projecs session", session);
+  export function preload(page: any, session: any) {
     const { BELL_CREEK_URL } = session;
     const href: string = BELL_CREEK_URL;
-    console.log("href", href);
     return { href };
   }
 </script>

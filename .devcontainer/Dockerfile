@@ -1,13 +1,13 @@
 FROM node:14-buster
 
 LABEL name="Sapper"
-LABEL version="1.0.1"
+LABEL version="1.0.2"
 
 ARG INSTALL_ZSH="true"
 ARG USERNAME=node
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
-ARG UPGRADE_PACKAGES="true"
+ARG UPGRADE_PACKAGES="false"
 ARG INSTALL_OH_MYS="true"
 ARG NVM_DIR=/usr/local/share/nvm
 ARG ENABLE_NONROOT_DOCKER="true"
@@ -17,8 +17,6 @@ ARG NODE_VERSION=v14.15.0
 ARG UPDATE_RC="true"
 # Docker Compose version
 ARG COMPOSE_VERSION=1.24.0
-
-# ENV DOCKER_HOST=unix:///var/run/docker.sock
 
 COPY library-scripts/*.sh /tmp/library-scripts/
 
@@ -55,11 +53,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
-USER node
-RUN mkdir /home/node/.kube && mkdir /home/node/.vs-kubernetes
-USER root
-
-EXPOSE 4000
+EXPOSE 3000
 
 ENTRYPOINT ["/usr/local/share/docker-init.sh"]
 
