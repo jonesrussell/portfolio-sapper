@@ -8,13 +8,14 @@
       <img
         alt="Cartoon of Russell"
         src="cartoon-russell.jpg"
-        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-32 -ml-32 lg:-ml-32"
+        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-32 -ml-32 lg:-ml-32 transform-gpu delay-1000 animate-grow"
         style="max-width: 250px;" />
     </div>
   </div>
 </div>
-<div class="text-center mt-16 pt-16 prose-xl">
-  <h1 class="text-5xl font-semibold leading-normal text-gray-800 mb-2">
+<div class="text-center mt-16 pt-16">
+  <h1
+    class="text-5xl font-semibold leading-normal text-gray-800 mb-2 font-greeting animate-slideInLeft delay-1000 transform-gpu">
     Ahnii, I'm Russell Jones
   </h1>
   <h2
@@ -25,7 +26,7 @@
     <strong class="text-pink-800 relative left-16">DevOps Architect</strong>
   </h2>
 </div>
-<div class="mt-10 py-10 border-t border-gray-300 text-center prose-xl">
+<div class="mt-10 py-10 border-t border-gray-300 text-center">
   <div class="flex flex-wrap justify-center">
     <div class="w-full lg:w-9/12 px-4">
       <p class="mb-4 text-lg leading-relaxed text-gray-800">

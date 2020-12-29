@@ -16,7 +16,7 @@
   <title>Projects | Full Stack Developer</title>
 </svelte:head>
 
-<header class="prose">
+<header>
   <h1>Projects</h1>
 </header>
 

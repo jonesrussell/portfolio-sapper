@@ -7,7 +7,6 @@
   } from "@fortawesome/free-brands-svg-icons";
 
   import {
-    faAddressBook,
     faBars,
     faBlog,
     faLayerGroup,
@@ -16,7 +15,6 @@
   } from "@fortawesome/free-solid-svg-icons";
 
   const toggleNavbar = (collapseID: string) => {
-    console.log("nav clicked");
     document.getElementById(collapseID)?.classList.toggle("hidden");
     document.getElementById(collapseID)?.classList.toggle("block");
   };
@@ -53,6 +51,15 @@
       <ul class="flex flex-col lg:flex-row list-none mr-auto">
         <li class="flex items-center">
           <a
+            class:selected={segment === 'blog'}
+            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+            href="/blog"><Fa
+              icon={faBlog}
+              class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
+            Blog</a>
+        </li>
+        <li class="flex items-center">
+          <a
             class:selected={segment === 'projects'}
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             href="/projects"><Fa
@@ -68,15 +75,6 @@
               icon={faLayerGroup}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
             Stacks</a>
-        </li>
-        <li class="flex items-center">
-          <a
-            class:selected={segment === 'blog'}
-            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="/blog"><Fa
-              icon={faBlog}
-              class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
-            Blog</a>
         </li>
         <li class="flex items-center">
           <a
@@ -121,7 +119,6 @@
             class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
             type="button"
             style="transition: all 0.15s ease 0s;">
-            <Fa icon={faAddressBook} class="inline" />
             <span class="inline">Contact</span>
           </button>
         </li>

@@ -36,7 +36,7 @@
   <title>Blog</title>
 </svelte:head>
 
-<section class="prose lg:prose-xl">
+<section class="">
   <h1>Recent posts</h1>
 
   <ul>
@@ -45,7 +45,10 @@
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-      <li><a rel="prefetch" href={`/blog/${post.id}`}>{post.title}</a></li>
+      <li>
+        <div><a rel="prefetch" href={`/blog/${post.id}`}>{post.title}</a></div>
+        <div><time>{post.date_published}</time></div>
+      </li>
     {/each}
   </ul>
 </section>

@@ -1,4 +1,4 @@
-<section class="prose lg:prose-xl">
+<section class="">
   <h1>Privacy Policy</h1>
   <p>
     Your privacy is important to us. It is Russell Jones' policy to respect your

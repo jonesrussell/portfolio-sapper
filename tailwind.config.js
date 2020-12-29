@@ -20,12 +20,30 @@ module.exports = {
 		},
 	},
 	theme: {
-		extend: {},
+		fontFamily: {
+			greeting: ["Lobster", "cursive"],
+		},
+		extend: {
+			keyframes: {
+				grow: {
+					"0%": { transform: "scale(0)", opacity: "0" },
+					"100%": { transform: "scale(1)", opacity: "1" },
+				},
+				slideInLeft: {
+					"0%": { transform: "--tw-translate-x: -24rem" },
+					"100%": { transform: "--tw-translate-x: 0px" },
+				},
+			},
+			animation: {
+				grow: "grow 1s ease-in-out",
+				slideInLeft: "slideInLeft 1s ease-in-out",
+			},
+		},
 	},
 	variants: {
 		extend: {},
 	},
 	plugins: [
-		require('@tailwindcss/typography')
+		// require('@tailwindcss/typography')
 	],
 };

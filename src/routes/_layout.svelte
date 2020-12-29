@@ -12,9 +12,7 @@
 <Nav {segment} />
 
 <section class="relative block" style="height: 400px;">
-  <div
-    class="absolute top-0 w-full h-full bg-left bg-cover"
-    style="background-image: url('indian_head_discovery_by_rhineville_d2zqv2d.jpg');">
+  <div class="absolute top-0 w-full h-full bg-left bg-cover" style="">
     <span
       id="blackOverlay"
       class="w-full h-full absolute opacity-50 bg-black" />
@@ -37,7 +35,9 @@
   </div>
 </section>
 
-<main class="relative py-16 bg-gray-300">
+<main
+  class="relative py-16 bg-gray-300  bg-left bg-no-repeat"
+  style="background-image: url('undraw_to_the_moon_v1mv.svg');">
   <div class="container mx-auto px-4 max-w-screen-lg">
     <div
       class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
