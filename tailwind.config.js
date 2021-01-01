@@ -30,8 +30,8 @@ module.exports = {
 					"100%": { transform: "scale(1)", opacity: "1" },
 				},
 				slideInLeft: {
-					"0%": { transform: "--tw-translate-x: -24rem" },
-					"100%": { transform: "--tw-translate-x: 0px" },
+					"0%": { "left": "-24rem", "opacity": "0" },
+					"100%": { "left": "0", "opacity": "1" },
 				},
 			},
 			animation: {

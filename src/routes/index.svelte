@@ -8,14 +8,14 @@
       <img
         alt="Cartoon of Russell"
         src="cartoon-russell.jpg"
-        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-32 -ml-32 lg:-ml-32 transform-gpu delay-1000 animate-grow"
-        style="max-width: 250px;" />
+        class="shadow-xl rounded-full h-auto align-middle absolute -m-24 -ml-24 lg:-ml-24 transform-gpu delay-1000 animate-grow"
+        style="max-width: 200px;" />
     </div>
   </div>
 </div>
 <div class="text-center mt-16 pt-16">
   <h1
-    class="text-5xl font-semibold leading-normal text-gray-800 mb-2 font-greeting animate-slideInLeft delay-1000 transform-gpu">
+    class="relative text-5xl font-semibold leading-normal text-gray-800 mb-2 font-greeting delay-1000 transform-gpu animate-grow">
     Ahnii, I'm Russell Jones
   </h1>
   <h2
