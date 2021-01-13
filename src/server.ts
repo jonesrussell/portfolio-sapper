@@ -3,8 +3,9 @@ import compression from "compression";
 import express, { Express } from "express";
 import sirv from "sirv";
 import cors from "cors";
+import dotenv from "dotenv";
 
-require("dotenv").config();
+dotenv.config();
 
 const {
 	PORT, mode, BLOG_URL, BELL_CREEK_URL,
