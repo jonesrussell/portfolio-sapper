@@ -1,5 +1,5 @@
 <script lang="javascript">
-  let toggle = 'basic';
+  let toggle = "basic";
 </script>
 
 <section

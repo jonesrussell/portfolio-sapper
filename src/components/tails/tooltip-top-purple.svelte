@@ -2,7 +2,7 @@
   let hover = false;
 
   function toggleHover() {
-    hover = !hover;
+  	hover = !hover;
   }
 </script>
 

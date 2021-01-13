@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
   let open: boolean = false;
 
   const openTrue = () => {

@@ -19,7 +19,7 @@
   "license": "MIT",
   "version": "2020.10.21",
   "scripts": {
-    "eslint": "eslint",
+    "eslint": "eslint ./*.js ./src/*.ts ./src/components/**/*.svelte ./src/routes/**/*.svelte ./src/routes/**/*.ts",
     "eslint:fix": "eslint --fix ./*.js ./src/*.ts ./src/components/**/*.svelte ./src/routes/**/*.svelte ./src/routes/**/*.ts",
     "validate": "svelte-check --ignore src/node_modules/@sapper",
     "validate:dev": "svelte-check --ignore src/node_modules/@sapper --watch",
