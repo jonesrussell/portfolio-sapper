@@ -1,5 +1,5 @@
 <script context="module" lang="typescript">
-  export function preload(page: any, session: any) {
+  export function preload(_page: any, session: any) {
     const { BELL_CREEK_URL } = session;
     const href: string = BELL_CREEK_URL;
     return { href };
@@ -33,4 +33,10 @@
     Learn how gold is processed from ore into dore bars in this interacive
     animation with embedded video.
   </ContentBrowser>
+
+  <ContentBrowser title="YAIA" subtitle="Rubiks Cube" cta="Spin!">
+    <span />
+  </ContentBrowser>
+
+  <div>Rubiks Cube</div>
 </section>

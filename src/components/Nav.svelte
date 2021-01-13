@@ -40,14 +40,14 @@
         class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
         type="button"
         on:click={() => {
-          toggleNavbar('example-collapse-navbar');
+          toggleNavbar('collapse-navbar');
         }}>
         <Fa icon={faBars} class="text-white" />
       </button>
     </div>
     <div
       class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden block"
-      id="example-collapse-navbar">
+      id="collapse-navbar">
       <ul class="flex flex-col lg:flex-row list-none mr-auto">
         <li class="flex items-center">
           <a

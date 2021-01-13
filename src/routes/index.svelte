@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Russell Jones | DevOps &amp; Full Stack Developer</title>
+  <title>Russell Jones | Full Stack Developer &amp; DevOps Dude</title>
 </svelte:head>
 
 <div class="flex flex-wrap justify-center">
@@ -20,7 +20,7 @@
   </h1>
   <h2
     class="text-3xl leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
-    <span class="mt-6 mb-6 block">I'm a really good</span>
+    <span class="mt-6 mb-6 block">I'm a great</span>
     <em class="text-pink-800 relative -left-16">Full Stack Developer</em>
     <span class="block text-8xl">&amp;</span>
     <strong class="text-pink-800 relative left-16">DevOps Architect</strong>
