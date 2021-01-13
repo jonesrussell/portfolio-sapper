@@ -1,16 +1,16 @@
 <script lang="ts">
-  let toggle = "basic";
+  let toggle = 'basic';
 
   const toggleBasic = () => {
-    toggle = "basic";
+    toggle = 'basic';
   };
 
   const toggleSilver = () => {
-    toggle = "silver";
+    toggle = 'silver';
   };
 
   const toggleGold = () => {
-    toggle = "gold";
+    toggle = 'gold';
   };
 </script>
 

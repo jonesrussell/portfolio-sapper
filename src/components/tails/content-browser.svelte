@@ -1,8 +1,8 @@
-<script lang="typescript">
-  export let title: string = "Awesome Features";
-  export let subtitle: string = "Awesome Features<br />for Everyone to Enjoy.";
-  export let cta: string = "View All Features";
-  export let href: string = "#";
+<script lang="ts">
+  export let title: string = 'Awesome Features';
+  export let subtitle: string = 'Awesome Features<br />for Everyone to Enjoy.';
+  export let cta: string = 'View All Features';
+  export let href: string = '#';
 </script>
 
 <style>

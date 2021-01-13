@@ -1,6 +1,6 @@
 <script lang="ts">
   const handleSubmit = () => {
-  	console.log("submitted");
+    console.log('submitted');
   };
 </script>
 
