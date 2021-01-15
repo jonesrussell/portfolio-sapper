@@ -1,21 +1,5 @@
-import {
-  preprocess,
-  createEnv,
-  readConfigFile,
-} from "@pyoner/svelte-ts-preprocess";
-
 const sveltePreprocess = require("svelte-preprocess");
 const postcss = require("./postcss.config");
-
-const env = createEnv();
-const compilerOptions = readConfigFile(env);
-const opts = {
-  env,
-  compilerOptions: {
-    ...compilerOptions,
-    allowNonTsExtensions: true,
-  },
-};
 
 const createPreprocessors = ({ sourceMap }) => [
   sveltePreprocess({
@@ -27,7 +11,6 @@ const createPreprocessors = ({ sourceMap }) => [
     postcss,
   }),
   // You could have more preprocessors, like mdsvex
-  preprocess(opts),
 ];
 
 module.exports = {

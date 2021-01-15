@@ -1,5 +1,5 @@
-<script context="module" lang="typescript">
-  export async function preload(page: any, session: any) {
+<script context="module" lang="ts">
+  export async function preload(_page: any, session: any) {
     const { BLOG_URL } = session;
     const res = await this.fetch(BLOG_URL);
     const posts = await res.json();
@@ -8,7 +8,7 @@
   }
 </script>
 
-<script lang="typescript">
+<script lang="ts">
   export let posts: {
     version: string;
     description: string;

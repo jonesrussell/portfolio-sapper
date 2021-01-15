@@ -1,4 +1,4 @@
-import posts from './_feed.js'
+// import posts from './_feed.js'
 
 const lookup = new Map();
 

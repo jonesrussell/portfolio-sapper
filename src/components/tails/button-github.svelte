@@ -66,7 +66,7 @@
         <aside
           class="absolute z-10 flex flex-col items-start w-64 mt-10 bg-white border rounded-md shadow-md"
           role="menu"
-          x-show="open"
+          x-show={open}
           aria-labelledby="menu-heading"
           on:click={openFalse}>
           <div id="menu-heading" class="w-full p-3 text-xs border-b">
