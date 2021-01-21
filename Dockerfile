@@ -1,7 +1,7 @@
 FROM node:14-buster AS build
 COPY . /app
 WORKDIR /app
-RUN npm install && npm run build
+RUN npm install && npm run export
 
 FROM nginx:1.19.2-alpine
 COPY --from=build /app/__sapper__/build /usr/share/nginx/html
