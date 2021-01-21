@@ -1,22 +1,23 @@
 <script lang="typescript">
-  import Fa from "svelte-fa";
+  import Fa from 'svelte-fa';
   import {
     faGithub,
     faLinkedin,
     faTwitter,
-  } from "@fortawesome/free-brands-svg-icons";
+  } from '@fortawesome/free-brands-svg-icons';
 
   import {
     faBars,
     faBlog,
+    faBookOpen,
     faLayerGroup,
     faProjectDiagram,
     faQuestion,
-  } from "@fortawesome/free-solid-svg-icons";
+  } from '@fortawesome/free-solid-svg-icons';
 
   const toggleNavbar = (collapseID: string) => {
-    document.getElementById(collapseID)?.classList.toggle("hidden");
-    document.getElementById(collapseID)?.classList.toggle("block");
+    document.getElementById(collapseID)?.classList.toggle('hidden');
+    document.getElementById(collapseID)?.classList.toggle('block');
   };
 
   export let segment: string;
@@ -57,6 +58,15 @@
               icon={faBlog}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
             Blog</a>
+        </li>
+        <li class="flex items-center">
+          <a
+            class:selected={segment === 'courses'}
+            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+            href="/courses"><Fa
+              icon={faBookOpen}
+              class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2" />
+            Courses</a>
         </li>
         <li class="flex items-center">
           <a

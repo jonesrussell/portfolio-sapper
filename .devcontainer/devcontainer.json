@@ -73,7 +73,8 @@
 		"lunuan.kubernetes-templates",
 		"jasonnutter.search-node-modules",
 		"ziyasal.vscode-open-in-github",
-		"rbuckton.tsserver-live-reload"
+		"rbuckton.tsserver-live-reload",
+		"formulahendry.github-actions"
 	],
 	// Uncomment the next line if you want start specific services in your Docker Compose config.
 	// "runServices": [],

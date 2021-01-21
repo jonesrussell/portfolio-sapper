@@ -1,5 +1,5 @@
-<script lang="typescript">
-  import FormContactSimple from "./../components/tails/form-contact-simple.svelte";
+<script lang="ts">
+  import FormContactSimple from './../components/tails/form-contact-simple.svelte';
 </script>
 
 <section class="relative py-6 min-w-screen animation-fade animation-delay">

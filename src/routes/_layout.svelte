@@ -3,10 +3,10 @@
 </script>
 
 <script lang="typescript">
-  import Nav from "../components/Nav.svelte";
-  import Footer from "../components/Footer.svelte";
+  import Nav from '../components/Nav.svelte';
+  import Footer from '../components/Footer.svelte';
 
-  export let segment: string = "home";
+  export let segment: string = 'home';
 </script>
 
 <style>
@@ -14,7 +14,16 @@
     min-height: 400px;
   }
 
-  .foobar {
+  .ufo {
+    background-color: transparent;
+    fill: #fff;
+    background-size: 206px 206px;
+    background-repeat: no-repeat;
+    background-image: url('../ufo-flying.svg');
+    @apply bg-left-top;
+  }
+
+  .sasquatch {
     /*Free Classic Bigfoot SVG provided by SVGeez.com - CC 4.0 License - © 2019 Megan Young */
     background-color: transparent;
     fill: #fff;
@@ -52,15 +61,17 @@
   </div>-->
 </section>
 
-<main class="relative py-16 foobar">
-  <div class="container mx-auto px-4 max-w-screen-lg">
-    <div
-      class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
-      <div class="px-6">
-        <slot />
+<div class="ufo">
+  <main class="relative py-16 sasquatch">
+    <div class="container mx-auto px-4 max-w-screen-lg">
+      <div
+        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+        <div class="px-6">
+          <slot />
+        </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
+</div>
 
 <Footer year={2020} />

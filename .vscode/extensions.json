@@ -53,6 +53,7 @@
         "lunuan.kubernetes-templates",
         "jasonnutter.search-node-modules",
         "ziyasal.vscode-open-in-github",
-        "rbuckton.tsserver-live-reload"
+        "rbuckton.tsserver-live-reload",
+        "formulahendry.github-actions"
     ]
 }
