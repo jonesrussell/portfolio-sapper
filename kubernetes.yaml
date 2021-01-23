@@ -13,8 +13,8 @@ spec:
         app: portfolio-sapper
     spec:
       containers:
-        - name: blog
-          image: jonesrussell/blog-app:1.0.0
+        - name: portfolio
+          image: jonesrussell/portfolio-app:1.0.0
           ports:
             - containerPort: 80
           readinessProbe:
@@ -38,7 +38,7 @@ spec:
 apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
-  name: blog-ingress
+  name: portfolio-ingress
   annotations:
     kubernetes.io/ingress.class: nginx
     cert-manager.io/cluster-issuer: letsencrypt-prod
@@ -46,7 +46,7 @@ spec:
   tls:
     - hosts:
         - www.jonesrussell42.xyz
-      secretName: blog-tls
+      secretName: portfolio-tls
   rules:
     - host: www.jonesrussell42.xyz
       http:
