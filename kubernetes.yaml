@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: blog-jekyll
+  name: portfolio-sapper
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: blog-jekyll
+      app: portfolio-sapper
   template:
     metadata:
       labels:
-        app: blog-jekyll
+        app: portfolio-sapper
     spec:
       containers:
         - name: blog
-          image: jonesrussell/blog-app:1.1.1
+          image: jonesrussell/blog-app:1.0.0
           ports:
             - containerPort: 80
           readinessProbe:
@@ -45,14 +45,14 @@ metadata:
 spec:
   tls:
     - hosts:
-        - blog.jonesrussell42.xyz
+        - www.jonesrussell42.xyz
       secretName: blog-tls
   rules:
-    - host: blog.jonesrussell42.xyz
+    - host: www.jonesrussell42.xyz
       http:
         paths:
           - backend:
-              serviceName: blog-jekyll
+              serviceName: portfolio-sapper
               servicePort: 80
 ---
 apiVersion: cert-manager.io/v1alpha2
@@ -76,10 +76,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: blog-jekyll
+  name: portfolio-sapper
 spec:
   selector:
-    app: blog-jekyll
+    app: portfolio-sapper
   ports:
     - protocol: TCP
       port: 80
