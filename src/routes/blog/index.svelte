@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-  export async function preload(_page: any, session: any) {
+  export async function preload(this: any, _page: any, session: any) {
     const { BLOG_URL } = session;
     const res = await this.fetch(BLOG_URL);
     const posts = await res.json();
@@ -24,13 +24,6 @@
     }[];
   }[];
 </script>
-
-<style>
-  ul {
-    margin: 0 0 1em 0;
-    line-height: 1.5;
-  }
-</style>
 
 <svelte:head>
   <title>Blog</title>
