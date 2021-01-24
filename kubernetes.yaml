@@ -15,6 +15,11 @@ spec:
       containers:
         - name: portfolio
           image: jonesrussell/portfolio-app:1.0.0
+          env:
+          - name: BLOG_URL
+            value: "https://blog.jonesrussell42.xyz/feed.json"
+          - name: BELL_CREEK_URL 
+            value: "https://bell-creek.jonesrussell42.xyz"
           ports:
             - containerPort: 3000
           readinessProbe:
