@@ -6,34 +6,144 @@
   <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
     <div class="relative">
       <img
-        alt="Cartoon of Russell"
+        alt="Cartoon of Russell Jones"
         src="cartoon-russell.jpg"
         class="shadow-xl rounded-full h-auto align-middle absolute -m-24 -ml-24 lg:-ml-24 transform-gpu delay-1000 animate-grow"
-        style="max-width: 200px;" />
+        style="max-width: 200px;"
+      />
     </div>
   </div>
 </div>
 <div class="text-center mt-16 pt-16">
   <h1
-    class="relative text-5xl font-semibold leading-normal text-gray-800 mb-2 font-greeting delay-1000 transform-gpu animate-grow">
-    Ahnii, I'm Russell Jones
-  </h1>
-  <h2
-    class="text-3xl leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
-    <span class="mt-6 mb-6 block">I'm a great</span>
-    <em class="text-pink-800 relative -left-16">Full Stack Developer</em>
-    <span class="block text-8xl">&amp;</span>
-    <strong class="text-pink-800 relative left-16">DevOps Architect</strong>
-  </h2>
+    class="relative text-5xl font-semibold leading-normal text-gray-800 mb-2 font-greeting delay-1000 transform-gpu animate-grow"
+  >Ahnii, I'm Russell Jones</h1>
 </div>
-<div class="mt-10 py-10 border-t border-gray-300 text-center">
-  <div class="flex flex-wrap justify-center">
-    <div class="w-full lg:w-9/12 px-4">
-      <p class="mb-4 text-lg leading-relaxed text-gray-800">
-        A "web" developer of considerable range, Russell is a First Nations
-        person born and raised in Canada.
-      </p>
-      <a href="#pablo" class="font-normal text-pink-500">Show more</a>
+
+<div
+  class="max-w-screen-xl p-4 bg-white dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative py-26 lg:mt-10"
+>
+  <div class="relative">
+    <div
+      class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center"
+    >
+      <div class="lg:col-start-2 lg:max-w-2xl ml-auto">
+        <p class="text-base leading-6 text-indigo-500 font-semibold uppercase">
+          Interactive
+        </p>
+        <h4
+          class="mt-2 text-2xl leading-8 font-extrabold text-gray-900 dark:text-white sm:text-3xl sm:leading-9"
+        >Interactivity between team members is the key of the success.</h4>
+        <p class="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
+          Build a simply and powered collaborative space for all your team.
+          Track, share, measure, you have a fully control, it&#x27;s never be
+          simply and efficient.
+        </p>
+        <ul class="mt-8 md:grid md:grid-cols-2 gap-6">
+          <li class="mt-6 lg:mt-0">
+            <div class="flex">
+              <span
+                class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <span
+                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                Live modifications
+              </span>
+            </div>
+          </li>
+          <li class="mt-6 lg:mt-0">
+            <div class="flex">
+              <span
+                class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <span
+                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                Data tracker
+              </span>
+            </div>
+          </li>
+          <li class="mt-6 lg:mt-0">
+            <div class="flex">
+              <span
+                class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <span
+                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                24/24 support
+              </span>
+            </div>
+          </li>
+          <li class="mt-6 lg:mt-0">
+            <div class="flex">
+              <span
+                class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <span
+                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
+                Free tips to improve work time
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="mt-10 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1">
+        <div class="relative space-y-4">
+          <div class="flex items-end justify-center lg:justify-start space-x-4">
+            <img
+              class="rounded-lg shadow-lg w-48 md:w-56"
+              src="svelte.png"
+              alt="Svelte"
+            />
+            <img
+              class="rounded-lg shadow-lg w-24 md:w-32"
+              src="kubernetes.png"
+              alt="Kubernetes"
+            />
+          </div>
+          <div
+            class="flex items-start justify-center lg:justify-start space-x-4 ml-12"
+          >
+            <img
+              class="rounded-lg shadow-lg w-24 md:w-40"
+              src="tailwindcss.png"
+              alt="Tailwind CSS"
+            />
+            <img
+              class="rounded-lg shadow-lg w-28 md:w-32"
+              src="nodejs-development-services.webp"
+              alt="NodeJS"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
