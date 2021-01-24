@@ -3,8 +3,6 @@ WORKDIR /app
 COPY . .
 RUN npm install --save
 RUN npm run sapper:build
-# EXPOSE 3000
-
 
 FROM node:14-alpine
 COPY --from=build /app /app
