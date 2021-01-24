@@ -9,3 +9,5 @@ __sapper__/
 .pnpm-store
 static/Ubuntu_80s_glitch_by_Abubakar_NK.jpg
 *.log
+.env
+
