@@ -36,7 +36,7 @@
 				"start": "node __sapper__/build",
 				"start:export": "serve __sapper__/export",
 				"deploy": "run-s prod firebase:deploy",
-				"export": "run-s sapper:export static:404:cp static:404:rmdir validate",
+				"export": "run-s sapper:export static:404:cp static:404:rmdir",
 				"deploy:export": "run-s export firebase:deploy:hosting"
 		},
 		"dependencies": {

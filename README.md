@@ -88,6 +88,9 @@ The [Apple touch icon](https://developer.apple.com/library/archive/documentation
 
 This project base comes with [source maps](https://blog.teamtreehouse.com/introduction-source-maps) enabled during development and disabled during production for the best compromise between performance and developer experience. You can change this behavior through the `sourcemap` variable in `rollup.config.js`.
 
+## TODO
+
+Add 'validate' back to the end of 'export'
 
 ## 📄 License
 
