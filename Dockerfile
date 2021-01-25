@@ -18,7 +18,7 @@ WORKDIR /app
 
 #RUN npm install && npm run sapper:export
 
-CMD ["npm", "start"]
+CMD ["npm", "start:export"]
 
 #FROM nginx:1.19.2-alpine
 #COPY --from=build /app/__sapper__/build /usr/share/nginx/html

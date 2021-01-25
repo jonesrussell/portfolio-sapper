@@ -51,7 +51,6 @@ spec:
   tls:
     - hosts:
         - www.jonesrussell42.xyz
-        - jonesrussell42.xyz
       secretName: portfolio-tls
   rules:
     - host: www.jonesrussell42.xyz
