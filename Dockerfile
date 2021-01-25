@@ -1,7 +1,7 @@
 FROM node:14-buster AS build
 
 LABEL name portfolio-sapper
-LABEL version 1.0.1
+LABEL version 1.0.2
 
 WORKDIR /app
 
