@@ -118,26 +118,21 @@
         <div class="relative space-y-4">
           <div class="flex items-end justify-center lg:justify-start space-x-4">
             <img
-              class="rounded-lg shadow-lg w-48 md:w-56"
-              src="svelte.png"
-              alt="Svelte"
+              class="rounded-lg shadow-lg w-24 md:w-64"
+              src="photo-overhead-table-work.jpeg"
+              alt="Laptop"
             />
             <img
-              class="rounded-lg shadow-lg w-24 md:w-32"
-              src="kubernetes.png"
-              alt="Kubernetes"
+              class="w-24 md:w-32 relative top-14"
+              src="svelte.png"
+              alt="Svelte"
             />
           </div>
           <div
             class="flex items-start justify-center lg:justify-start space-x-4 ml-12"
           >
             <img
-              class="rounded-lg shadow-lg w-24 md:w-40"
-              src="tailwindcss.png"
-              alt="Tailwind CSS"
-            />
-            <img
-              class="rounded-lg shadow-lg w-28 md:w-32"
+              class="w-28 md:w-40 md:mt-10"
               src="nodejs-development-services.webp"
               alt="NodeJS"
             />
