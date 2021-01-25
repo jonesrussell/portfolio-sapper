@@ -12,10 +12,10 @@ jobs:
       - name: "Checkout Repo"
         uses: actions/checkout@master
 
-      - name: "Install npm"
-        uses: npm/action-setup@v1.2.1
-        with:
-          version: 5.8
+      #      - name: "Install npm"
+      #        uses: npm/action-setup@v1.2.1
+      #        with:
+      #          version: 5.8
       - name: "Install Production and Development Dependencies"
         run: "npm install"
 
