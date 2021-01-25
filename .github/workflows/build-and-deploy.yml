@@ -1,17 +1,39 @@
-name: Export Sapper and Deploy to Kubernetes
-
-on: [push]
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  build_deploy:
-    runs-on: ubuntu-latest
+  build:
+    name: Build and Deploy
+    runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@master
-      - name: Build Sapper
-        uses: truewebartisans/actions-sapper@master
+      - name: "Checkout Repo"
+        uses: actions/checkout@master
+
+      - name: "Install npm"
+        uses: npm/action-setup@v1.2.1
         with:
-          build_mode: "export"
-          args: "--legacy"
+          version: 5.8
+      - name: "Install Production and Development Dependencies"
+        run: "npm install"
+
+      # This section makes as many pages as possible static.
+      # If you don't want that, remove it and replace firebase:deploy:functions with firebase:deploy below
+      - name: "Export a Static Build"
+        run: "npm run export"
+#      - name: "Deploy Hosting"
+#        run: "npm run firebase:deploy:hosting"
+#  build_deploy:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@master
+#      - name: Build Sapper
+#        uses: truewebartisans/actions-sapper@master
+#        with:
+#          build_mode: "export"
+#          args: "--legacy"
 #      - name: Deploy to remote virtual server via SSH
 #        uses: appleboy/scp-action@master
 #        with:
