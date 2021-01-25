@@ -50,9 +50,16 @@ metadata:
 spec:
   tls:
     - hosts:
+        - jonesrussell42.xyz
         - www.jonesrussell42.xyz
       secretName: portfolio-tls
   rules:
+    - host: jonesrussell42.xyz
+      http:
+        paths:
+          - backend:
+              serviceName: portfolio-sapper
+              servicePort: 5000
     - host: www.jonesrussell42.xyz
       http:
         paths:
