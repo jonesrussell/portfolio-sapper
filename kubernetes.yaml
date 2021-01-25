@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: portfolio
-          image: jonesrussell/portfolio-app:1.0.2
+          image: jonesrussell/portfolio-app:1.0.3
           env:
             - name: BLOG_URL
               value: "https://blog.jonesrussell42.xyz/feed.json"
