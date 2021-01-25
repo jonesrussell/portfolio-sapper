@@ -21,15 +21,15 @@ spec:
             - name: BELL_CREEK_URL
               value: "https://bell-creek.jonesrussell42.xyz"
           ports:
-            - containerPort: 3000
+            - containerPort: 5000
           readinessProbe:
             tcpSocket:
-              port: 3000
+              port: 5000
             initialDelaySeconds: 5
             periodSeconds: 10
           livenessProbe:
             tcpSocket:
-              port: 3000
+              port: 5000
             initialDelaySeconds: 15
             periodSeconds: 20
           resources:
@@ -58,7 +58,7 @@ spec:
         paths:
           - backend:
               serviceName: portfolio-sapper
-              servicePort: 3000
+              servicePort: 5000
 ---
 apiVersion: cert-manager.io/v1alpha2
 kind: ClusterIssuer
@@ -87,5 +87,5 @@ spec:
     app: portfolio-sapper
   ports:
     - protocol: TCP
-      port: 3000
+      port: 5000
   type: ClusterIP
