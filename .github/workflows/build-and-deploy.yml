@@ -36,6 +36,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Apply deployment updates
-        run: kubectl apply -f kubernetes.yml
+        run: kubectl apply -f
         with:
-          path: ./
+          path: ./kubernetes.yml
