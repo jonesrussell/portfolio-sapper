@@ -17,7 +17,6 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          load: true
           tags: jonesrussell/portfolio-sapper:latest
           push: true
       - name: Inspect
