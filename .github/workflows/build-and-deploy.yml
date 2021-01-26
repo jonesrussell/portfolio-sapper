@@ -19,23 +19,10 @@ jobs:
       # If you don't want that, remove it and replace firebase:deploy:functions with firebase:deploy below
       - name: "Export a Static Build"
         run: "npm run export"
-
-      - name: DigitalOcean Kubernetes
-        uses: matootie/dokube@v1.3.4
-        with:
-          personalAccessToken: ${{ secrets.DIGITALOCEAN_TOKEN }}
-          clusterName: galaxy-k8s
-      - name: Apply deployment updates
-        run: kubectl apply -f kubernetes.yml
-#      - name: Build Sapper
-#        uses: truewebartisans/actions-sapper@master
+#      - name: DigitalOcean Kubernetes
+#        uses: matootie/dokube@v1.3.4
 #        with:
-#          build_mode: "export"
-#          args: "--legacy"
-
-#      - name: "Deploy Hosting"
-#        run: "npm run firebase:deploy:hosting"
-#  build_deploy:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@master
+#          personalAccessToken: ${{ secrets.DIGITALOCEAN_TOKEN }}
+#          clusterName: galaxy-k8s
+#      - name: Apply deployment updates
+#        run: kubectl apply -f kubernetes.yml
