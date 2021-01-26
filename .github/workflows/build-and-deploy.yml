@@ -8,49 +8,23 @@ jobs:
   export-docker:
     runs-on: ubuntu-latest
     steps:
-      -
-        name: Checkout
-        uses: actions/checkout@v2
-      -
-        name: Set up Docker Buildx
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
-      -
-        name: Build
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push
+        id: docker_build
         uses: docker/build-push-action@v2
         with:
-          context: .
-          file: ./Dockerfile
-          load: true
+          push: true
           tags: jonesrussell/portfolio-app:latest
-      -
-        name: Inspect
-        run: |
-          docker image inspect jonesrussell/portfolio-app:latest
-#      - name: DigitalOcean Kubernetes
-#        uses: matootie/dokube@v1.3.4
-#        with:
-#          personalAccessToken: ${{ secrets.DIGITALOCEAN_TOKEN }}
-#          clusterName: galaxy-k8s
-#      - name: Apply deployment updates
-#        with:
-#          context: .
-#          file: ./kubernetes.yml
-#        run: kubectl apply
-
-#  build:
-#    name: Build and Deploy
-#    runs-on: ubuntu-20.04
-#    steps:
-#      - name: "Checkout Repo"
-#        uses: actions/checkout@master
-#
-#      - name: "Install Production and Development Dependencies"
-#        run: "npm install"
-
-      # This section makes as many pages as possible static.
-      # If you don't want that, remove it and replace firebase:deploy:functions with firebase:deploy below
-#      - name: "Export a Static Build"
-#        run: "npm run export"
-#
-      - name: Build and push Docker images
-        uses: docker/build-push-action@v2.2.2
+      #          build-args: |
+      #            arg1=value1
+      #            arg2=value2
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
