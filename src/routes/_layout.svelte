@@ -61,17 +61,15 @@
   </div>-->
 </section>
 
-<div class="ufo">
-  <main class="relative py-16 sasquatch">
-    <div class="container mx-auto px-4 max-w-screen-lg">
-      <div
-        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
-        <div class="px-6">
-          <slot />
-        </div>
+<main class="relative py-16 sasquatch">
+  <div class="container mx-auto px-4 max-w-screen-lg">
+    <div
+      class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+      <div class="px-6">
+        <slot />
       </div>
     </div>
-  </main>
-</div>
+  </div>
+</main>
 
 <Footer year={2020} />

@@ -29,15 +29,15 @@
     >
       <div class="lg:col-start-2 lg:max-w-2xl ml-auto">
         <p class="text-base leading-6 text-indigo-500 font-semibold uppercase">
-          Interactive
+          Every Company is a Software Company
         </p>
         <h4
           class="mt-2 text-2xl leading-8 font-extrabold text-gray-900 dark:text-white sm:text-3xl sm:leading-9"
-        >Interactivity between team members is the key of the success.</h4>
+        >Great developers are the key to the success.</h4>
         <p class="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
-          Build a simply and powered collaborative space for all your team.
-          Track, share, measure, you have a fully control, it&#x27;s never be
-          simply and efficient.
+          And I am a great developer. With over 20 years of experience in
+          Full Stack development, in addition to DevOps, I can help you realize
+          your vision by bringing it to the Cloud.
         </p>
         <ul class="mt-8 md:grid md:grid-cols-2 gap-6">
           <li class="mt-6 lg:mt-0">
@@ -54,7 +54,7 @@
               </span>
               <span
                 class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                Live modifications
+                LAMP/LEMP Stack (Linux/Apache, Nginx, MySQL, PHP)
               </span>
             </div>
           </li>
@@ -72,7 +72,7 @@
               </span>
               <span
                 class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                Data tracker
+                
               </span>
             </div>
           </li>
