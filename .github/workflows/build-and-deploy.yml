@@ -8,24 +8,28 @@ jobs:
   export-docker:
     runs-on: ubuntu-latest
     steps:
-      -
-        name: Checkout
+      - name: Checkout
         uses: actions/checkout@v2
-      -
-        name: Set up Docker Buildx
+      - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
-      -
-        name: Build
+      - name: Build
         uses: docker/build-push-action@v2
         with:
           context: .
           file: ./Dockerfile
           load: true
           tags: jonesrussell/portfolio-sapper:latest
-      -
-        name: Inspect
+      - name: Inspect
         run: |
           docker image inspect jonesrussell/portfolio-sapper:latest
+      - name: DigitalOcean Kubernetes
+        uses: matootie/dokube@v1.3.4
+        with:
+          personalAccessToken: ${{ secrets.DIGITALOCEAN_TOKEN }}
+          clusterName: galaxy-k8s
+      - name: Apply deployment updates
+        run: kubectl apply -f kubernetes.yml
+
 #  build:
 #    name: Build and Deploy
 #    runs-on: ubuntu-20.04
@@ -43,11 +47,3 @@ jobs:
 #
 #      - name: Build and push Docker images
 #        uses: docker/build-push-action@v2.2.2
-
-#      - name: DigitalOcean Kubernetes
-#        uses: matootie/dokube@v1.3.4
-#        with:
-#          personalAccessToken: ${{ secrets.DIGITALOCEAN_TOKEN }}
-#          clusterName: galaxy-k8s
-#      - name: Apply deployment updates
-#        run: kubectl apply -f kubernetes.yml
