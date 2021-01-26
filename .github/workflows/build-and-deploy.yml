@@ -27,6 +27,8 @@ jobs:
         with:
           personalAccessToken: ${{ secrets.DIGITALOCEAN_TOKEN }}
           clusterName: galaxy-k8s
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Apply deployment updates
         run: kubectl apply -f ./kubernetes.yml
 
