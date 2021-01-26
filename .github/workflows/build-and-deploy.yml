@@ -31,8 +31,7 @@ jobs:
         with:
           context: .
           file: ./kubernetes.yml
-          load: true
-        run: kubectl apply -f ./kubernetes.yml
+        run: kubectl apply
 
 #  build:
 #    name: Build and Deploy
