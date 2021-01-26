@@ -21,7 +21,7 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      greeting: ["Lobster", "cursive"],
+      greeting: ["Dancing Script", "cursive"],
     },
     extend: {
       keyframes: {
