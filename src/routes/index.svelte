@@ -72,7 +72,7 @@
               </span>
               <span
                 class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                
+                Github / Github Actions
               </span>
             </div>
           </li>
