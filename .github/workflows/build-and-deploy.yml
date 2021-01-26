@@ -19,6 +19,7 @@ jobs:
           file: ./Dockerfile
           load: true
           tags: jonesrussell/portfolio-sapper:latest
+          push: true
       - name: Inspect
         run: |
           docker image inspect jonesrussell/portfolio-sapper:latest
