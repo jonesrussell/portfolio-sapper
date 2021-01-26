@@ -34,6 +34,7 @@ jobs:
           personalAccessToken: ${{ secrets.DIGITALOCEAN_TOKEN }}
           clusterName: galaxy-k8s
       - name: Apply deployment updates
+        uses: matootie/dokube@v1.3.4
         with:
           context: .
           file: ./kubernetes.yml
