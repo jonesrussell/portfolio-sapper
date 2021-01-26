@@ -28,7 +28,7 @@ jobs:
           personalAccessToken: ${{ secrets.DIGITALOCEAN_TOKEN }}
           clusterName: galaxy-k8s
       - name: Apply deployment updates
-        run: kubectl apply -f kubernetes.yml
+        run: kubectl apply -f ./kubernetes.yml
 
 #  build:
 #    name: Build and Deploy
