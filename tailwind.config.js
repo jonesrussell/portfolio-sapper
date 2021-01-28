@@ -29,6 +29,10 @@ module.exports = {
           "0%": { transform: "scale(0)", opacity: "0" },
           "100%": { transform: "scale(1)", opacity: "1" },
         },
+        shrink: {
+          "100%": { transform: "scale(1)", opacity: "1" },
+          "0%": { transform: "scale(0)", opacity: "0" },
+        },
         slideInLeft: {
           "0%": { left: "-24rem", opacity: "0" },
           "100%": { left: "0", opacity: "1" },
@@ -36,6 +40,7 @@ module.exports = {
       },
       animation: {
         grow: "grow 1s ease-in-out",
+        shrink: "shrink 1s ease-in-out",
         slideInLeft: "slideInLeft 1s ease-in-out",
       },
     },

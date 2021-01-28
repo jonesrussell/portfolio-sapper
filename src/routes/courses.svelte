@@ -4,9 +4,10 @@
 
 <div>
   <h1
-    class="mb-10 text-4xl font-extrabold leading-10 tracking-tight text-left text-gray-900 sm:text-5xl sm:leading-none md:text-6xl sm:text-center">
+    class="mb-10 text-4xl font-extrabold leading-10 tracking-tight text-left text-gray-900 sm:text-5xl sm:leading-none md:text-6xl sm:text-center"
+  >
     Awesome
-    <span class="inline-block text-indigo-500">Course <del>s</del></span>
+    <span class="inline-block text-indigo-500">Courses</span>
   </h1>
 
   <p>As this is my first course I decided it will be two things.</p>

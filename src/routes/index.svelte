@@ -16,8 +16,10 @@
 </div>
 <div class="text-center mt-16 pt-16">
   <h1
-    class="relative text-5xl font-semibold leading-normal text-gray-800 mb-2 font-greeting delay-1000 transform-gpu animate-grow"
-  >Ahnii, I'm Russell Jones</h1>
+    class="relative text-5xl font-bold leading-normal text-gray-800 mb-2 font-greeting delay-1000 transform-gpu animate-grow"
+  >
+    Ahnii, I'm Russell Jones
+  </h1>
 </div>
 
 <div
@@ -33,17 +35,20 @@
         </p>
         <h4
           class="mt-2 text-2xl leading-8 font-extrabold text-gray-900 dark:text-white sm:text-3xl sm:leading-9"
-        >Great developers are the key to the success.</h4>
+        >
+          And I'm The Developer You're Looking For
+        </h4>
         <p class="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
-          And I am a great developer. With over 20 years of experience in
-          Full Stack development, in addition to DevOps, I can help you realize
-          your vision by bringing it to the Cloud.
+          With over 20 years of experience as a <em>Full Stack Developer</em>,
+          and <strong>DevOps Expert</strong>, I can help you realize your vision
+          by bringing it to the Cloud.
         </p>
         <ul class="mt-8 md:grid md:grid-cols-2 gap-6">
           <li class="mt-6 lg:mt-0">
             <div class="flex">
               <span
-                class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent"
+              >
                 <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                   <path
                     fill-rule="evenodd"
@@ -53,15 +58,17 @@
                 </svg>
               </span>
               <span
-                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                LAMP/LEMP Stack (Linux/Apache, Nginx, MySQL, PHP)
+                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200"
+              >
+                LAMP/LEMP Stack
               </span>
             </div>
           </li>
           <li class="mt-6 lg:mt-0">
             <div class="flex">
               <span
-                class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent"
+              >
                 <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                   <path
                     fill-rule="evenodd"
@@ -71,15 +78,17 @@
                 </svg>
               </span>
               <span
-                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                Github / Github Actions
+                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200"
+              >
+                CI/CD
               </span>
             </div>
           </li>
           <li class="mt-6 lg:mt-0">
             <div class="flex">
               <span
-                class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent"
+              >
                 <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                   <path
                     fill-rule="evenodd"
@@ -89,15 +98,17 @@
                 </svg>
               </span>
               <span
-                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                24/24 support
+                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200"
+              >
+                Drupal / Laravel
               </span>
             </div>
           </li>
           <li class="mt-6 lg:mt-0">
             <div class="flex">
               <span
-                class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent">
+                class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-green-100 text-green-800 dark:text-green-500 drark:bg-transparent"
+              >
                 <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                   <path
                     fill-rule="evenodd"
@@ -107,8 +118,9 @@
                 </svg>
               </span>
               <span
-                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200">
-                Free tips to improve work time
+                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200"
+              >
+                Typescript / Webpack
               </span>
             </div>
           </li>
