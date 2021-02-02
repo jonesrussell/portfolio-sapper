@@ -1,6 +1,6 @@
 <img
   alt="Foo"
-  class="bg-white flex items-center justify-center min-h-screen min-w-screen"
+  class="bg-white flex items-center justify-center  min-w-screen"
 />
 <div class="bg-white px-10">
   <div

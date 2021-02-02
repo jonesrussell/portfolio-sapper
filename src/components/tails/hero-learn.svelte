@@ -1,5 +1,5 @@
 <div
-  class="relative flex flex-col items-center justify-center min-h-screen bg-white bg-cover min-w-screen"
+  class="relative flex flex-col items-center justify-center  bg-white bg-cover min-w-screen"
 >
   <div
     class="flex flex-col-reverse items-center justify-center p-10 mx-auto lg:flex-row lg:max-w-6xl lg:p-0"
@@ -24,7 +24,7 @@
         <span class="relative">
           <span
             class="absolute bottom-0 left-0 inline-block w-full h-4 mb-1 -ml-1 transform -skew-x-3 bg-yellow-200"
-          ></span>
+          />
           <span class="relative">Learn Together,</span>
         </span>
         <span class="relative block text-yellow-400">Grow Together.</span>
@@ -39,7 +39,8 @@
         <a
           href="https://dev.to"
           class="flex items-center self-start justify-center px-5 py-3 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-yellow-500 border border-transparent rounded-lg shadow hover:bg-yellow-600 focus:outline-none focus:border-yellow-600 focus:ring-yellow md:py-4 md:text-lg xl:text-xl md:px-10"
-        >Get Started</a>
+          >Get Started</a
+        >
         <a
           href="https://dev.to"
           class="relative flex inline-block h-full ml-5 text-base text-lg font-medium leading-tight text-gray-600 underline transition duration-150 ease-in-out border-transparent"
@@ -49,10 +50,9 @@
       </div>
       <p class="mt-6 text-xs text-gray-500 rounded-full">
         Already a member?
-        <a
-          href="https://dev.to"
-          class="font-medium text-yellow-500 underline"
-        >Login Here</a>
+        <a href="https://dev.to" class="font-medium text-yellow-500 underline"
+          >Login Here</a
+        >
       </p>
     </div>
   </div>

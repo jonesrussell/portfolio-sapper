@@ -10,12 +10,15 @@
     <span class="inline-block text-indigo-500">Courses</span>
   </h1>
 
-  <p>As this is my first course I decided it will be two things.</p>
+  <p>
+    As this is my first course it will serve three purposes, which I believe to
+    be the fundamentals of web development.
+  </p>
+
   <ol>
     <li>
-      The first in a series of 3 free courses, HTML, CSS, and TBD, the
-      fundamentals of establishging a foothold in cyberspace;
+      The first in a series of 3 free courses, HTML, CSS, and Tooling, the
+      fundamentals of establishging a foothold in cyberspace.
     </li>
-    <li>TBD</li>
   </ol>
 </div>

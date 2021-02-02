@@ -1,6 +1,4 @@
-<div
-  class="flex items-center justify-center min-h-screen p-5 bg-gray-100 min-w-screen"
->
+<div class="flex items-center justify-center  p-5 bg-gray-100 min-w-screen">
   <div
     class="relative flex flex-col items-center w-full max-w-6xl px-4 py-8 mx-auto text-center rounded-lg shadow-2xl lg:text-left lg:block bg-gradient-to-br from-purple-600 via-indigo-500 to-teal-400 sm:px-6 md:pb-0 md:pt-12 lg:px-12 lg:py-12"
   >

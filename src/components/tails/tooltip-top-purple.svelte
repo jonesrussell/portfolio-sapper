@@ -6,13 +6,11 @@
   }
 </script>
 
-<div
-  class="bg-white min-h-screen min-w-screen flex items-center justify-center"
->
+<div class="bg-white  min-w-screen flex items-center justify-center">
   <div
     class="flex items-center relative text-gray-500 hover:text-gray-600 cursor-pointer"
-    on:mouseenter="{toggleHover}"
-    on:mouseleave="{toggleHover}"
+    on:mouseenter={toggleHover}
+    on:mouseleave={toggleHover}
   >
     <p>Hover Me</p>
     <div class="relative">
@@ -27,12 +25,13 @@
         x-transition:leave-end="opacity-0 transform scale-90"
         x-cloak
       >
-        <span class="leading-tight text-sm inline-block">Hello, I'm a quick
-          tooltip that you can drop into any project.</span>
+        <span class="leading-tight text-sm inline-block"
+          >Hello, I'm a quick tooltip that you can drop into any project.</span
+        >
         <span
           class="w-5 h-5 bg-purple-600 absolute right-0 bottom-0 -mb-1 transform rotate-45"
           style="left:50%;"
-        ></span>
+        />
       </div>
       <svg
         class="w-4 h-4 ml-1"
@@ -46,7 +45,7 @@
           stroke-linejoin="round"
           stroke-width="2"
           d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        ></path>
+        />
       </svg>
     </div>
   </div>

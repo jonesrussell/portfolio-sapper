@@ -1,28 +1,33 @@
 <script lang="ts">
-  let toggle: string = "basic";
+  let toggle: string = 'basic';
 
   const toggleBasic = () => {
-    toggle = "basic";
+    toggle = 'basic';
   };
 
   const toggleSilver = () => {
-    toggle = "silver";
+    toggle = 'silver';
   };
 
   const toggleGold = () => {
-    toggle = "gold";
+    toggle = 'gold';
   };
 </script>
 
 <section
   x-data={toggleBasic}
-  class="relative min-h-screen py-16 bg-gray-200 min-w-screen animation-fade animation-delay">
+  class="relative  py-16 bg-gray-200 min-w-screen animation-fade animation-delay"
+>
   <div class="container w-full px-10 mx-auto sm:px-5">
     <div class="sm:flex">
       <aside class="w-full sm:flex-initial">
         <div
           on:click={toggleBasic}
-          class="flex mt-1 text-black bg-white rounded-md hover:text-white hover:bg-gray-700 {toggle === 'basic' ? 'bg-blue-500 text-white hover:bg-blue-700' : ''}">
+          class="flex mt-1 text-black bg-white rounded-md hover:text-white hover:bg-gray-700 {toggle ===
+          'basic'
+            ? 'bg-blue-500 text-white hover:bg-blue-700'
+            : ''}"
+        >
           <div class="self-center flex-shrink p-5">
             <svg
               x-show={toggle === 'basic'}
@@ -34,17 +39,20 @@
               y="0px"
               viewBox="0 0 512 512"
               style="enable-background:new 0 0 512 512;"
-              xml:space="preserve">
+              xml:space="preserve"
+            >
               <ellipse
                 style="fill:#32BEA6;"
                 cx="256"
                 cy="256"
                 rx="256"
-                ry="255.832" />
+                ry="255.832"
+              />
               <polygon
                 style="fill:#FFFFFF;"
                 points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504 
-                                391.88,166.392 " />
+                                391.88,166.392 "
+              />
             </svg>
             <svg
               x-show={toggle !== 'basic'}
@@ -56,13 +64,15 @@
               y="0px"
               viewBox="0 0 512 512"
               style="enable-background:new 0 0 512 512;"
-              xml:space="preserve">
+              xml:space="preserve"
+            >
               <ellipse
                 style="fill:#FFFFFF;"
                 cx="256"
                 cy="256"
                 rx="256"
-                ry="255.832" />
+                ry="255.832"
+              />
             </svg>
           </div>
           <div class="flex-grow px-0 py-5 md:px-5">
@@ -70,13 +80,18 @@
             <div class="pt-1 text-sm">Start pack + 3 submissions</div>
           </div>
           <div
-            class="self-center flex-shrink w-32 px-5 py-5 text-2xl text-center md:px-5">
+            class="self-center flex-shrink w-32 px-5 py-5 text-2xl text-center md:px-5"
+          >
             $ 5
           </div>
         </div>
         <div
           on:click={toggleSilver}
-          class="flex mt-3 text-black bg-white rounded-md hover:text-white hover:bg-gray-700 {toggle === 'silver' ? 'bg-blue-500 text-white hover:bg-blue-700' : ''}">
+          class="flex mt-3 text-black bg-white rounded-md hover:text-white hover:bg-gray-700 {toggle ===
+          'silver'
+            ? 'bg-blue-500 text-white hover:bg-blue-700'
+            : ''}"
+        >
           <div class="self-center flex-shrink p-5">
             <svg
               x-show={toggle === 'silver'}
@@ -88,17 +103,20 @@
               y="0px"
               viewBox="0 0 512 512"
               style="enable-background:new 0 0 512 512;"
-              xml:space="preserve">
+              xml:space="preserve"
+            >
               <ellipse
                 style="fill:#32BEA6;"
                 cx="256"
                 cy="256"
                 rx="256"
-                ry="255.832" />
+                ry="255.832"
+              />
               <polygon
                 style="fill:#FFFFFF;"
                 points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504 
-                                391.88,166.392 " />
+                                391.88,166.392 "
+              />
             </svg>
             <svg
               x-show={toggle !== 'silver'}
@@ -110,13 +128,15 @@
               y="0px"
               viewBox="0 0 512 512"
               style="enable-background:new 0 0 512 512;"
-              xml:space="preserve">
+              xml:space="preserve"
+            >
               <ellipse
                 style="fill:#FFFFFF;"
                 cx="256"
                 cy="256"
                 rx="256"
-                ry="255.832" />
+                ry="255.832"
+              />
             </svg>
           </div>
           <div class="flex-grow px-0 py-5 md:px-5">
@@ -126,13 +146,18 @@
             </div>
           </div>
           <div
-            class="self-center flex-shrink w-32 px-5 py-5 text-2xl text-center md:px-5">
+            class="self-center flex-shrink w-32 px-5 py-5 text-2xl text-center md:px-5"
+          >
             $ 10
           </div>
         </div>
         <div
           on:click={toggleGold}
-          class="flex mt-3 text-black bg-white rounded-md hover:text-white hover:bg-gray-700 {toggle === 'gold' ? 'bg-blue-500 text-white hover:bg-blue-700' : ''}">
+          class="flex mt-3 text-black bg-white rounded-md hover:text-white hover:bg-gray-700 {toggle ===
+          'gold'
+            ? 'bg-blue-500 text-white hover:bg-blue-700'
+            : ''}"
+        >
           <div class="self-center flex-shrink p-5">
             <svg
               x-show={toggle === 'gold'}
@@ -144,17 +169,20 @@
               y="0px"
               viewBox="0 0 512 512"
               style="enable-background:new 0 0 512 512;"
-              xml:space="preserve">
+              xml:space="preserve"
+            >
               <ellipse
                 style="fill:#32BEA6;"
                 cx="256"
                 cy="256"
                 rx="256"
-                ry="255.832" />
+                ry="255.832"
+              />
               <polygon
                 style="fill:#FFFFFF;"
                 points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504 
-                                391.88,166.392 " />
+                                391.88,166.392 "
+              />
             </svg>
             <svg
               x-show={toggle !== 'gold'}
@@ -166,13 +194,15 @@
               y="0px"
               viewBox="0 0 512 512"
               style="enable-background:new 0 0 512 512;"
-              xml:space="preserve">
+              xml:space="preserve"
+            >
               <ellipse
                 style="fill:#FFFFFF;"
                 cx="256"
                 cy="256"
                 rx="256"
-                ry="255.832" />
+                ry="255.832"
+              />
             </svg>
           </div>
           <div class="flex-grow px-0 py-5 md:px-5">
@@ -182,14 +212,16 @@
             </div>
           </div>
           <div
-            class="self-center flex-shrink w-32 px-5 py-5 text-2xl text-center md:px-5">
+            class="self-center flex-shrink w-32 px-5 py-5 text-2xl text-center md:px-5"
+          >
             $ 15
           </div>
         </div>
       </aside>
       <div
         x-show={toggle === 'basic'}
-        class="flex w-full mt-10 bg-white rounded-md sm:mt-1 sm:ml-5 sm:flex-initial">
+        class="flex w-full mt-10 bg-white rounded-md sm:mt-1 sm:ml-5 sm:flex-initial"
+      >
         <div class="flex-grow px-8 py-5">
           <div class="text-4xl">Basic Package</div>
           <div class="mt-0 text-lg text-gray-500">3 Submissions</div>
@@ -205,11 +237,13 @@
                 y="0px"
                 viewBox="0 0 512 512"
                 style="enable-background:new 0 0 512 512;"
-                xml:space="preserve">
+                xml:space="preserve"
+              >
                 <polygon
                   style="fill:#32BEA6;"
                   points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504 
-                                    391.88,166.392 " />
+                                    391.88,166.392 "
+                />
               </svg>
             </div>
             <div class="self-center flex-grow ml-3">Starter pack</div>
@@ -225,11 +259,13 @@
                 y="0px"
                 viewBox="0 0 512 512"
                 style="enable-background:new 0 0 512 512;"
-                xml:space="preserve">
+                xml:space="preserve"
+              >
                 <polygon
                   style="fill:#32BEA6;"
                   points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504 
-                                    391.88,166.392 " />
+                                    391.88,166.392 "
+                />
               </svg>
             </div>
             <div class="self-center flex-grow ml-3">3 Submission</div>
@@ -245,11 +281,13 @@
                 y="0px"
                 viewBox="0 0 512 512"
                 style="enable-background:new 0 0 512 512;"
-                xml:space="preserve">
+                xml:space="preserve"
+              >
                 <polygon
                   style="fill:#32BEA6;"
                   points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504 
-                                    391.88,166.392 " />
+                                    391.88,166.392 "
+                />
               </svg>
             </div>
             <div class="self-center flex-grow ml-3">FREE Ebook</div>
@@ -258,7 +296,8 @@
             <div class="mt-8">
               <a href="https://dev.to">
                 <div
-                  class="w-full px-8 py-4 text-center text-white bg-green-500 rounded-md hover:bg-green-800 pointer-cursor">
+                  class="w-full px-8 py-4 text-center text-white bg-green-500 rounded-md hover:bg-green-800 pointer-cursor"
+                >
                   Choose Package
                 </div>
               </a>
@@ -267,11 +306,13 @@
         </div>
         <div
           class="flex w-64 h-full bg-blue-500 bg-opacity-25 rounded-r md:flex-shrink"
-          style="background: url('https://picsum.photos/400/400?grayscale');" />
+          style="background: url('https://picsum.photos/400/400?grayscale');"
+        />
       </div>
       <div
         x-show={toggle === 'silver'}
-        class="flex w-full mt-10 bg-white rounded-md sm:mt-1 sm:ml-5 sm:flex-initial">
+        class="flex w-full mt-10 bg-white rounded-md sm:mt-1 sm:ml-5 sm:flex-initial"
+      >
         <div class="flex-grow px-8 py-5">
           <div class="text-4xl">Silver Package</div>
           <div class="mt-0 text-lg text-gray-500">10 Submissions</div>
@@ -287,11 +328,13 @@
                 y="0px"
                 viewBox="0 0 512 512"
                 style="enable-background:new 0 0 512 512;"
-                xml:space="preserve">
+                xml:space="preserve"
+              >
                 <polygon
                   style="fill:#32BEA6;"
                   points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504 
-                                    391.88,166.392 " />
+                                    391.88,166.392 "
+                />
               </svg>
             </div>
             <div class="self-center flex-grow ml-3">Starter pack</div>
@@ -307,11 +350,13 @@
                 y="0px"
                 viewBox="0 0 512 512"
                 style="enable-background:new 0 0 512 512;"
-                xml:space="preserve">
+                xml:space="preserve"
+              >
                 <polygon
                   style="fill:#32BEA6;"
                   points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504 
-                                    391.88,166.392 " />
+                                    391.88,166.392 "
+                />
               </svg>
             </div>
             <div class="self-center flex-grow ml-3">10 Submission</div>
@@ -327,11 +372,13 @@
                 y="0px"
                 viewBox="0 0 512 512"
                 style="enable-background:new 0 0 512 512;"
-                xml:space="preserve">
+                xml:space="preserve"
+              >
                 <polygon
                   style="fill:#32BEA6;"
                   points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504 
-                                    391.88,166.392 " />
+                                    391.88,166.392 "
+                />
               </svg>
             </div>
             <div class="self-center flex-grow ml-3">FREE Ebook</div>
@@ -340,7 +387,8 @@
             <div class="mt-8">
               <a href="https://dev.to">
                 <div
-                  class="w-full px-8 py-4 text-center text-white bg-green-500 rounded-md hover:bg-green-800 pointer-cursor">
+                  class="w-full px-8 py-4 text-center text-white bg-green-500 rounded-md hover:bg-green-800 pointer-cursor"
+                >
                   Choose Package
                 </div>
               </a>
@@ -349,11 +397,13 @@
         </div>
         <div
           class="flex w-64 h-full bg-blue-500 bg-opacity-25 rounded-r md:flex-shrink"
-          style="background: url('https://picsum.photos/400/400?grayscale');" />
+          style="background: url('https://picsum.photos/400/400?grayscale');"
+        />
       </div>
       <div
         x-show={toggle === 'gold'}
-        class="flex w-full mt-10 bg-white rounded-md sm:mt-1 sm:ml-5 sm:flex-initial">
+        class="flex w-full mt-10 bg-white rounded-md sm:mt-1 sm:ml-5 sm:flex-initial"
+      >
         <div class="flex-grow px-8 py-5">
           <div class="text-4xl">Gold Package</div>
           <div class="mt-0 text-lg text-gray-500">20 Submissions</div>
@@ -369,11 +419,13 @@
                 y="0px"
                 viewBox="0 0 512 512"
                 style="enable-background:new 0 0 512 512;"
-                xml:space="preserve">
+                xml:space="preserve"
+              >
                 <polygon
                   style="fill:#32BEA6;"
                   points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504 
-                                    391.88,166.392 " />
+                                    391.88,166.392 "
+                />
               </svg>
             </div>
             <div class="self-center flex-grow ml-3">Starter pack</div>
@@ -389,11 +441,13 @@
                 y="0px"
                 viewBox="0 0 512 512"
                 style="enable-background:new 0 0 512 512;"
-                xml:space="preserve">
+                xml:space="preserve"
+              >
                 <polygon
                   style="fill:#32BEA6;"
                   points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504 
-                                    391.88,166.392 " />
+                                    391.88,166.392 "
+                />
               </svg>
             </div>
             <div class="self-center flex-grow ml-3">20 Submission</div>
@@ -409,11 +463,13 @@
                 y="0px"
                 viewBox="0 0 512 512"
                 style="enable-background:new 0 0 512 512;"
-                xml:space="preserve">
+                xml:space="preserve"
+              >
                 <polygon
                   style="fill:#32BEA6;"
                   points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504 
-                                    391.88,166.392 " />
+                                    391.88,166.392 "
+                />
               </svg>
             </div>
             <div class="self-center flex-grow ml-3">FREE Ebook</div>
@@ -422,7 +478,8 @@
             <div class="mt-8">
               <a href="https://dev.to">
                 <div
-                  class="w-full px-8 py-4 text-center text-white bg-green-500 rounded-md hover:bg-green-800 pointer-cursor">
+                  class="w-full px-8 py-4 text-center text-white bg-green-500 rounded-md hover:bg-green-800 pointer-cursor"
+                >
                   Choose Package
                 </div>
               </a>
@@ -431,7 +488,8 @@
         </div>
         <div
           class="flex w-64 h-full bg-blue-500 bg-opacity-25 rounded-r md:flex-shrink"
-          style="background: url('https://picsum.photos/400/400?grayscale');" />
+          style="background: url('https://picsum.photos/400/400?grayscale');"
+        />
       </div>
     </div>
   </div>

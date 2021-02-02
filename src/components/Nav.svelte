@@ -49,7 +49,8 @@
         type="button"
         on:click={() => {
           toggleNavbar('collapse-navbar');
-        }}>
+        }}
+      >
         <Fa icon={faBars} class="text-white" />
       </button>
     </div>
@@ -92,18 +93,6 @@
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2"
             />
             Projects</a
-          >
-        </li>
-        <li class="flex items-center">
-          <a
-            class:selected={segment === 'stacks'}
-            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="/stacks"
-            ><Fa
-              icon={faLayerGroup}
-              class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2"
-            />
-            Stacks</a
           >
         </li>
         <li class="flex items-center">
@@ -157,7 +146,8 @@
           <button
             class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
             type="button"
-            style="transition: all 0.15s ease 0s;">
+            style="transition: all 0.15s ease 0s;"
+          >
             <a href="/contact"><span class="inline">Contact</span></a>
           </button>
         </li>

@@ -1,4 +1,4 @@
-<div class="bg-white relative min-h-screen min-w-screen">
+<div class="bg-white relative  min-w-screen">
   <div class="relative lg:absolute left-0 top-0 w-full lg:w-1/2 h-64 lg:h-full">
     <img
       alt="Foobar"
@@ -9,7 +9,7 @@
   <div
     class="max-w-6xl mx-auto flex items-center pb-20 pt-0 lg:pt-24 flex items-center justify-center h-full"
   >
-    <div class="w-1/2 hidden lg:block"></div>
+    <div class="w-1/2 hidden lg:block" />
     <div
       class="relative w-full lg:w-1/2 h-full pl-12 pr-10 lg:pl-16 lg:pr-0 flex flex-col items-start justify-center"
     >
@@ -43,7 +43,7 @@
             stroke-linejoin="round"
             stroke-width="2"
             d="M14 5l7 7m0 0l-7 7m7-7H3"
-          ></path>
+          />
         </svg>
       </a>
     </div>

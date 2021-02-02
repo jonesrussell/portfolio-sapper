@@ -1,8 +1,8 @@
 <div
-  class="min-w-screen min-h-screen flex items-center justify-center bg-cover relative flex flex-col"
+  class="min-w-screen  flex items-center justify-center bg-cover relative flex flex-col"
   style="background-image:url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80')"
 >
-  <div class="w-full h-full absolute inset-0 bg-black bg-opacity-75"></div>
+  <div class="w-full h-full absolute inset-0 bg-black bg-opacity-75" />
 
   <div class="flex max-w-6xl mx-auto">
     <div
@@ -23,11 +23,13 @@
         <a
           href="https://dev.to"
           class="flex items-center justify-center self-start px-5 py-3 border border-transparent text-base leading-tight font-medium rounded-lg shadow text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-8 mt-5"
-        >Get Started</a>
+          >Get Started</a
+        >
         <a
           href="https://dev.to"
           class="flex items-center justify-center self-start px-5 py-3 border-transparent text-base leading-tight font-medium rounded-lg shadow text-indigo-500 bg-gray-200 hover:bg-white focus:outline-none focus:border-gray-100 focus:ring-gray transition duration-150 ease-in-out md:py-4 md:text-lg md:px-8 mt-5 ml-5"
-        >How It Works</a>
+          >How It Works</a
+        >
       </div>
     </div>
     <div
@@ -43,10 +45,11 @@
             class="w-auto h-8 ml-1 text-indigo-600 fill-current"
             viewBox="0 0 52 66"
             xmlns="http://www.w3.org/2000/svg"
-          ><path
+            ><path
               d="M50 30.7L4.1.6C2.6-.4.8.9.8 2.9v60.3c0 2 1.8 3.3 3.3 2.3L50 35.3c1.5-1 1.5-3.6 0-4.6z"
               fill-rule="nonzero"
-            ></path></svg>
+            /></svg
+          >
         </span>
       </div>
       <img
