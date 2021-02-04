@@ -32,7 +32,7 @@
     />
     <div class="flex justify-center items-start flex-col">
       <h4 class="text-gray-800 font-bold">John Doe</h4>
-      <p class="text-gray-600">CEO of Something</p>
+      <p class="text-gray-800">CEO of Something</p>
     </div>
     <blockquote class="text-gray-500 mt-8 text-lg">
       "This is some rad shit! Pop lockin, Boom shockin radical. I immediately
@@ -51,7 +51,7 @@
         </div>
         <div class="flex justify-center items-start flex-col">
           <h4 class="text-gray-800 font-bold">Jane Doe</h4>
-          <p class="text-gray-600">CTO of Business</p>
+          <p class="text-gray-800">CTO of Business</p>
         </div>
       </div>
       <blockquote class="text-gray-500 mt-8 text-lg">
@@ -70,7 +70,7 @@
         </div>
         <div class="flex justify-center items-start flex-col">
           <h4 class="text-gray-800 font-bold">John Smith</h4>
-          <p class="text-gray-600">Creator of Stuff</p>
+          <p class="text-gray-800">Creator of Stuff</p>
         </div>
       </div>
       <blockquote class="text-gray-500 mt-8 text-lg">

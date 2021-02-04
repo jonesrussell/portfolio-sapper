@@ -176,7 +176,7 @@
               class="text-2xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-2xl sm:leading-9">
               Contact Us
             </h2>
-            <p class="mt-2 mb-5 text-sm text-gray-600">
+            <p class="mt-2 mb-5 text-sm text-gray-800">
               You can find our contact info below or you can feel free to leave
               us a quick message in the form.
             </p>

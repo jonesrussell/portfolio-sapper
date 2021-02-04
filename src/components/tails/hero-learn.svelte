@@ -43,7 +43,7 @@
         >
         <a
           href="https://dev.to"
-          class="relative flex inline-block h-full ml-5 text-base text-lg font-medium leading-tight text-gray-600 underline transition duration-150 ease-in-out border-transparent"
+          class="relative flex inline-block h-full ml-5 text-base text-lg font-medium leading-tight text-gray-800 underline transition duration-150 ease-in-out border-transparent"
         >
           Try Our Service for Free
         </a>

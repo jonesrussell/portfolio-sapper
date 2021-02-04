@@ -73,7 +73,7 @@
               <p class="text-sm font-medium leading-5 text-gray-900">
                 <a href="https://dev.to" class="hover:underline">Tom Cook</a>
               </p>
-              <div class="text-xs leading-5 text-gray-600">
+              <div class="text-xs leading-5 text-gray-800">
                 <time>Mid Summer, 2020</time>
               </div>
             </div>
@@ -125,7 +125,7 @@
               <p class="text-sm font-medium leading-5 text-gray-900">
                 <a href="https://dev.to" class="hover:underline">Margot Foster</a>
               </p>
-              <div class="text-xs leading-5 text-gray-600">
+              <div class="text-xs leading-5 text-gray-800">
                 <time>Jun 4, 2020</time>
               </div>
             </div>
@@ -177,7 +177,7 @@
               <p class="text-sm font-medium leading-5 text-gray-900">
                 <a href="https://dev.to" class="hover:underline">John Cooper</a>
               </p>
-              <div class="text-xs leading-5 text-gray-600">
+              <div class="text-xs leading-5 text-gray-800">
                 <time>Jun 3, 2020</time>
               </div>
             </div>

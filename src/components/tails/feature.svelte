@@ -15,7 +15,7 @@
     <Fa {icon} size="3x" class="text-black" />
   </div>
   <div class="mt-3 mb-6">
-    <h5 class="pb-2 text-xl font-bold leading-6 text-gray-600">{title}</h5>
+    <h5 class="pb-2 text-xl font-bold leading-6 text-gray-800">{title}</h5>
     <p class="mt-1 text-base leading-6 text-gray-500">
       <slot />
     </p>

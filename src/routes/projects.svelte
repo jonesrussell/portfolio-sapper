@@ -13,17 +13,17 @@
 </script>
 
 <svelte:head>
-  <title>Projects | Full Stack Developer</title>
+  <title>Past Projects | Full Stack Developer</title>
 </svelte:head>
 
 <header>
-  <h1>Projects</h1>
+  <h1>Past Projects</h1>
 </header>
 
 <section>
   <ContentBrowser
     title="Interactive Animation"
-    subtitle="Beautiful animation with SVG and JavaScript"
+    subtitle="Beautiful SVG"
     cta="Enlarge"
     {href}>
     <span slot="media"><iframe
@@ -33,10 +33,4 @@
     Learn how gold is processed from ore into dore bars in this interacive
     animation with embedded video.
   </ContentBrowser>
-
-  <ContentBrowser title="YAIA" subtitle="Rubiks Cube" cta="Spin!">
-    <span />
-  </ContentBrowser>
-
-  <div>Rubiks Cube</div>
 </section>

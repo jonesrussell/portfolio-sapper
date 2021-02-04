@@ -61,7 +61,7 @@
         <div class="flex flex-wrap items-top mb-6">
           <div class="w-full lg:w-4/12 px-4 ml-auto">
             <span
-              class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+              class="block uppercase text-gray-800 text-sm font-semibold mb-2"
               >Useful Links</span
             >
             <ul class="list-unstyled">
@@ -81,8 +81,8 @@
           </div>
           <div class="w-full lg:w-4/12 px-4">
             <span
-              class="block uppercase text-gray-600 text-sm font-semibold mb-2"
-              >Other Resources</span
+              class="block uppercase text-gray-800 text-sm font-semibold mb-2"
+              >Other</span
             >
             <ul class="list-unstyled">
               <li>
@@ -99,7 +99,7 @@
     <hr class="my-6 border-gray-400" />
     <div class="flex flex-wrap items-center md:justify-between justify-center">
       <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-        <div class="text-sm text-gray-600 font-semibold py-1">
+        <div class="text-sm text-gray-800 font-semibold py-1">
           &copy;
           {year}
           Russell Jones

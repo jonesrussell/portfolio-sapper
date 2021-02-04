@@ -7,6 +7,7 @@
   } from '@fortawesome/free-brands-svg-icons';
 
   import {
+faAddressCard,
     faBars,
     faBlog,
     faBookOpen,
@@ -73,18 +74,6 @@
         </li>
         <li class="flex items-center">
           <a
-            class:selected={segment === 'courses'}
-            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="/courses"
-            ><Fa
-              icon={faBookOpen}
-              class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2"
-            />
-            Courses</a
-          >
-        </li>
-        <li class="flex items-center">
-          <a
             class:selected={segment === 'projects'}
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             href="/projects"
@@ -92,19 +81,7 @@
               icon={faProjectDiagram}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2"
             />
-            Projects</a
-          >
-        </li>
-        <li class="flex items-center">
-          <a
-            class:selected={segment === 'faq'}
-            class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-            href="/faq"
-            ><Fa
-              icon={faQuestion}
-              class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2"
-            />
-            FAQ</a
+            Past Projects</a
           >
         </li>
       </ul>
@@ -148,7 +125,10 @@
             type="button"
             style="transition: all 0.15s ease 0s;"
           >
-            <a href="/contact"><span class="inline">Contact</span></a>
+            <a href="/contact"><Fa
+              icon={faAddressCard}
+              class="lg:text-gray-300 text-gray-500 text-lg leading-lg md:hidden"
+            /><span class="inline">Contact</span></a>
           </button>
         </li>
       </ul>

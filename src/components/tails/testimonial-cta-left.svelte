@@ -12,7 +12,7 @@
         >
           Testimonials
         </h2>
-        <p class="text-gray-600 text-lg my-6">
+        <p class="text-gray-800 text-lg my-6">
           Don't just take our word for it, read from our extensive list of case
           studies and customer testimonials.
         </p>
@@ -37,7 +37,7 @@
                   d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"
                 /></svg
               >
-              <p class="text-base text-gray-600 mt-2">
+              <p class="text-base text-gray-800 mt-2">
                 Awesome product! And the customer service is exceptionally well.
               </p>
             </div>
@@ -72,7 +72,7 @@
                   d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"
                 /></svg
               >
-              <p class="text-base text-gray-600 mt-2">
+              <p class="text-base text-gray-800 mt-2">
                 I can't express enough, how amazing this service has been for my
                 company.
               </p>
@@ -107,7 +107,7 @@
                   d="M30.7 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2C12.7 83.1 5 72.6 5 61.5c0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S30.7 31.6 30.7 42zM82.4 42c0 6.1 12.6 7 12.6 22 0 11-7.9 19.2-18.9 19.2-11.8 0-19.5-10.5-19.5-21.6 0-19.2 18-44.6 29.2-44.6 2.8 0 7.9 2 7.9 5.4S82.4 31.6 82.4 42z"
                 /></svg
               >
-              <p class="text-base text-gray-600 mt-2">
+              <p class="text-base text-gray-800 mt-2">
                 I can't express enough, how amazing this service has been for my
                 company.
               </p>

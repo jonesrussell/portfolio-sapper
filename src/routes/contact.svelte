@@ -15,7 +15,7 @@
         >
           Contact Russell
         </h2>
-        <p class="mt-2 mb-5 text-sm text-gray-600">
+        <p class="mt-2 mb-5 text-sm text-gray-800">
           My contact info below is below or you can feel free to leave me a
           quick message with the form.
         </p>

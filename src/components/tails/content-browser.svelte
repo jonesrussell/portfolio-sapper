@@ -14,23 +14,18 @@
   }
 
   .screenshot .image-container {
-    -webkit-transform: var(--transform);
     transform: var(--transform);
-    -webkit-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
-    -webkit-transition-property: -webkit-transform, -webkit-box-shadow;
     transition-property: -webkit-transform, -webkit-box-shadow;
     transition-property: transform, box-shadow;
     transition-property: transform, box-shadow, -webkit-transform,
       -webkit-box-shadow;
-    -webkit-transition-duration: 0.25s;
     transition-duration: 0.25s;
-    -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 </style>
 
-<div class="px-8 my-4 mx-auto flex items-center min-w-screen bg-white">
+<div class="px-8 my-4 mx-auto pb-8 flex items-center min-w-screen bg-white">
   <div class="relative w-1/2 h-full pl-12">
     <p class="text-sm uppercase font-bold text-indigo-500 tracking-wide">
       {title}
@@ -38,7 +33,7 @@
     <h2 class="text-4xl font-bold text-gray-900 mt-5 leading-tight">
       {@html subtitle}
     </h2>
-    <p class="text-gray-600 text-base mt-3">
+    <p class="text-gray-800 text-base mt-3 pr-4">
       <slot />
     </p>
     <a

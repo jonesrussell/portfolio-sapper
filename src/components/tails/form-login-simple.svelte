@@ -33,7 +33,7 @@
               type="checkbox"
               class="text-indigo-600 border form-checkbox"
             />
-            <span class="mx-2 text-sm text-gray-600">Remember me</span>
+            <span class="mx-2 text-sm text-gray-800">Remember me</span>
           </label>
         </div>
         <div>

@@ -21,7 +21,7 @@
         <br />
         help build your Empire.
       </h2>
-      <p class="text-gray-600 text-base mt-5">
+      <p class="text-gray-800 text-base mt-5">
         Are you ready for some badass features? If so, we've got you covered.
         From Cotton Candy Flavored Donuts to Fully Featured Eggs and Bacon.
         Whatever the fuck that means.

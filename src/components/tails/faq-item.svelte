@@ -7,7 +7,7 @@
   <h3 class="font-bold text-lg sm:text-xl md:text-2xl text-purple-500">
     {question}
   </h3>
-  <p class="mt-2 text-gray-600 text-base sm:text-lg md:text-normal">
+  <p class="mt-2 text-gray-800 text-base sm:text-lg md:text-normal">
     <slot />
   </p>
 </div>
