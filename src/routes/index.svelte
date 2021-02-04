@@ -23,7 +23,7 @@
 </div>
 
 <div
-  class="max-w-screen-xl p-4 bg-white dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative py-26 lg:mt-10"
+  class="max-w-screen-xl p-4 bg-white dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative pb-12 lg:mt-10"
 >
   <div class="relative">
     <div
@@ -38,7 +38,7 @@
         >
           And I'm The Developer You're Looking For
         </h4>
-        <p class="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
+        <p class="mt-4 text-lg leading-6 text-gray-800 dark:text-gray-300">
           With over 20 years of experience as a <em>Full Stack Developer</em>,
           and <strong>DevOps Expert</strong>, I can help you realize your vision
           by bringing it to the Cloud.
