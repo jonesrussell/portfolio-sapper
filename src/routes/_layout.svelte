@@ -42,4 +42,6 @@
   </div>
 </main>
 
+<a class="github-fork-ribbon" href="https://github.com/jonesrussell/portfolio-sapper/" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+
 <Footer year={2021} />
