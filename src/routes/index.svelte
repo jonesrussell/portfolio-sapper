@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Russell Jones | Full Stack Developer &amp; DevOps Dude</title>
+  <title>Russell Jones | Full Stack Developer &amp; DevOps Expert</title>
 </svelte:head>
 
 <div class="flex flex-wrap justify-center">
@@ -60,7 +60,7 @@
               <span
                 class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200"
               >
-                LAMP/LEMP Stack
+                Linux, Apache, MySQL, PHP
               </span>
             </div>
           </li>
