@@ -1,9 +1,9 @@
-<script context="module" lang="typescript">
+<script context="module" lang="ts">
   export async function preload(this: any, params: any) {
-    const goo = params.slug;
-    // the `slug` parameter is available because
+    const id = params.id;
+    // the `id` parameter is available because
     // this file is called [slug].svelte
-    const res = await this.fetch(`blog/${goo}.json`);
+    const res = await this.fetch(`blog/${id}.json`);
     const data = await res.json();
 
     if (res.status !== 200) {
@@ -14,9 +14,19 @@
   }
 </script>
 
-<script lang="typescript">
-  export let post: { slug: string; title: string; html: any };
+<script lang="ts">
+  export let post: { id: string; title: string; content_html: any };
 </script>
+
+<svelte:head>
+  <title>{post.title}</title>
+</svelte:head>
+
+<h1>{post.title}</h1>
+
+<div class="content">
+  {@html post.html}
+</div>
 
 <style>
   /*
@@ -53,13 +63,3 @@
     margin: 0 0 0.5em 0;
   }
 </style>
-
-<svelte:head>
-  <title>{post.title}</title>
-</svelte:head>
-
-<h1>{post.title}</h1>
-
-<div class="content">
-  {@html post.html}
-</div>

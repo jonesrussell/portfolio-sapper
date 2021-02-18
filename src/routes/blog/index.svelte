@@ -28,8 +28,6 @@
     }[];
   };
 
-  const firstPost = feed.items.shift();
-
   const {
     id,
     image,
@@ -38,7 +36,7 @@
     content_html,
     date_published,
     tags,
-  } = firstPost;
+  } = feed.items.shift();
 
   function trunc(text, max) {
     return text.substr(0, max - 1) + (text.length > max ? '&hellip;' : '');
@@ -52,7 +50,7 @@
 <section class="mb-10">
   <h1>Blog</h1>
 
-  <ContentCard date={date_published} {title}>
+  <ContentCard date={date_published} {title} href={`/blog/${id}`}>
     {@html trunc(content_text, 125)}
   </ContentCard>
 
