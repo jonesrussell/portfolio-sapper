@@ -1,46 +1,72 @@
-<script context="module">
-  export function preload({ params, query }) {
+<script context="module" lang="ts">
+  export function preload({}) {
     return this.fetch(`feed.json`)
       .then((r) => r.json())
-      .then((posts) => {
-        return { posts };
+      .then((feed) => {
+        return { feed };
       });
   }
 </script>
 
 <script lang="ts">
-  export let posts: {
+  import ContentCard from './../../components/tails/content-card.svelte';
+  import { format } from 'date-fns';
+
+  export let feed: {
     version: string;
     description: string;
     home_page_url: string;
     feed_url: string;
     items: {
       id: string;
+      image: string;
       title: string;
+      content_text: string;
       content_html: string;
-      summary: string;
       date_published: string;
       tags: string[];
     }[];
-  }[];
+  };
+
+  const firstPost = feed.items.shift();
+
+  const {
+    id,
+    image,
+    title,
+    content_text,
+    content_html,
+    date_published,
+    tags,
+  } = firstPost;
+
+  function trunc(text, max) {
+    return text.substr(0, max - 1) + (text.length > max ? '&hellip;' : '');
+  }
 </script>
 
 <svelte:head>
   <title>Blog</title>
 </svelte:head>
 
-<section class="">
+<section class="mb-10">
   <h1>Blog</h1>
 
+  <ContentCard date={date_published} {title}>
+    {@html trunc(content_text, 125)}
+  </ContentCard>
+
   <ul>
-    {#each posts.items as { id, title, date_published }}
+    {#each feed.items as { id, title, date_published }}
       <!-- we're using the non-standard `rel=prefetch` attribute to
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
       <li class="mb-8">
         <h2><a rel="prefetch" href={`/blog/${id}`}>{title}</a></h2>
-        <div><time>{new Date(date_published).toString()}</time></div>
+        <div>
+          <time>{format(new Date(date_published), 'PPP')}</time>
+        </div>
       </li>
     {/each}
   </ul>
