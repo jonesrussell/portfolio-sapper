@@ -36,7 +36,7 @@
     content_html,
     date_published,
     tags,
-  } = feed.items.shift();
+  } = feed.items[0];
 
   function trunc(text, max) {
     return text.substr(0, max - 1) + (text.length > max ? '&hellip;' : '');
