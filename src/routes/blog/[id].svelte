@@ -10,9 +10,14 @@
 
         // Convert images to full urls
         const regex = /src="(.*)"/gi;
-        post.content_html = post.content_html.replaceAll(
+        /*post.content_html = post.content_html.replaceAll(
           regex,
           'src="https://blog.jonesrussell42.xyz/$1"'
+        );*/
+
+        post.content_html = post.content_html.replaceAll(
+          regex,
+          'src=\\"https://blog.jonesrussell42.xyz/$1\\"'
         );
 
         return { post };
