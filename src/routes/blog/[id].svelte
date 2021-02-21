@@ -3,11 +3,10 @@
     const id = params.params.id;
     // the `id` parameter is available because
     // this file is called [id].svelte
-    // const res = await this.fetch(`blog/${id}.json`);
     return this.fetch(`feed.json`)
-      .then((r) => r.json())
-      .then((feed) => {
-        const post = feed.items.filter((item) => item.id == id)[0];
+      .then((r: any) => r.json())
+      .then((feed: any) => {
+        const post = feed.items.filter((item: any) => item.id == id)[0];
 
         // Convert images to full urls
         const regex = /src="(.*)"/gi;
@@ -93,10 +92,5 @@
 
   .content :global(li) {
     margin: 0 0 0.5em 0;
-  }
-
-  .highlight pre {
-    padding: 10px;
-    margin: 10px 0;
   }
 </style>
