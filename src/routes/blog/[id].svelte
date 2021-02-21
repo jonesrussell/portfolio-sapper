@@ -9,15 +9,10 @@
         const post = feed.items.filter((item: any) => item.id == id)[0];
 
         // Convert images to full urls
-        const regex = /src="(.*)"/gi;
-        /*post.content_html = post.content_html.replaceAll(
-          regex,
-          'src="https://blog.jonesrussell42.xyz/$1"'
-        );*/
-
+        const regex = /src=\\*"(.*)\\*"/gi;
         post.content_html = post.content_html.replaceAll(
           regex,
-          'src=\\"https://blog.jonesrussell42.xyz/$1\\"'
+          'src="https://blog.jonesrussell42.xyz$1"'
         );
 
         return { post };
@@ -77,25 +72,5 @@
     font-size: 2.5em;
     font-weight: 700;
     font-style: italic;
-  }
-
-  .content :global(pre) {
-    background-color: #f9f9f9;
-    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
-    padding: 0.5em;
-    border-radius: 2px;
-    overflow-x: auto;
-  }
-
-  .content :global(pre) :global(code) {
-    background-color: #272822;
-  }
-
-  .content :global(ul) {
-    line-height: 1.5;
-  }
-
-  .content :global(li) {
-    margin: 0 0 0.5em 0;
   }
 </style>

@@ -3,7 +3,8 @@
     return this.fetch(`feed.json`)
       .then((r) => r.json())
       .then((feed) => {
-        return { feed };
+        const firstPost = feed.items.shift();
+        return { firstPost, feed };
       });
   }
 </script>
@@ -11,6 +12,16 @@
 <script lang="ts">
   import ContentCard from './../../components/tails/content-card.svelte';
   import { format } from 'date-fns';
+
+  export let firstPost: {
+    id: string;
+    image: string;
+    title: string;
+    content_text: string;
+    content_html: string;
+    date_published: string;
+    tags: string[];
+  };
 
   export let feed: {
     version: string;
@@ -28,17 +39,7 @@
     }[];
   };
 
-  const {
-    id,
-    image,
-    title,
-    content_text,
-    content_html,
-    date_published,
-    tags,
-  } = feed.items[0];
-
-  function trunc(text, max) {
+  function trunc(text: string, max: number) {
     return text.substr(0, max - 1) + (text.length > max ? '&hellip;' : '');
   }
 </script>
@@ -50,8 +51,12 @@
 <section class="mb-10">
   <h1>Blog</h1>
 
-  <ContentCard date={date_published} {title} href={`/blog/${id}`}>
-    {@html trunc(content_text, 125)}
+  <ContentCard
+    date={firstPost.date_published}
+    title={firstPost.title}
+    href={`/blog/${firstPost.id}`}
+  >
+    {@html trunc(firstPost.content_text, 125)}
   </ContentCard>
 
   <ul>
