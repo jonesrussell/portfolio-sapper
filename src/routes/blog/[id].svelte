@@ -7,7 +7,7 @@
       .then((r: any) => r.json())
       .then((feed: any) => {
         const post = feed.items.filter((item: any) => item.id == id)[0];
-        console.log('post', post);
+        //console.log('post', post);
         // Convert images to full urls
         /*
         const regex = /src=\"(.*)\"/gi;

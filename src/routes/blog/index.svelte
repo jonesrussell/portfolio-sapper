@@ -1,6 +1,9 @@
 <script context="module" lang="ts">
-  export function preload({}) {
-    return this.fetch(`feed.json`)
+  export function preload(_page: any, session: any) {
+    const { BLOG_URL } = session;
+    // const href: string = BELL_CREEK_URL;
+
+    return this.fetch(BLOG_URL)
       .then((r) => r.json())
       .then((feed) => {
         const firstPost = feed.items.shift();
