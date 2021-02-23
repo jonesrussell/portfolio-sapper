@@ -33,7 +33,7 @@
     >
       <div>
         <p
-          class="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider text-purple-600 uppercase rounded-full bg-purple-200"
+          class="inline-block px-3 py-1 mb-0 text-xs font-medium tracking-wider text-purple-600 uppercase rounded-full bg-purple-200 m-0 mb-4"
         >
           {format(new Date(date), 'PPP')}
         </p>
@@ -41,7 +41,7 @@
       <h2 class="mb-3 text-xl font-bold leading-none sm:text-2xl">
         {title}
       </h2>
-      <p class="mb-5 text-gray-800 py-5">
+      <p class="m-0 text-gray-800 py-3">
         <slot />
       </p>
       <div class="flex items-center">
