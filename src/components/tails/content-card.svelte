@@ -38,9 +38,9 @@
           {format(new Date(date), 'PPP')}
         </p>
       </div>
-      <h2 class="mb-3 text-xl font-bold leading-none sm:text-2xl">
+      <h3 class="mb-3 text-xl font-bold leading-none sm:text-2xl">
         {title}
-      </h2>
+      </h3>
       <p class="m-0 text-gray-800 py-3">
         <slot />
       </p>

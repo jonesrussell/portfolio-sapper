@@ -16,8 +16,6 @@ spec:
         - name: portfolio
           image: jonesrussell/portfolio-app:latest
           env:
-            - name: BLOG_URL
-              value: "https://blog.jonesrussell42.xyz"
             - name: BELL_CREEK_URL
               value: "https://bell-creek.jonesrussell42.xyz"
           ports:

@@ -1,4 +1,6 @@
 <script context="module" lang="ts">
+  import ContentCard from './../../components/tails/content-card.svelte';
+  import BlogPosts from './../../components/tails/blog-posts.svelte';
   export function preload() {
     return this.fetch(`feed.json`)
       .then((r) => r.json())
@@ -10,7 +12,6 @@
 </script>
 
 <script lang="ts">
-  import ContentCard from './../../components/tails/content-card.svelte';
   import { format } from 'date-fns';
 
   export let firstPost: {
@@ -58,6 +59,8 @@
   >
     {@html trunc(firstPost.content_text, 125)}
   </ContentCard>
+
+  <BlogPosts pretitle="Latest Posts" title="foobar" />
 
   <ul>
     {#each feed.items as { id, title, date_published }}
