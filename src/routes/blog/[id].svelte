@@ -6,7 +6,11 @@
     return this.fetch(`feed.json`)
       .then((r: any) => r.json())
       .then((feed: any) => {
-        const post = feed.items.filter((item: any) => item.id == id)[0];
+        let post = feed.items.filter((item: any) => item.id == id)[0];
+        post.replaceAll(
+          /src="(.*?)"/gi,
+          'src="https://blog.jonesrussell.xyz/$1"'
+        );
         //console.log('post', post);
         // Convert images to full urls
         /*
