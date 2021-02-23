@@ -7,19 +7,12 @@
       .then((r: any) => r.json())
       .then((feed: any) => {
         let post = feed.items.filter((item: any) => item.id == id)[0];
+
         post.replaceAll(
           /src="(.*?)"/gi,
           'src="https://blog.jonesrussell.xyz/$1"'
         );
-        //console.log('post', post);
-        // Convert images to full urls
-        /*
-        const regex = /src=\"(.*)\"/gi;
-        post.content_html = post.content_html.replaceAll(
-          regex,
-          'src="https://blog.jonesrussell42.xyz/$1"'
-        );
-*/
+
         return { post };
       });
   }

@@ -3,7 +3,7 @@
     const { BLOG_URL } = session;
     // const href: string = BELL_CREEK_URL;
 
-    return this.fetch(BLOG_URL)
+    return this.fetch(`${BLOG_URL}/feed.json`)
       .then((r) => r.json())
       .then((feed) => {
         const firstPost = feed.items.shift();
