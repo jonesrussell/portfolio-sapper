@@ -1,11 +1,15 @@
 <script context="module" lang="ts">
   import ContentCard from './../../components/tails/content-card.svelte';
   import BlogPosts from './../../components/tails/blog-posts.svelte';
+
   export function preload() {
     return this.fetch(`feed.json`)
       .then((r) => r.json())
       .then((feed) => {
         const firstPost = feed.items.shift();
+        const secondPost = feed.items.shift();
+        const thirdPost = feed.items.shift();
+        const fourthPost = feed.items.shift();
         return { firstPost, feed };
       });
   }
@@ -23,6 +27,38 @@
     date_published: string;
     tags: string[];
   };
+
+  export let secondPost: {
+    id: string;
+    image: string;
+    title: string;
+    content_text: string;
+    content_html: string;
+    date_published: string;
+    tags: string[];
+  };
+
+  export let thirdPost: {
+    id: string;
+    image: string;
+    title: string;
+    content_text: string;
+    content_html: string;
+    date_published: string;
+    tags: string[];
+  };
+
+  export let fourthPost: {
+    id: string;
+    image: string;
+    title: string;
+    content_text: string;
+    content_html: string;
+    date_published: string;
+    tags: string[];
+  };
+
+  export let posts = [secondPost, thirdPost, fourthPost];
 
   export let feed: {
     version: string;
@@ -60,7 +96,7 @@
     {@html trunc(firstPost.content_text, 125)}
   </ContentCard>
 
-  <BlogPosts pretitle="Latest Posts" title="foobar" />
+  <BlogPosts pretitle="Latest Posts" {posts} />
 
   <ul>
     {#each feed.items as { id, title, date_published }}
