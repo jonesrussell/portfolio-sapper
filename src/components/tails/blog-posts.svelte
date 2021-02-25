@@ -31,17 +31,18 @@
     tags: string[];
   };
 
-  const base = 'https://blog.jonesrussell42.xyz/';
-  const regex = /<img\b[^>]+?src\s*=\s*['"]?([^\s'"?#>]+)/;
+  const base = 'https://blog.jonesrussell42.xyz';
+  const regex = /<img.*?\/>/;
 
-  const secondImg = `${secondPost.content_html.match(regex)}`;
-  console.log(secondImg);
-  // secondImg?.replace(/src="(.*)"/, `src="${base}$1"`);
+  let secondImg = `${secondPost.content_html.match(regex)}`;
+  secondImg = secondImg?.replace(/src="(.*)"/, `src="${base}$1"`);
 
   const thirdImg = `${thirdPost.content_html.match(regex)}`;
+  console.log(thirdImg);
   thirdImg?.replace(/src="(.*)"/, `src="${base}$1"`);
 
   const fourthImg = `${fourthPost.content_html.match(regex)}`;
+  console.log(fourthImg);
   fourthImg?.replace(/src="(.*)"/, `src="${base}$1"`);
 
   function trunc(text: string, max: number) {
