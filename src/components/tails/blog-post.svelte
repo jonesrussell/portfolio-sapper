@@ -1,13 +1,12 @@
-<script>
-  export let image = 'src';
-  export let alt = 'alt';
-  export let title = '';
-  export let intro = '';
+<script lang="ts">
+  export let img: string = '';
+  export let title: string = '';
 </script>
 
 <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
   <div class="relative flex-shrink-0">
-    <img class="object-cover w-full h-56" src={image} {alt} />
+    <!--<img class="object-cover w-full h-56" src={imgSrc} />-->
+    {img}
   </div>
   <div class="flex flex-col justify-between flex-1">
     <div class="flex flex-col justify-between flex-1 p-6 bg-white">
@@ -17,7 +16,7 @@
           class="text-xl font-semibold leading-7 text-gray-900">{title}</a
         >
         <p class="mt-3 text-base leading-6 text-gray-500">
-          {intro}
+          <slot />
         </p>
       </div>
       <p class="mt-3 text-sm font-medium leading-5">

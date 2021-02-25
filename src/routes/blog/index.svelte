@@ -10,7 +10,7 @@
         const secondPost = feed.items.shift();
         const thirdPost = feed.items.shift();
         const fourthPost = feed.items.shift();
-        return { firstPost, feed };
+        return { firstPost, secondPost, thirdPost, fourthPost, feed };
       });
   }
 </script>
@@ -58,8 +58,6 @@
     tags: string[];
   };
 
-  export let posts = [secondPost, thirdPost, fourthPost];
-
   export let feed: {
     version: string;
     description: string;
@@ -96,7 +94,7 @@
     {@html trunc(firstPost.content_text, 125)}
   </ContentCard>
 
-  <BlogPosts pretitle="Latest Posts" {posts} />
+  <BlogPosts {secondPost} {thirdPost} {fourthPost} />
 
   <ul>
     {#each feed.items as { id, title, date_published }}
