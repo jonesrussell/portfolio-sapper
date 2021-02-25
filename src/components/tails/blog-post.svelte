@@ -2,10 +2,17 @@
   export let img: string = '';
   export let title: string = '';
   export let href: string = '';
+  export let tags: string[];
+
+  const base = 'https://blog.jonesrussell42.xyz/';
+
+  img = img?.replace(/src="[^http](.*)"/, `src="${base}$1"`);
 
   if (img === 'null') {
     img = '<img src="generic-blog.png"/>';
   }
+
+  console.log('img', img);
 </script>
 
 <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
@@ -22,14 +29,14 @@
           <slot />
         </p>
       </div>
-      <p class="mt-3 text-sm font-medium leading-5">
+      <!--<p class="mt-3 text-sm font-medium leading-5">
         <a href="https://dev.to" class="inline-block">
           <span
             class="inline-flex items-center px-3 py-1 text-xs font-medium leading-tight text-orange-800 bg-orange-100 rounded-full"
-            >Eloquent</span
+            >{tags}</span
           >
         </a>
-      </p>
+      </p>-->
     </div>
   </div>
 </div>

@@ -31,19 +31,13 @@
     tags: string[];
   };
 
-  const base = 'https://blog.jonesrussell42.xyz';
   const regex = /<img.*?\/>/;
 
-  let secondImg = `${secondPost.content_html.match(regex)}`;
-  secondImg = secondImg?.replace(/src="(.*)"/, `src="${base}$1"`);
+  const secondImg = `${secondPost.content_html.match(regex)}`;
 
   const thirdImg = `${thirdPost.content_html.match(regex)}`;
-  console.log(thirdImg);
-  thirdImg?.replace(/src="(.*)"/, `src="${base}$1"`);
 
   const fourthImg = `${fourthPost.content_html.match(regex)}`;
-  console.log(fourthImg);
-  fourthImg?.replace(/src="(.*)"/, `src="${base}$1"`);
 
   function trunc(text: string, max: number) {
     return text.substr(0, max - 1) + (text.length > max ? '&hellip;' : '');
