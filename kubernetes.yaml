@@ -12,9 +12,11 @@ spec:
       labels:
         app: portfolio-sapper
     spec:
+      terminationGracePeriodSeconds: 30
       containers:
         - name: portfolio
           image: jonesrussell/portfolio-app:latest
+          imagePullPolicy: "Always"
           env:
             - name: BELL_CREEK_URL
               value: "https://bell-creek.jonesrussell42.xyz"
