@@ -33,6 +33,7 @@
 
   const regex = /<img.*?\/>/;
 
+  // @TODO loop these
   const secondImg = `${secondPost.content_html.match(regex)}`;
 
   const thirdImg = `${thirdPost.content_html.match(regex)}`;
@@ -44,7 +45,7 @@
   }
 </script>
 
-<div class="bg-gray-100 py-12">
+<div class="bg-gray-100 py-6">
   <div
     class="flex flex-col justify-center items-center container px-4 pt-2 pb-8 mx-auto sm:px-6 lg:px-8"
   >

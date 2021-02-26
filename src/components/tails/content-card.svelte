@@ -50,7 +50,7 @@
           aria-label=""
           class="inline-flex text-lg underline items-center transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
         >
-          Read More
+          Check it out
           <svg
             class="inline-block w-2 ml-2"
             fill="currentColor"

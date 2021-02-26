@@ -2,22 +2,32 @@
   export let img: string = '';
   export let title: string = '';
   export let href: string = '';
-  export let tags: string[];
+  // export let tags: string[];
 
+  // Nice tailwind classes for card image
+  const classes = 'object-cover w-full h-56';
+
+  // @TODO pull from session BLOG_URL
   const base = 'https://blog.jonesrussell42.xyz/';
 
+  // Prepend 'base' to any images hosted at blog 'base'
   img = img?.replace(/src="[^http](.*)"/, `src="${base}$1"`);
 
-  if (img === 'null') {
-    img = '<img src="generic-blog.png"/>';
-  }
+  // @TODO add classes better
+  img = img?.replace(/src="(.*)"/, `src="$1" class="${classes}"`);
 
-  console.log('img', img);
+  // No image? insert generic
+  // @TODO null is a string...
+  if (img === 'null') {
+    img = `<img src="generic-blog.png" class="${classes}"/>`;
+  }
 </script>
 
 <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
   <div class="relative flex-shrink-0">
-    {@html img}
+    <a {href}>
+      {@html img}
+    </a>
   </div>
   <div class="flex flex-col justify-between flex-1">
     <div class="flex flex-col justify-between flex-1 p-6 bg-white">
@@ -25,7 +35,7 @@
         <a {href} class="text-xl font-semibold leading-7 text-gray-900"
           >{title}</a
         >
-        <p class="mt-3 text-base leading-6 text-gray-500">
+        <p class="m-0 mt-3 text-base leading-6 text-gray-800">
           <slot />
         </p>
       </div>
@@ -40,3 +50,9 @@
     </div>
   </div>
 </div>
+
+<style>
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
