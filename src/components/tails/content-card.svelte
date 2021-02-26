@@ -36,11 +36,11 @@
         {title}
       </h3>
       <div>
-        <p
-          class="inline-block px-3 py-1 mb-0 text-xs font-medium tracking-wider text-purple-600 uppercase rounded-full bg-purple-200 m-0 mb-4"
+        <time
+          class="inline-block px-3 py-1 text-xs font-medium tracking-wider text-purple-600 uppercase rounded-full bg-purple-200 m-0 mb-4"
         >
           {format(date, 'PPP')}
-        </p>
+        </time>
       </div>
       <p class="m-0 text-gray-800 py-3 leading-6">
         <slot />

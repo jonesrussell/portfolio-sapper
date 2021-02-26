@@ -50,13 +50,25 @@
     <div
       class="grid max-w-lg gap-5 mx-auto mt-12 md:grid-cols-2 lg:grid-cols-3 md:max-w-none"
     >
-      <BlogPost img={secondImg} title={secondPost.title}>
+      <BlogPost
+        img={secondImg}
+        title={secondPost.title}
+        date={new Date(secondPost.date_published)}
+      >
         {@html trunc(secondPost.content_text, 75)}
       </BlogPost>
-      <BlogPost img={thirdImg} title={thirdPost.title}>
+      <BlogPost
+        img={thirdImg}
+        title={thirdPost.title}
+        date={new Date(thirdPost.date_published)}
+      >
         {@html trunc(thirdPost.content_text, 75)}
       </BlogPost>
-      <BlogPost img={fourthImg} title={fourthPost.title}>
+      <BlogPost
+        img={fourthImg}
+        title={fourthPost.title}
+        date={new Date(fourthPost.date_published)}
+      >
         {@html trunc(fourthPost.content_text, 75)}
       </BlogPost>
     </div>

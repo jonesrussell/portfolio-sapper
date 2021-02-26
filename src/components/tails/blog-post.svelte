@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { format } from 'date-fns';
+
+  export let date: Date = new Date();
   export let img: string = '';
   export let title: string = '';
   export let href: string = '';
@@ -30,7 +33,13 @@
     </a>
   </div>
   <div class="flex flex-col justify-between flex-1">
-    <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+    <div class="flex flex-col flex-1 p-6 bg-white">
+      <div class="pb-4">
+        <time
+          class="inline-block px-3 py-1 text-xs font-medium tracking-wider text-purple-600 uppercase rounded-full bg-purple-200 m-0 mb-4"
+          >{format(date, 'PPP')}</time
+        >
+      </div>
       <div>
         <a
           {href}

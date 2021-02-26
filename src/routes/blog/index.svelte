@@ -108,7 +108,7 @@
           <div class="pb-4">
             <time>{format(new Date(date_published), 'PPP')}</time>
           </div>
-          <div style="font-size:18px;">
+          <div class="text-lg">
             {@html trunc(content_text, 125)}
           </div>
         </li>
