@@ -43,7 +43,7 @@
   }
 </script>
 
-<div class="bg-gray-100 py-6">
+<div class="py-6">
   <div
     class="flex flex-col justify-center items-center container px-4 pt-2 pb-8 mx-auto sm:px-6 lg:px-8"
   >

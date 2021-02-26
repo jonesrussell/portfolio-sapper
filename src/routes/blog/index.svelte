@@ -2,10 +2,10 @@
   import ContentCard from './../../components/tails/content-card.svelte';
   import BlogPosts from './../../components/tails/blog-posts.svelte';
 
-  export function preload() {
+  export function preload(this: any) {
     return this.fetch(`feed.json`)
-      .then((r) => r.json())
-      .then((feed) => {
+      .then((r: { json: () => any }) => r.json())
+      .then((feed: { items: any[] }) => {
         const firstPost = feed.items.shift();
         const secondPost = feed.items.shift();
         const thirdPost = feed.items.shift();
@@ -87,7 +87,7 @@
   <h1>Blog</h1>
 
   <ContentCard
-    date={firstPost.date_published}
+    date={new Date(firstPost.date_published)}
     title={firstPost.title}
     href={`/blog/${firstPost.id}`}
   >
@@ -96,7 +96,7 @@
 
   <BlogPosts {secondPost} {thirdPost} {fourthPost} />
 
-  <div class="bg-gray-100 py-2 p-8">
+  <div class="py-2 p-8">
     <ul>
       {#each feed.items as { id, title, date_published, content_text }}
         <!-- we're using the non-standard `rel=prefetch` attribute to

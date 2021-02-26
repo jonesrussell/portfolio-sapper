@@ -4,6 +4,7 @@
   export let date: Date = new Date();
   export let title: string = 'Your Next Great Idea';
   export let href: string = '#';
+  export let link_text: string = 'Check it out';
 </script>
 
 <div
@@ -29,29 +30,29 @@
       </svg>
     </div>
     <div
-      class="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2"
+      class="flex flex-col justify-center p-8 bg-white lg:p-12 lg:pl-10 lg:w-1/2"
     >
+      <h3 class="mb-5 text-xl font-bold leading-none sm:text-2xl">
+        {title}
+      </h3>
       <div>
         <p
           class="inline-block px-3 py-1 mb-0 text-xs font-medium tracking-wider text-purple-600 uppercase rounded-full bg-purple-200 m-0 mb-4"
         >
-          {format(new Date(date), 'PPP')}
+          {format(date, 'PPP')}
         </p>
       </div>
-      <h3 class="mb-3 text-xl font-bold leading-none sm:text-2xl">
-        {title}
-      </h3>
-      <p class="m-0 text-gray-800 py-3">
+      <p class="m-0 text-gray-800 py-3 leading-6">
         <slot />
       </p>
-      <div class="flex items-center">
+      <div class="flex items-center mt-4">
         <a
           {href}
           rel="prefetch"
           aria-label=""
           class="inline-flex text-lg underline items-center transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
         >
-          Check it out
+          {link_text}
           <svg
             class="inline-block w-2 ml-2"
             fill="currentColor"
