@@ -25,15 +25,17 @@
 
 <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
   <div class="relative flex-shrink-0">
-    <a {href}>
+    <a {href} rel="prefetch">
       {@html img}
     </a>
   </div>
   <div class="flex flex-col justify-between flex-1">
     <div class="flex flex-col justify-between flex-1 p-6 bg-white">
       <div>
-        <a {href} class="text-xl font-semibold leading-7 text-gray-900"
-          >{title}</a
+        <a
+          {href}
+          rel="prefetch"
+          class="text-xl font-semibold leading-7 text-gray-900">{title}</a
         >
         <p class="m-0 mt-3 text-base leading-6 text-gray-800">
           <slot />

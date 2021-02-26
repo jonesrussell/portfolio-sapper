@@ -96,18 +96,33 @@
 
   <BlogPosts {secondPost} {thirdPost} {fourthPost} />
 
-  <ul>
-    {#each feed.items as { id, title, date_published }}
-      <!-- we're using the non-standard `rel=prefetch` attribute to
+  <div class="bg-gray-100 py-2 p-8">
+    <ul>
+      {#each feed.items as { id, title, date_published, content_text }}
+        <!-- we're using the non-standard `rel=prefetch` attribute to
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-      <li class="mb-8">
-        <h2><a rel="prefetch" href={`/blog/${id}`}>{title}</a></h2>
-        <div>
-          <time>{format(new Date(date_published), 'PPP')}</time>
-        </div>
-      </li>
-    {/each}
-  </ul>
+        <li class="mb-12">
+          <h2><a rel="prefetch" href={`/blog/${id}`}>{title}</a></h2>
+          <div class="pb-4">
+            <time>{format(new Date(date_published), 'PPP')}</time>
+          </div>
+          <div style="font-size:18px;">
+            {@html trunc(content_text, 125)}
+          </div>
+        </li>
+      {/each}
+    </ul>
+  </div>
 </section>
+
+<style>
+  h2 {
+    padding: 0;
+  }
+
+  h2:hover {
+    text-decoration: underline;
+  }
+</style>

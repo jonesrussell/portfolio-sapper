@@ -35,9 +35,7 @@
 
   // @TODO loop these
   const secondImg = `${secondPost.content_html.match(regex)}`;
-
   const thirdImg = `${thirdPost.content_html.match(regex)}`;
-
   const fourthImg = `${fourthPost.content_html.match(regex)}`;
 
   function trunc(text: string, max: number) {

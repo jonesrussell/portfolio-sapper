@@ -47,6 +47,7 @@
       <div class="flex items-center">
         <a
           {href}
+          rel="prefetch"
           aria-label=""
           class="inline-flex text-lg underline items-center transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
         >
