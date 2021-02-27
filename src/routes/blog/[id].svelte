@@ -71,4 +71,12 @@
     font-weight: 700;
     font-style: italic;
   }
+
+  code {
+    @apply text-white;
+  }
+
+  div.highlight {
+    @apply p-8;
+  }
 </style>

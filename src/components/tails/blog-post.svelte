@@ -7,9 +7,6 @@
   export let title: string = '';
   export let href: string = '';
 
-  // Nice tailwind classes for card image
-  const classes = 'object-cover w-full h-56';
-
   hljs.highlightAll();
 
   // @TODO pull from session BLOG_URL
@@ -19,6 +16,8 @@
   img = img?.replace(/src="[^http](.*)"/, `src="${base}$1"`);
 
   // @TODO add classes better
+  // Nice tailwind classes for card image
+  const classes = 'object-cover w-full h-56';
   img = img?.replace(/src="(.*)"/, `src="$1" class="${classes}"`);
 
   // No image? insert generic
@@ -52,14 +51,6 @@
           <slot />
         </p>
       </div>
-      <!--<p class="mt-3 text-sm font-medium leading-5">
-        <a href="https://dev.to" class="inline-block">
-          <span
-            class="inline-flex items-center px-3 py-1 text-xs font-medium leading-tight text-orange-800 bg-orange-100 rounded-full"
-            >{tags}</span
-          >
-        </a>
-      </p>-->
     </div>
   </div>
 </div>
