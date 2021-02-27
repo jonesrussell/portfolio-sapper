@@ -71,11 +71,6 @@
     font-weight: 700;
     font-style: italic;
   }
-
-  div.highlight {
-    @apply p-8;
-  }
-
   article {
     @apply text-xl;
   }
