@@ -72,11 +72,11 @@
     font-style: italic;
   }
 
-  code {
-    @apply text-white;
-  }
-
   div.highlight {
     @apply p-8;
+  }
+
+  article {
+    @apply text-xl;
   }
 </style>

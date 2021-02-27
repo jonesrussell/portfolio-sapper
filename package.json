@@ -105,6 +105,7 @@
     "svelte": "^3.34.0",
     "svelte-check": "^1.1.36",
     "svelte-fa": "github:Cweili/svelte-fa#pull/60/head",
+    "svelte-highlight": "^0.7.1",
     "svelte-preprocess": "^4.6.9",
     "tailwindcss": "^2.0.3",
     "tslib": "^2.1.0",
