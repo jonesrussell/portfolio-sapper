@@ -8,9 +8,9 @@
       .then((feed: any) => {
         let post = feed.items.filter((item: any) => item.id == id)[0];
 
-        post.replaceAll(
+        post.content_html = post.content_html.replace(
           /src="(.*?)"/gi,
-          'src="https://blog.jonesrussell.xyz/$1"'
+          'src="https://blog.jonesrussell42.xyz/$1"'
         );
 
         return { post };
