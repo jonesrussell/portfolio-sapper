@@ -37,7 +37,7 @@
     <div class="flex flex-col flex-1 p-6 bg-white">
       <div class="pb-4">
         <time
-          class="inline-block px-3 py-1 text-xs font-medium tracking-wider text-purple-600 uppercase rounded-full bg-purple-200 m-0 mb-4"
+          class="inline-block px-3 py-1 text-xs font-medium tracking-wider text-purple-600 uppercase rounded-full bg-purple-200 m-0"
           >{format(date, 'PPP')}</time
         >
       </div>
