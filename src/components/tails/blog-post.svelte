@@ -1,13 +1,10 @@
 <script lang="ts">
   import { format } from 'date-fns';
-  import hljs from 'highlight.js';
 
   export let date: Date = new Date();
   export let img: string = '';
   export let title: string = '';
   export let href: string = '';
-
-  hljs.highlightAll();
 
   // @TODO pull from session BLOG_URL
   const base = 'https://blog.jonesrussell42.xyz/';
