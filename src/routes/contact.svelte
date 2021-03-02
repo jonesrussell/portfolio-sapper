@@ -16,8 +16,7 @@
           Contact Russell
         </h2>
         <p class="mt-2 mb-5 text-sm text-gray-800">
-          My contact info below is below or you can feel free to leave me a
-          quick message with the form.
+          My contact info is below or leave me a quick message with the form.
         </p>
         <div class="flex items-start py-3 pt-5">
           <div class="flex-shrink">
@@ -75,7 +74,6 @@
           <div class="flex-grow ml-10 md:ml-5">
             <div class="mb-2 text-base font-medium">Social</div>
             <div class="flex text-white text-md sm:text-gray-500">
-              s
               <a
                 href="https://twitter.com/jonesrussell42"
                 class="ml-3 text-gray-400 hover:text-gray-500"

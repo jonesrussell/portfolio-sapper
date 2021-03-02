@@ -1,5 +1,5 @@
 <script lang="ts">
-  const handleSubmit = (data) => {
+  const handleSubmit = (data: any) => {
     console.log('submitted');
     console.log(data);
     const url = '/process/contact'; // associated script = /src/routes/process/contact.js
@@ -8,19 +8,18 @@
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
-        'Content-Type': 'application/json'
-      }
+        'Content-Type': 'application/json',
+      },
     })
-    .then(r => {
-      r.json()
-        .then(function(result) {
+      .then((r) => {
+        r.json().then(function (result) {
           console.log(result);
-        })
-    })
-    .catch(err => {
-      // POST error: do something...
-      console.log('POST error', err.message)
-    })
+        });
+      })
+      .catch((err) => {
+        // POST error: do something...
+        console.log('POST error', err.message);
+      });
   };
 </script>
 
