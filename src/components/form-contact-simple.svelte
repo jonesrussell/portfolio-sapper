@@ -1,7 +1,10 @@
 <script lang="ts">
+  let email: string = '';
+  let message: string = '';
+
   const handleSubmit = (data: any) => {
     console.log('submitted');
-    console.log(data);
+    console.log('data', data);
     const url = '/process/contact'; // associated script = /src/routes/process/contact.js
 
     fetch(url, {
@@ -23,22 +26,23 @@
   };
 </script>
 
-<form class="w-full" on:submit={handleSubmit}>
+<form class="w-full" on:submit={handleSubmit} method="POST">
   <div class="pb-3">
     <label
       class="block uppercase tracking-wide text-gray-700 text-xs font-bold
         mb-2"
       for="your-email"
     >
-      Your Email
+      Your Email Address
     </label>
     <input
       class="w-full px-5 py-3 border border-gray-400 rounded-lg outline-none focus:ring"
-      type="text"
+      bind:value={email}
+      type="email"
       placeholder="Email Address"
       name="email"
       id="your-email"
-      value=""
+      required
     />
   </div>
   <div class="py-3">
@@ -50,11 +54,13 @@
       Your message
     </label>
     <textarea
+      bind:value={message}
       rows="4"
       class="w-full h-40 px-5 py-3 border border-gray-400 rounded-lg outline-none focus:ring"
       name="message"
       id="your-message"
-      placeholder="Your message here..."
+      placeholder="Type here..."
+      required
     />
   </div>
   <div class="pt-3">
