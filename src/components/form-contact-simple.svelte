@@ -4,7 +4,6 @@
 
   const handleSubmit = async (data: any) => {
     console.log('submitted');
-    console.log('data', data);
     const url = '/process/contact'; // associated script = /src/routes/process/contact.js
 
     await fetch(url, {
@@ -26,7 +25,7 @@
   };
 </script>
 
-<form class="w-full" on:submit={handleSubmit} method="POST">
+<form class="w-full" on:submit|preventDefault={handleSubmit} method="POST">
   <div class="pb-3">
     <label
       class="block uppercase tracking-wide text-gray-700 text-xs font-bold

@@ -1,11 +1,4 @@
-const mongoose = require('mongoose');
-
-const contactSchema = new mongoose.Schema({
-  email: String,
-  message: String,
-});
-
-const entry = mongoose.model('Contact', contactSchema);
+const contacts = require('../../contactModel');
 
 export async function post(req, res, next) {
   console.log('contact.js');
@@ -16,7 +9,7 @@ export async function post(req, res, next) {
   // Do something with the data...
   console.debug('data', data);
 
-  entry.save(data);
+  await contacts.insertOne(data);
 
   return res.end(JSON.stringify({ success: true }));
 }
