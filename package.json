@@ -43,7 +43,6 @@
     "kube:deploy": "kubectl deploy -f kubernetes.yml"
   },
   "dependencies": {
-    "@pyoner/svelte-ts-preprocess": "^1.3.0",
     "autoprefixer": "^10.2.4",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
