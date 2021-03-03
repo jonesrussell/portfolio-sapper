@@ -1,15 +1,11 @@
-const mongo = require("mongodb");
+const mongoose = require('mongoose');
 
-let client = null;
-let db = null;
+const contactSchema = new mongoose.Schema({
+  email: String,
+  message: String,
+});
 
-export async function init() {
-  if (!client) {
-    client = await mongo.MongoClient.connect("mongodb://mongodb.jonesrussell42.xyz");
-    db = client.db("portfolio-contact");
-  }
-  return { client, db }
-}
+const entry = mongoose.model('Contact', contactSchema);
 
 export async function post(req, res, next) {
   console.log('contact.js');
@@ -19,6 +15,8 @@ export async function post(req, res, next) {
 
   // Do something with the data...
   console.debug('data', data);
+
+  entry.save(data);
 
   return res.end(JSON.stringify({ success: true }));
 }

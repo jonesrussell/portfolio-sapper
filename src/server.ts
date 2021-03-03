@@ -3,15 +3,28 @@ import compression from "compression";
 import express, { Express } from "express";
 import sirv from "sirv";
 import cors from "cors";
-import dotenv from "dotenv";
+import dotenv from "dotenv"
+
+const mongoose = require('mongoose');
 
 dotenv.config();
 
 const {
-  PORT, mode, BLOG_URL, BELL_CREEK_URL,
+  PORT, mode, BLOG_URL, BELL_CREEK_URL, MONGODB_URI
 } = process.env;
 const dev = mode === "development";
 const main = require.main === module || require.main?.filename.match(/__sapper__\/build\/index.js$/);
+
+
+mongoose.connect(MONGODB_URI, {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true
+})
+
+mongoose.connection.on('error', (err: any) => {
+  console.error('Database connection error:', err)
+})
 
 const createSapperServer = async (): Promise<Express> => {
   const app: Express = express();
