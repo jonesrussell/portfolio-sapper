@@ -2,12 +2,12 @@
   let email: string = '';
   let message: string = '';
 
-  const handleSubmit = (data: any) => {
+  const handleSubmit = async (data: any) => {
     console.log('submitted');
     console.log('data', data);
     const url = '/process/contact'; // associated script = /src/routes/process/contact.js
 
-    fetch(url, {
+    await fetch(url, {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
@@ -16,7 +16,7 @@
     })
       .then((r) => {
         r.json().then(function (result) {
-          console.log(result);
+          console.log('result', result);
         });
       })
       .catch((err) => {
