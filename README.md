@@ -2,9 +2,9 @@
 
 ## ❓ What is this?
 
-The site that builds from this repository can be found [here](https://fir-sapper-tailwindcss.web.app/).
+The site that builds from this repository can be found [here](https://www.jonesrussell42.xyz).
 
-This is an extremely opinionated Sapper project base intended for my own use. That being said, there is quite a bit of work put into it to make it generalized and adaptable to your own setup, given that you want to use _most_ of these things. The lower something is on this list, the easier it is to reconfigure or remove:
+This is an extremely opinionated Svelte/Sapper project intended for my own use. That being said, this is the gist:
 
 - [Sapper for Svelte](https://sapper.svelte.dev/)
   - [Official VS Code Extension](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
@@ -30,29 +30,18 @@ This is an extremely opinionated Sapper project base intended for my own use. Th
 
 Sapper is going to change.
 
-Until `create-svelte` and `@sveltejs/kit` are ready, **this project base will continue to be maintained**.
+Until `create-svelte` and `@sveltejs/kit` are ready, this is a great base.
 
-But, once we move on, I won't be creating project bases (templates / boilerplates) anymore. Instead, you'll apply presets onto the default template like this:
-
-```sh
-npm init svelte@next  # Use the official template from create-svelte
-
-npx use-preset babichjacob/svelte-add-typescript  # Apply the changes to set up TypeScript for create-svelte
-npx use-preset babichjacob/svelte-add-typegraphql  # Apply the changes to set up TypeGraphQL for create-svelte as long as TypeScript is already set up
-
-npx use-preset babichjacob/svelte-add-postcss  # Apply the changes to set up PostCSS for create-svelte
-npx use-preset babichjacob/svelte-add-tailwindcss  # Apply the changes to set up Tailwind CSS for create-svelte as long as PostCSS is already set up
-
-# Remember, the above are hypothetical commands and the real ones might look and work different
 ```
 
 ### ⬇️ Install Dependencies
 
-You need to be using version 12 or higher of Node; the `package.json` `engines` field only specifies `10` for Cloud Functions for Firebase.
+You need to be using version 12 or higher of Node;
 
 ```sh
+git clone https://github.com/jonesrussell/portfolio-sapper.git
 cd portfolio-sapper
-npm install  # npm also works
+npm install
 ```
 
 ## 🛠 Usage
@@ -60,15 +49,15 @@ npm install  # npm also works
 ### 🧪 Development
 
 ```sh
-npm run dev
+npm run sapper:dev
 ```
 
-### 🔥 Deployment to x
+### 🔥 Deployment to kubernetes
 
 This will create a production build for you before deploying.
 
 ```sh
-npm run deploy
+kubectl deploy -f kubernetes.yaml
 ```
 
 ### 🔨 Testing Production Builds Locally
