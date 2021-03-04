@@ -1,7 +1,7 @@
 FROM node:14-buster
 
 LABEL name="Sapper"
-LABEL version="1.0.2"
+LABEL version="2.0.0"
 
 ARG INSTALL_ZSH="true"
 ARG USERNAME=node
