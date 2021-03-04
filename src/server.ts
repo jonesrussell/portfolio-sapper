@@ -4,6 +4,7 @@ import express, { Express } from "express";
 import sirv from "sirv";
 import cors from "cors";
 import dotenv from "dotenv";
+import bodyParser from "bodyParser";
 
 const mongoose = require('mongoose');
 
@@ -33,6 +34,8 @@ const createSapperServer = async (): Promise<Express> => {
   }
 
   app.use(cors());
+
+  app.use(bodyParser());
 
   app.use(
     compression({ threshold: 0 }),
