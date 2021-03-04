@@ -1,20 +1,21 @@
 <script lang="ts">
-  let email: string = '';
-  let message: string = '';
+  $: email = '';
+  $: message = '';
 
-  const handleSubmit = async (data: any) => {
-    console.log('submitted');
+  // let data = { email, message };
+
+  const contactSubmit = async () => {
     const url = '/process/contact'; // associated script = /src/routes/process/contact.js
 
     await fetch(url, {
       method: 'POST',
-      body: JSON.stringify(data),
+      body: JSON.stringify({ email, message }),
       headers: {
         'Content-Type': 'application/json',
       },
     })
       .then((r) => {
-        r.json().then(function (result) {
+        r.json().then((result) => {
           console.log('result', result);
         });
       })
@@ -25,7 +26,7 @@
   };
 </script>
 
-<form class="w-full" on:submit|preventDefault={handleSubmit} method="POST">
+<form class="w-full" on:submit|preventDefault={contactSubmit} method="POST">
   <div class="pb-3">
     <label
       class="block uppercase tracking-wide text-gray-700 text-xs font-bold

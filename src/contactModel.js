@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+import { Schema, Model, model } from 'mongoose';
 
 const contactSchema = new Schema(
   {
@@ -12,4 +12,6 @@ const contactSchema = new Schema(
   { collection: "Contacts" }
 );
 
-export default model('contactModel', contactSchema);
+class Contact extends Model { }
+
+export default model(Contact, contactSchema, 'contact');

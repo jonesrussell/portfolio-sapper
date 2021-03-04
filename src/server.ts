@@ -4,7 +4,8 @@ import express, { Express } from "express";
 import sirv from "sirv";
 import cors from "cors";
 import dotenv from "dotenv";
-import bodyParser from "bodyParser";
+
+const bodyParser = require('body-parser');
 
 const mongoose = require('mongoose');
 
@@ -35,7 +36,7 @@ const createSapperServer = async (): Promise<Express> => {
 
   app.use(cors());
 
-  app.use(bodyParser());
+  app.use(bodyParser.json());
 
   app.use(
     compression({ threshold: 0 }),
@@ -43,6 +44,7 @@ const createSapperServer = async (): Promise<Express> => {
       session: () => ({
         BLOG_URL,
         BELL_CREEK_URL,
+        MONGODB_URI
       }),
     }),
   );
