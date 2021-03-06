@@ -7,8 +7,6 @@ import dotenv from "dotenv";
 
 import { json } from 'body-parser';
 
-const mongoose = require('mongoose');
-
 dotenv.config();
 
 const {
@@ -18,16 +16,6 @@ const {
 const dev = mode === "development";
 
 const main = require.main === module || require.main?.filename.match(/__sapper__\/build\/index.js$/);
-
-mongoose.connect(MONGODB_URI, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true
-});
-
-mongoose.connection.on('error', (err: any) => {
-  console.error('Database connection error:', err)
-});
 
 const createSapperServer = async (): Promise<Express> => {
   const app: Express = express();
