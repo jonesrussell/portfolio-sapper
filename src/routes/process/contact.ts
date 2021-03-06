@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 import dotenv from "dotenv";
-import contactModule from "../../contactModel";
+import contactModule from '../../models/contact.model';
 
 dotenv.config();
 
