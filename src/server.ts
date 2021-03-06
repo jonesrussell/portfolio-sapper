@@ -1,11 +1,11 @@
-import * as sapper from "@sapper/server"; // eslint-disable-line import/no-unresolved
+import * as sapper from "@sapper/server";
 import compression from "compression";
 import express, { Express } from "express";
 import sirv from "sirv";
 import cors from "cors";
 import dotenv from "dotenv";
 
-const bodyParser = require('body-parser');
+import { json } from 'body-parser';
 
 const mongoose = require('mongoose');
 
@@ -14,7 +14,9 @@ dotenv.config();
 const {
   PORT, mode, BLOG_URL, BELL_CREEK_URL, MONGODB_URI
 } = process.env;
+
 const dev = mode === "development";
+
 const main = require.main === module || require.main?.filename.match(/__sapper__\/build\/index.js$/);
 
 mongoose.connect(MONGODB_URI, {
@@ -36,7 +38,7 @@ const createSapperServer = async (): Promise<Express> => {
 
   app.use(cors());
 
-  app.use(bodyParser.json());
+  app.use(json());
 
   app.use(
     compression({ threshold: 0 }),
@@ -54,7 +56,7 @@ const createSapperServer = async (): Promise<Express> => {
 
 if (main) {
   createSapperServer().then((app) => {
-		app.listen(PORT, (err?: any): void => { // eslint-disable-line
+		app.listen(PORT, (err?: any): void => {
       if (err) console.log("error", err);
     });
   });

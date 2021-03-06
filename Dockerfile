@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . .
 
 RUN npm install
-RUN npm run sapper:export
+RUN npm run sapper:build
 
 FROM node:14-alpine
 
@@ -15,6 +15,6 @@ COPY --from=build /app /app
 
 WORKDIR /app
 
-CMD ["npm", "run", "start:export"]
+CMD ["npm", "run", "start"]
 
-EXPOSE 5000
+EXPOSE 3000

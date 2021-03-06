@@ -5,7 +5,11 @@ export async function post(req, res, next) {
   const data = req.body;
 
   await contactModule.create(data);
-  //await contactModule.insertMany(data);
 
-  return res.end(JSON.stringify({ success: true }));
+  if (contactModule !== null) {
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify({ success: true }));
+  } else {
+    next();
+  }
 }
