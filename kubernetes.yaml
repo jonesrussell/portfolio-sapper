@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: portfolio-sapper
+  labels:
+    app: portfolio-sapper
 spec:
   replicas: 3
   selector:
@@ -15,7 +17,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: portfolio
-          image: jonesrussell/portfolio-app:v2.0.0
+          image: jonesrussell/portfolio-app:v2.0.1
           imagePullPolicy: "Always"
           env:
             - name: BELL_CREEK_URL
