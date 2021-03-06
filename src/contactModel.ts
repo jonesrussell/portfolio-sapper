@@ -12,6 +12,10 @@ const contactSchema = new Schema(
   { collection: "Contacts" }
 );
 
-class Contact extends Model { }
+class Contact extends Model {
+  constructor() {
+    super("Contact");
+  }
+}
 
 export default model(Contact, contactSchema, 'contact');
