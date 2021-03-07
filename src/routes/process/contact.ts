@@ -1,23 +1,36 @@
 import dotenv from "dotenv";
-import contactModule from '../../models/contact.model';
 import type express from "express"
+import contactModule from '../../models/contact.model';
+import Bugsnag from "@bugsnag/js";
+import mongoose from 'mongoose';
 
-const mongoose = require('mongoose');
-
+// Retrieve the MongoDB URI
 dotenv.config();
-
 const { MONGODB_URI } = process.env;
 
+/**
+ * Initiate the connection to MongoDB
+ */
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true
 });
 
+/**
+ * Send an error to BugSnag if mongoose can't connect to mongodb
+ */
 mongoose.connection.on('error', (err: any) => {
-  console.error('Database connection error:', err)
+  Bugsnag.notify('Database connection error:', err);
 });
 
+/**
+ * Handler for /contact form
+ * 
+ * @param req HTTP Request argument
+ * @param res HTTP Response argument
+ * @param next Callback function
+ */
 export async function post(req: express.Request, res: express.Response, next: () => void) {
   const data = req.body;
 
