@@ -17,6 +17,7 @@
   LogRocket.init('herbig-haro/portfolio');
 
   LogRocket.getSessionURL(function (sessionURL) {
+    // eslint-disable-next-line
     ga('send', {
       hitType: 'event',
       eventCategory: 'LogRocket',
