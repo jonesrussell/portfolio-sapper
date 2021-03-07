@@ -98,7 +98,7 @@
           </g>
         </svg>
         <span class="self-center float-left ml-3 text-base font-medium"
-          >Submit Message</span
+          >Send Message</span
         >
       </button>
     </div>
