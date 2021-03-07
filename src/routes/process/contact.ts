@@ -4,6 +4,13 @@ import contactModule from '../../models/contact.model';
 import Bugsnag from "@bugsnag/js";
 import mongoose from 'mongoose';
 
+// Set process.env types
+declare var process: {
+  env: {
+    [key: string]: string;
+  }
+};
+
 // Retrieve the MongoDB URI
 dotenv.config();
 const { MONGODB_URI } = process.env;
