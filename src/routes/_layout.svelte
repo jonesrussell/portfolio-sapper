@@ -2,11 +2,16 @@
   export const preload = () => {};
 </script>
 
-<script lang="typescript">
+<script lang="ts">
   import Nav from '../components/Nav.svelte';
   import Footer from '../components/Footer.svelte';
+  import GoogleAnalytics from 'sapper-google-analytics/GoogleAnalytics.svelte';
+  import { stores } from '@sapper/app';
+
+  let ga_measurment_id = 'UA-114644797-1';
 
   export let segment: string = 'home';
+  export let year: number = new Date().getFullYear();
 </script>
 
 <Nav {segment} />
@@ -25,7 +30,11 @@
   </div>
 </main>
 
-<Footer year={2021} />
+<Footer {year} />
+
+<svelte:head>
+  <GoogleAnalytics {stores} id={ga_measurment_id} />
+</svelte:head>
 
 <style>
   .hero-home {
