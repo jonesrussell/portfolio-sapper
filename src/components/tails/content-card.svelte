@@ -5,6 +5,8 @@
   export let title: string = 'Your Next Great Idea';
   export let href: string = '#';
   export let link_text: string = 'Check it out';
+  export let src: string =
+    'https://blog.jonesrussell42.xyz/assets/img/imposter-syndrome.png';
 </script>
 
 <div
@@ -15,7 +17,7 @@
   >
     <div class="relative lg:w-1/2">
       <img
-        src="https://blog.jonesrussell42.xyz/assets/img/screenshot-scripts.png"
+        {src}
         alt=""
         class="object-cover w-full lg:absolute h-80 lg:h-full"
       />
