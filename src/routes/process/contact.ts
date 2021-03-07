@@ -18,7 +18,6 @@ mongoose.connection.on('error', (err: any) => {
   console.error('Database connection error:', err)
 });
 
-// export async function post(req, res, next) {
 export async function post(req: express.Request, res: express.Response, next: () => void) {
   res.setHeader('Content-Type', 'application/json');
   const data = req.body;
