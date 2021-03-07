@@ -7,11 +7,31 @@
   import Footer from '../components/Footer.svelte';
   import GoogleAnalytics from 'sapper-google-analytics/GoogleAnalytics.svelte';
   import { stores } from '@sapper/app';
-
-  let ga_measurment_id = 'UA-114644797-1';
+  import LogRocket from 'logrocket';
+  import Bugsnag from '@bugsnag/js';
 
   export let segment: string = 'home';
   export let year: number = new Date().getFullYear();
+  let ga_measurment_id = 'UA-114644797-1';
+
+  LogRocket.init('herbig-haro/portfolio');
+
+  LogRocket.getSessionURL(function (sessionURL) {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'LogRocket',
+      eventAction: sessionURL,
+    });
+  });
+
+  Bugsnag.start({ apiKey: '615a4defdc1b405abb1743b6cb33843d' });
+
+  Bugsnag.beforeNotify = function (data: {
+    metaData: { sessionURL: string | null };
+  }) {
+    data.metaData.sessionURL = LogRocket.sessionURL;
+    return data;
+  };
 </script>
 
 <Nav {segment} />

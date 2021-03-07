@@ -43,6 +43,7 @@
     "kube:deploy": "kubectl deploy -f kubernetes.yml"
   },
   "dependencies": {
+    "@bugsnag/js": "^7.8.0",
     "autoprefixer": "^10.2.5",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
@@ -50,6 +51,7 @@
     "date-fns": "^2.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "logrocket": "^1.0.14",
     "mongoose": "^5.11.19",
     "morgan": "^1.10.0",
     "node-fetch": "^2.6.1",

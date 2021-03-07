@@ -1,5 +1,6 @@
 <script lang="ts">
   import Fa from 'svelte-fa';
+  import { fade } from 'svelte/transition';
   import {
     faGithub,
     faLinkedin,
@@ -7,7 +8,7 @@
   } from '@fortawesome/free-brands-svg-icons';
 
   import {
-faAddressCard,
+    faAddressCard,
     faBars,
     faBlog,
     faBookOpen,
@@ -16,9 +17,13 @@ faAddressCard,
     faQuestion,
   } from '@fortawesome/free-solid-svg-icons';
 
-  const toggleNavbar = (collapseID: string) => {
-    document.getElementById(collapseID)?.classList.toggle('hidden');
-    document.getElementById(collapseID)?.classList.toggle('block');
+  const toggleNavbar = (id: string) => {
+    document.getElementById(id)?.classList.toggle('hidden');
+    document.getElementById(id)?.classList.toggle('block');
+  };
+
+  const hideLogo = () => {
+    console.log('hideLogo');
   };
 
   export let segment: string;
@@ -38,6 +43,8 @@ faAddressCard,
         class:md:inline-block={segment !== 'home'}
         class:hidden={segment === 'home'}
         class:animate-grow={segment === 'home'}
+        on:click={hideLogo}
+        transition:fade={{ delay: 250, duration: 300 }}
         href="/"
         ><img
           src="cartoon-russell.jpg"
@@ -125,10 +132,12 @@ faAddressCard,
             type="button"
             style="transition: all 0.15s ease 0s;"
           >
-            <a href="/contact"><Fa
-              icon={faAddressCard}
-              class="lg:text-gray-300 text-gray-500 text-lg leading-lg md:hidden"
-            /><span class="inline">Contact</span></a>
+            <a href="/contact"
+              ><Fa
+                icon={faAddressCard}
+                class="lg:text-gray-300 text-gray-500 text-lg leading-lg md:hidden"
+              /><span class="inline">Contact</span></a
+            >
           </button>
         </li>
       </ul>
