@@ -19,7 +19,6 @@ mongoose.connection.on('error', (err: any) => {
 });
 
 export async function post(req: express.Request, res: express.Response, next: () => void) {
-  res.setHeader('Content-Type', 'application/json');
   const data = req.body;
 
   await contactModule.create(data);
