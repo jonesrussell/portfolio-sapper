@@ -16,15 +16,6 @@
 
   LogRocket.init('herbig-haro/portfolio');
 
-  LogRocket.getSessionURL(function (sessionURL) {
-    // eslint-disable-next-line
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'LogRocket',
-      eventAction: sessionURL,
-    });
-  });
-
   Bugsnag.start({ apiKey: '615a4defdc1b405abb1743b6cb33843d' });
 
   Bugsnag.beforeNotify = function (data: {

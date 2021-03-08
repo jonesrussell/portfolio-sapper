@@ -6,7 +6,7 @@
       class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center"
     >
       <div class="lg:col-start-2 lg:max-w-2xl ml-auto">
-        <p class="text-base leading-6 text-indigo-500 font-semibold uppercase">
+        <p class="text-base leading-6 text-indigo-700 font-semibold uppercase">
           Every Company is a Software Company
         </p>
         <h4
@@ -111,11 +111,15 @@
               class="w-28 md:w-40 md:mt-10"
               src="nodejs-development-services.webp"
               alt="NodeJS"
+              width="160"
+              height="178"
             />
             <img
               class="w-24 md:w-32 relative top-7"
               src="svelte-logo.svg"
               alt="Svelte"
+              width="128"
+              height="154"
             />
           </div>
           <div
@@ -125,6 +129,8 @@
               class="w-24 md:w-72 relative top-5"
               src="laravel-ar21.svg"
               alt="Laravel logo"
+              width="288"
+              height="144"
             />
           </div>
         </div>

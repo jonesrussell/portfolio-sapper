@@ -39,6 +39,7 @@
         <div class="mt-6">
           <a href="https://linkedin.com/in/jonesrussell" rel="external"
             ><button
+              aria-label="Linked In"
               class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
               type="button"
             >
@@ -47,6 +48,7 @@
           >
           <a href="https://twitter.com/jonesrussell" rel="external"
             ><button
+              aria-label="Twitter"
               class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
               type="button"
             >
@@ -55,6 +57,7 @@
           >
           <a href="https://github.com/jonesrussell" rel="external"
             ><button
+              aria-label="Github"
               class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
               type="button"
             >
@@ -72,16 +75,10 @@
             >
             <ul class="list-unstyled">
               <li>
-                <a
-                  class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="/contact">Contact Russell</a
-                >
+                <a class="link" href="/contact">Contact Russell</a>
               </li>
               <li>
-                <a
-                  class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="https://blog.jonesrussell42.xyz">Blog</a
-                >
+                <a class="link" href="https://blog.jonesrussell42.xyz">Blog</a>
               </li>
             </ul>
           </div>
@@ -92,17 +89,14 @@
             >
             <ul class="list-unstyled">
               <li>
-                <a
-                  class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  href="/privacy-policy">Privacy Policy</a
-                >
+                <a class="link" href="/privacy-policy">Privacy Policy</a>
               </li>
               <li>
                 <a
                   href="https://www.creative-tim.com/"
                   rel="external"
                   title="Fully Coded UI Tools to create web and mobile apps"
-                  >Creative Tim</a
+                  class="link">Creative Tim</a
                 >
               </li>
             </ul>
@@ -122,3 +116,9 @@
     </div>
   </div>
 </footer>
+
+<style>
+  .link {
+    @apply text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm;
+  }
+</style>

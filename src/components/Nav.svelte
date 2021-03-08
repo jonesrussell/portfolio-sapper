@@ -98,6 +98,7 @@
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             target="_blank"
             href="https://linkedin.com/in/jonesrussell42"
+            rel="noreferrer"
             ><Fa
               icon={faLinkedin}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg"
@@ -108,6 +109,7 @@
           <a
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             target="_blank"
+            rel="noreferrer"
             href="https://twitter.com/jonesrussell42"
             ><Fa
               icon={faTwitter}
@@ -119,6 +121,7 @@
           <a
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             target="_blank"
+            rel="noreferrer"
             href="https://github.com/jonesrussell"
             ><Fa
               icon={faGithub}
