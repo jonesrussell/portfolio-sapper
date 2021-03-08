@@ -34,7 +34,7 @@
                 </svg>
               </span>
               <span
-                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200"
+                class="ml-4 text-base leading-6 font-medium text-gray-700 dark:text-gray-200"
               >
                 Linux, Apache, MySQL, PHP
               </span>
@@ -54,7 +54,7 @@
                 </svg>
               </span>
               <span
-                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200"
+                class="ml-4 text-base leading-6 font-medium text-gray-700 dark:text-gray-200"
               >
                 CI/CD
               </span>
@@ -74,7 +74,7 @@
                 </svg>
               </span>
               <span
-                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200"
+                class="ml-4 text-base leading-6 font-medium text-gray-700 dark:text-gray-200"
               >
                 Drupal / Laravel
               </span>
@@ -94,7 +94,7 @@
                 </svg>
               </span>
               <span
-                class="ml-4 text-base leading-6 font-medium text-gray-500 dark:text-gray-200"
+                class="ml-4 text-base leading-6 font-medium text-gray-700 dark:text-gray-200"
               >
                 Typescript / Webpack
               </span>
