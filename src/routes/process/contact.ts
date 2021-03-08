@@ -5,7 +5,7 @@ import Bugsnag from "@bugsnag/js";
 import mongoose from 'mongoose';
 
 // Set process.env types
-declare var process: {
+declare const process: {
   env: {
     [key: string]: string;
   }
