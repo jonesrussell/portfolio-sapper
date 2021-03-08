@@ -1,5 +1,5 @@
 <div
-  class="max-w-screen-xl p-4 bg-white dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative pb-12 lg:mt-10"
+  class="max-w-screen-xl p-4 bg-gray-100 dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative pb-12 lg:mt-5 lg:mb-5 rounded-md"
 >
   <div class="relative">
     <div
@@ -12,7 +12,7 @@
         <h4
           class="mt-2 text-2xl leading-8 font-extrabold text-gray-900 dark:text-white sm:text-3xl sm:leading-9"
         >
-          And I'm The Developer You're Looking For
+          I'm The Developer You Want
         </h4>
         <p class="mt-4 text-lg leading-6 text-gray-800 dark:text-gray-300">
           With over 20 years of experience as a <em>Full Stack Developer</em>,
@@ -104,11 +104,17 @@
       </div>
       <div class="mt-10 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1">
         <div class="relative space-y-4">
-          <div class="flex items-end justify-center lg:justify-start space-x-4">
-            <img class="w-24 md:w-60" src="php.svg" alt="PHP Elephant" />
+          <div
+            class="flex items-end justify-center lg:justify-start space-x-20"
+          >
             <img
-              class="w-24 md:w-32 relative top-14"
-              src="svelte.png"
+              class="w-28 md:w-40 md:mt-10"
+              src="nodejs-development-services.webp"
+              alt="NodeJS"
+            />
+            <img
+              class="w-24 md:w-32 relative top-7"
+              src="svelte-logo.svg"
               alt="Svelte"
             />
           </div>
@@ -116,9 +122,9 @@
             class="flex items-start justify-center lg:justify-start space-x-4 ml-12"
           >
             <img
-              class="w-28 md:w-40 md:mt-10"
-              src="nodejs-development-services.webp"
-              alt="NodeJS"
+              class="w-24 md:w-72 relative top-5"
+              src="laravel-ar21.svg"
+              alt="Laravel logo"
             />
           </div>
         </div>

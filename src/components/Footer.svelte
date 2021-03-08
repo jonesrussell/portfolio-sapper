@@ -21,7 +21,8 @@
       version="1.1"
       viewBox="0 0 2560 100"
       x="0"
-      y="0">
+      y="0"
+    >
       <polygon
         class="text-gray-300 fill-current"
         points="2560 0 2560 100 0 100"
@@ -39,19 +40,24 @@
           <a href="https://linkedin.com/in/jonesrussell" rel="external"
             ><button
               class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-              type="button"> <Fa icon={faLinkedin} class="flex" /></button
+              type="button"
+            >
+              <Fa icon={faLinkedin} class="flex" /></button
             ></a
           >
           <a href="https://twitter.com/jonesrussell" rel="external"
             ><button
               class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-              type="button"> <Fa icon={faTwitter} class="flex" /></button
+              type="button"
+            >
+              <Fa icon={faTwitter} class="flex" /></button
             ></a
           >
           <a href="https://github.com/jonesrussell" rel="external"
             ><button
               class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-              type="button">
+              type="button"
+            >
               <Fa icon={faGithub} class="flex" />
             </button></a
           >
@@ -62,7 +68,7 @@
           <div class="w-full lg:w-4/12 px-4 ml-auto">
             <span
               class="block uppercase text-gray-800 text-sm font-semibold mb-2"
-              >Useful Links</span
+              >My Links</span
             >
             <ul class="list-unstyled">
               <li>
@@ -89,6 +95,14 @@
                 <a
                   class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                   href="/privacy-policy">Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.creative-tim.com/"
+                  rel="external"
+                  title="Fully Coded UI Tools to create web and mobile apps"
+                  >Creative Tim</a
                 >
               </li>
             </ul>

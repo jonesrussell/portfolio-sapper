@@ -22,8 +22,15 @@
   <h1
     class="relative text-5xl font-bold leading-normal text-gray-800 mb-2 font-greeting delay-1000 transform-gpu animate-grow"
   >
-    Ahnii, I'm Russell Jones
+    <span class="accent">Ahnii</span>, I'm Russell Jones
   </h1>
 </div>
 
 <HomeHero />
+
+<style>
+  .accent {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+  }
+</style>
