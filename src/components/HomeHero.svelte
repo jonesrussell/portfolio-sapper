@@ -1,5 +1,5 @@
 <div
-  class="max-w-screen-xl p-4 bg-gray-100 dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative pb-12 lg:mt-5 lg:mb-5 rounded-md"
+  class="max-w-screen-xl p-4 bg-gray-200 dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative pb-12 lg:mt-5 lg:mb-5 rounded-md"
 >
   <div class="relative">
     <div
