@@ -53,6 +53,7 @@
         img={secondImg}
         title={secondPost.title}
         date={new Date(secondPost.date_published)}
+        href="/blog/{secondPost.id}"
       >
         {@html trunc(secondPost.content_text, 75)}
       </BlogPost>
@@ -60,6 +61,7 @@
         img={thirdImg}
         title={thirdPost.title}
         date={new Date(thirdPost.date_published)}
+        href="/blog/{thirdPost.id}"
       >
         {@html trunc(thirdPost.content_text, 75)}
       </BlogPost>
@@ -67,6 +69,7 @@
         img={fourthImg}
         title={fourthPost.title}
         date={new Date(fourthPost.date_published)}
+        href="/blog/{fourthPost.id}"
       >
         {@html trunc(fourthPost.content_text, 75)}
       </BlogPost>
