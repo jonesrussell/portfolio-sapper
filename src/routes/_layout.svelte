@@ -17,7 +17,7 @@
   LogRocket.init('herbig-haro/portfolio');
 
   if (!Bugsnag._client) {
-    Bugsnag.start({ apiKey: '615a4defdc1b405abb1743b6cb33843d' });
+    Bugsnag.start({ apiKey: '615a4defdc1b405abb1743b6cb33843d', logger: null });
   }
 
   Bugsnag.beforeNotify = (data: {
