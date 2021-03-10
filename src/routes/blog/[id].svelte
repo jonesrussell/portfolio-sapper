@@ -9,7 +9,7 @@
         let post = feed.items.filter((item: any) => item.id == id)[0];
 
         post.content_html = post.content_html.replace(
-          /src="(.*?)"/gi,
+          /src="?!http(.*?)"/gi,
           'src="https://blog.jonesrussell42.xyz/$1"'
         );
 
