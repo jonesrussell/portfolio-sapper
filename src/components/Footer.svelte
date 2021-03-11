@@ -31,7 +31,7 @@
   </div>
   <div class="container mx-auto px-4">
     <div class="flex flex-wrap">
-      <div class="w-full lg:w-6/12 px-4">
+      <div class="w-full lg:w-6/12 px-4 py-8">
         <h4 class="text-3xl font-semibold">Get in touch!</h4>
         <h5 class="text-lg mt-0 mb-2 text-gray-700">
           Find me on any of these platforms.
