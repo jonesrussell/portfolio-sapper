@@ -105,7 +105,7 @@
       <div class="mt-10 lg:-mx-4 relative relative-20 lg:mt-0 lg:col-start-1">
         <div class="relative space-y-4">
           <div
-            class="flex items-end justify-center lg:justify-start space-x-20"
+            class="flex items-end justify-center lg:justify-start space-x-10 md:space-x-20"
           >
             <img
               class="w-28 md:w-40 md:mt-10"
@@ -126,7 +126,7 @@
             class="flex items-start justify-center lg:justify-start space-x-4 ml-12"
           >
             <img
-              class="w-24 md:w-72 relative top-5"
+              class="w-48 md:w-72 relative top-5"
               src="laravel-ar21.svg"
               alt="Laravel logo"
               width="288"
