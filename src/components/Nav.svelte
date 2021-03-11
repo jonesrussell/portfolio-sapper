@@ -63,7 +63,7 @@
       </button>
     </div>
     <div
-      class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none block"
+      class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
       id="collapse-navbar"
     >
       <ul class="flex flex-col lg:flex-row list-none mr-auto">
