@@ -1,8 +1,10 @@
 <script lang="ts">
-  import FormContactSimple from './../components/form-contact-simple.svelte';
+  import FormContactSimple from './../components/FormContactSimple.svelte';
 </script>
 
-<section class="relative py-6 min-w-screen animation-fade animation-delay">
+<h1>Contact Russell</h1>
+
+<section class="relative min-w-screen animation-fade animation-delay">
   <div
     class="container h-full max-w-5xl mx-auto overflow-hidden rounded-lg shadow"
   >
@@ -10,32 +12,9 @@
       <aside
         class="w-full p-10 rounded-none sm:rounded md:w-1/3 sm:bg-gray-100"
       >
-        <h2
-          class="text-2xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-2xl sm:leading-9"
-        >
-          Contact Russell
-        </h2>
         <p class="mt-2 mb-5 text-sm text-gray-800">
           My contact info is below or leave me a quick message with the form.
         </p>
-        <div class="flex items-start py-3 pt-5">
-          <div class="flex-shrink">
-            <svg
-              class="w-8 h-8 mt-1 text-gray-700"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-              />
-            </svg>
-          </div>
-          <div class="flex-grow ml-10 md:ml-5">
-            <div class="text-base font-medium mb-">Phone</div>
-            <span class="text-gray-500 text-md">+1-705-847-1816</span>
-          </div>
-        </div>
         <div class="flex items-start py-3">
           <div class="flex-shrink">
             <svg

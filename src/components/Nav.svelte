@@ -11,15 +11,13 @@
     faAddressCard,
     faBars,
     faBlog,
-    faBookOpen,
-    faLayerGroup,
     faProjectDiagram,
-    faQuestion,
   } from '@fortawesome/free-solid-svg-icons';
 
-  const toggleNavbar = (id: string) => {
-    document.getElementById(id)?.classList.toggle('hidden');
-    document.getElementById(id)?.classList.toggle('block');
+  const navId = 'collapse-navbar';
+  const toggleNavbar = () => {
+    document.getElementById(navId)?.classList.toggle('hidden');
+    document.getElementById(navId)?.classList.toggle('block');
   };
 
   const hideLogo = () => {
@@ -55,9 +53,7 @@
       ><button
         class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
         type="button"
-        on:click={() => {
-          toggleNavbar('collapse-navbar');
-        }}
+        on:click={toggleNavbar}
       >
         <Fa icon={faBars} class="text-white" />
       </button>
@@ -72,6 +68,7 @@
             class:selected={segment === 'blog'}
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             href="/blog"
+            on:click={toggleNavbar}
             ><Fa
               icon={faBlog}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2"
@@ -84,6 +81,7 @@
             class:selected={segment === 'projects'}
             class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
             href="/projects"
+            on:click={toggleNavbar}
             ><Fa
               icon={faProjectDiagram}
               class="lg:text-gray-300 text-gray-500 text-lg leading-lg mr-2"
@@ -135,7 +133,7 @@
             type="button"
             style="transition: all 0.15s ease 0s;"
           >
-            <a href="/contact"
+            <a href="/contact" on:click={toggleNavbar}
               ><Fa
                 icon={faAddressCard}
                 class="lg:text-gray-300 text-gray-500 text-lg leading-lg md:hidden"

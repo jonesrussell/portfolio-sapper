@@ -1,5 +1,5 @@
 <div
-  class="max-w-screen-xl p-4 bg-gray-200 dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative pb-12 lg:mt-5 lg:mb-5 rounded-md"
+  class="max-w-screen-xl p-4 bg-gray-200 dark:bg-gray-800 mx-auto px-4 sm:px-6 lg:px-8 relative pb-12 mb-5 lg:mt-5 rounded-md"
 >
   <div class="relative">
     <div
@@ -123,7 +123,7 @@
             />
           </div>
           <div
-            class="flex items-start justify-center lg:justify-start space-x-4 ml-12"
+            class="flex items-start justify-center lg:justify-start space-x-4 md:ml-12"
           >
             <img
               class="w-48 md:w-72 relative top-5"
