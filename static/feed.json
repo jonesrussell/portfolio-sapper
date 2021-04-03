@@ -11,6 +11,27 @@
 "items": [
     
         {
+            "id": "laravel-2021-04-03-start-developing-with-laravel-in-ubuntu-20-04",
+            "title": "Start Developing with Laravel in Ubuntu 20.04",
+            "summary": null,
+            "content_text": "First and foremost, I find Ubuntu the Linux distribution easiest to install and best supported when learning Web Development. I’m sure that’s open for debate, but that’s what the comments are for.OK, I’m running Ubuntu, what next?I suggest that your install Homebrew, “The Missing Package Manager for macOS (or Linux)”. It’s great but if you choose another path, I hope you can still follow along.I have Homebrew, now what?Install DDEV[DDEV](https://github.com/drud/ddev) is an open  source tool that makes it dead simple to get local PHP development  environments up and running within minutes. It's powerful and flexible  as a result of its per-project environment configurations, which can be  extended, version controlled, and shared. In short, DDEV aims to allow  development teams to use Docker in their workflow without the  complexities of bespoke configuration.Follow the directions at https://ddev.readthedocs.io/en/stable/#installation which will ensure you have everything needed to install DDEV and then Laravel.Install LaravelCopy and paste from below, replace MY_SITE=”” with the name you wish to choose for you site:MY_SITE=my-laravel-appmkdir $MY_SITEcd $MY_SITEddev config --project-type=laravel --docroot=public --create-docrootddev startddev composer create --prefer-dist laravel/laravelddev exec \"cat .env.example | sed  -E 's/DB_(HOST|DATABASE|USERNAME|PASSWORD)=(.*)/DB_\\1=db/g' &gt; .env\"ddev exec \"php artisan key:generate\"ddev launchBing, bang, boom. I have some LaravelThe ddev launch command should have opened your default browser to this screen:",
+            "content_html": "<p>First and foremost, I find <a href=\"https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview\">Ubuntu</a> the Linux distribution easiest to install and best supported when learning Web Development. I’m sure that’s open for debate, but that’s what the comments are for.</p><h2 id=\"ok-im-running-ubuntu-what-next\">OK, I’m running Ubuntu, what next?</h2><p>I suggest that your <a href=\"https://blog.aamnah.com/sysadmin/install-homebrew-ubuntu-linux\">install Homebrew</a>, “The Missing Package Manager for macOS (or Linux)”. It’s great but if you choose another path, I hope you can still follow along.</p><h2 id=\"i-have-homebrew-now-what\">I have Homebrew, now what?</h2><h3 id=\"install-ddev\">Install DDEV</h3><blockquote>[DDEV](https://github.com/drud/ddev) is an open  source tool that makes it dead simple to get local PHP development  environments up and running within minutes. It's powerful and flexible  as a result of its per-project environment configurations, which can be  extended, version controlled, and shared. In short, DDEV aims to allow  development teams to use Docker in their workflow without the  complexities of bespoke configuration.</blockquote><p>Follow the directions at https://ddev.readthedocs.io/en/stable/#installation which will ensure you have everything needed to install DDEV and then Laravel.</p><h3 id=\"install-laravel\">Install Laravel</h3><p>Copy and paste from below, replace MY_SITE=”” with the name you wish to choose for you site:</p><div class=\"language-bash highlighter-rouge\"><div class=\"highlight\"><pre class=\"highlight\"><code><span class=\"nv\">MY_SITE</span><span class=\"o\">=</span>my-laravel-app<span class=\"nb\">mkdir</span> <span class=\"nv\">$MY_SITE</span><span class=\"nb\">cd</span> <span class=\"nv\">$MY_SITE</span>ddev config <span class=\"nt\">--project-type</span><span class=\"o\">=</span>laravel <span class=\"nt\">--docroot</span><span class=\"o\">=</span>public <span class=\"nt\">--create-docroot</span>ddev startddev composer create <span class=\"nt\">--prefer-dist</span> laravel/laravelddev <span class=\"nb\">exec</span> <span class=\"s2\">\"cat .env.example | sed  -E 's/DB_(HOST|DATABASE|USERNAME|PASSWORD)=(.*)/DB_</span><span class=\"se\">\\1</span><span class=\"s2\">=db/g' &gt; .env\"</span>ddev <span class=\"nb\">exec</span> <span class=\"s2\">\"php artisan key:generate\"</span>ddev launch</code></pre></div></div><h2 id=\"bing-bang-boom-i-have-some-laravel\">Bing, bang, boom. I have some Laravel</h2><p>The <em>ddev launch</em> command should have opened your default browser to this screen:</p><p><img src=\"/assets/img/laravel.png\" alt=\"\" /></p>",
+            "url": "https://blog.jonesrussell42.xyz/laravel/2021/04/03/start-developing-with-laravel-in-ubuntu-20.04.html",
+            "image": "/assets/img/laravel.png",
+            
+            
+            "tags": ["web-development","install"],
+            
+            "date_published": "2021-04-03T00:00:00+00:00",
+            "date_modified": "2021-04-03T00:00:00+00:00",
+            
+                "author": 
+                ""
+                
+            
+        },
+    
+        {
             "id": "web-development-2021-03-06-imposter-syndrome-my-2",
             "title": "Imposter Syndrome",
             "summary": null,
